@@ -1,0 +1,252 @@
+{
+    "tamil": {
+        "menu": [ {
+            "navtitle": "தமிழ் இசைச் சங்கம்",
+            "path": "/",
+            "details": [
+            {
+              "subtitle": "தமிழ் இசைச் சங்க வரலாறு",
+              "path": "/history"
+            },
+            {
+              "subtitle": "நிர்வாகக் குழு",
+              "childsubtitle": [
+                { "description": "தமிழ் இசைச் சங்க ஆட்சிக் குழு", "path": "/trustees" },
+                { "description": "தலைவர்கள்", "path": "/presidents-and-secretaries" }
+              ]
+            }
+          ]
+            },
+            {
+              "navtitle": "இசை விழா",
+              "path": "/isai-vizha",
+              "details": [
+                {
+                  "subtitle": "பண்ஆராய்ச்சிகள்",
+                  "path": "/pann-research"
+                },
+                {
+                  "subtitle": "விருதுகள்",
+                  "path": "/awards"
+                },
+                {
+                  "subtitle": "சிறப்பு விருந்தினர்கள்",
+                  "path": "/cheif-guest"
+                }
+              ]
+            },
+            {
+              "navtitle": "தமிழ் இசை கல்லூரி",
+              "path": "/tamil-isai-college",
+              "details": [
+                {
+                  "subtitle": "தமிழ் இசைக் கல்லூரி வரலாறு",
+                  "childsubtitle": [
+                    { "description": "முன்னாள் முதல்வர்கள்", "path": "/principals" }
+                  ]
+                },
+                { "subtitle": "பகல் நேரக் கல்லூரி", "path": "/day-college" },
+                { "subtitle": "மாலை நேரக் கல்லூரி", "path": "/eve-college" },
+                { "subtitle": "TISGEC Course & Registration", "path": "/tisgec-course" }
+                ,{
+                    "subtitle": "E-Quiz Registration",
+                    "path": "/awards"
+                  },{
+                    "subtitle": "Undergraduate course",
+                    "path": "/awards"
+                  },{
+                    "subtitle": "Diploma course",
+                    "path": "/awards"
+                  },{
+                    "subtitle": "Special course",
+                    "path": "/awards"
+                  },{
+                    "subtitle": "நிகழ்நிலை (Online) வகுப்புகள்",
+                    "path": "/online-class"
+                  },{
+                    "subtitle": "தொலைநிலைக்கல்வி",
+                    "path": "/distance-education"
+                  },{
+                    "subtitle": "திறந்த நிலை கல்வி",
+                    "path": "/open-education"
+                  },{
+                    "subtitle": "ஊழியர்கள்",
+                    "path": "/staff"
+                  }
+      
+              ]
+            },
+            { "navtitle": "நூலகம்", "path": "/library" },
+            { "navtitle": "தொல் இசை கலஞ்சியம்", "path": "/thol-isai-kalanjiyam" },
+            { "navtitle": "ஊடகம்", "path": "/media" },
+            { "navtitle": "புகைப்படங்கள்", "path": "/" ,
+              "details":[{
+                    "subtitle": "இசைவிழா",
+                    "childsubtitle": [
+                      { "description": "தெய்வீக அருளாளர்கள்", "path": "/principals" },
+                      { "description": "இசை அருளாளர்கள்", "path": "/principals" },
+                      { "description": "இசைக் கலைவாணர்கள்", "path": "/principals" },
+                      { "description": "முஇசைப் பேரறிஞர்கள்", "path": "/principals" },
+                      { "description": "பண் இசைப் பேரறிஞர்கள்", "path": "/principals" }
+                    ]
+                  }]},
+            { "navtitle": "தொடர்புக்கு", "path": "/contact-us" },
+            { "navtitle": "ஆடியோ", "path": "/audio" }],
+        "content": {
+            "home": "வணக்கம்! நாங்கள் உங்கள் தேவைகளுக்கு சரியான தீர்வுகளை வழங்குகிறோம்.",
+            "about": "நாங்கள் ஒரு முன்னணி நிறுவனம்."
+        }
+    },
+    "english": {
+        "menu": [ {
+            "navtitle": "Home",
+            "path": "/",
+            "details": [
+              {
+                "subtitle": "History",
+                "path": "/history"
+              },
+              {
+                "subtitle": "Board",
+                "childsubtitle": [
+                  {
+                    "description": "Board of Trustees",
+                    "path": "/trustees"
+                  },
+                  {
+                    "description": "Presidents and Secretaries",
+                    "path": "/presidents-and-secretaries"
+                  }
+                ]
+              }
+            ]            
+            },
+            {
+              "navtitle": "Isai Vizha",
+              "path": "/isai-vizha",
+              "details": [
+                {
+                  "subtitle": "Tamil Pann Research",
+                  "path": "/tamil-pann-research"
+                },
+                {
+                  "subtitle": "Awards",
+                  "path": "/awards"
+                },
+                {
+                  "subtitle": "Special Guest of Honour",
+                  "path": "/history"
+                }
+              ]
+            },
+            {
+              "navtitle": "Tamil Isai College",
+              "path": "/tamil-isai-college",
+              "details": [
+                {
+                  "subtitle": "History",
+                  "childsubtitle": [
+                    {
+                      "description": "Former Principals",
+                      "path": "/principals"
+                    }
+                  ]
+                },
+                {
+                  "subtitle": "Day College",
+                  "path": "/day-college"
+                },
+                {
+                  "subtitle": "Evening College",
+                  "path": "/day-college"
+                },
+                {
+                  "subtitle": "TISGEC Course & Registration",
+                  "path": "/day-college"
+                },
+                {
+                  "subtitle": "E-Quiz Registration",
+                  "path": "/day-college"
+                },
+                {
+                  "subtitle": "Undergraduate course",
+                  "path": "/day-college"
+                },
+                {
+                  "subtitle": "Diploma course",
+                  "path": "/day-college"
+                },
+                {
+                  "subtitle": "Certificate course",
+                  "path": "/day-college"
+                },
+                {
+                  "subtitle": "Special course",
+                  "path": "/day-college"
+                },
+                {
+                  "subtitle": "Distance Education",
+                  "path": "/day-college"
+                },
+                {
+                  "subtitle": "Open University",
+                  "path": "/day-college"
+                },
+                {
+                  "subtitle": "Staffs",
+                  "path": "/day-college"
+                }
+              ]
+            },
+            {
+              "navtitle": "Library",
+              "path": "/library"
+            },
+            {
+              "navtitle": "Thol Isai Kalanjiyam",
+              "path": "/thol-isai-kalanjiyam"
+            },
+            {
+              "navtitle": "Media",
+              "path": "/media"
+            },
+            {
+              "navtitle": "Gallery",
+              "details": [
+                {
+                  "subtitle": "Isai Vizha",
+                  "childsubtitle": [
+                    {
+                      "description": "Deiviga Arulalarkal",
+                      "path": "/principals"
+                    },
+                    {
+                      "description": "Isai Arulalarkal",
+                      "path": "/principals"
+                    },
+                    {
+                      "description": "Isai Kalaivanarkal",
+                      "path": "/principals"
+                    },
+                    {
+                      "description": "Isai Perarignarkal",
+                      "path": "/principals"
+                    },
+                    {
+                      "description": "Pann Isai Perarignarkal",
+                      "path": "/principals"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "navtitle": "Audio",
+              "path": "/audio"
+            }],
+        "content": {
+            "home": "Welcome! We provide the best solutions for your needs.",
+            "about": "We are a leading company."
+        }
+    }
+}
