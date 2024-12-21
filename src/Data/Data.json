@@ -1,3 +1,6 @@
+
+
+
 {
     "tamil": {
         "menu": [ {
@@ -20,6 +23,7 @@
             {
               "navtitle": "இசை விழா",
               "path": "/isai-vizha",
+              "icon":"",
               "details": [
                 {
                   "subtitle": "பண்ஆராய்ச்சிகள்",
