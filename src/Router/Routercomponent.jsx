@@ -8,6 +8,7 @@ import Tamilisaisangam from "../Pages/Tamilisaisangam";
 import Register from "../Component/Register/Register";
 import Login from "../Component/Login/Login";
 import History from "../Pages/History";
+import Boardtrustees from "../Pages/Boardtrustees";
 
 const Routercomponent = () => {
   return (
@@ -33,6 +34,7 @@ const MainRoutes = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/tamil-isai-history" element={<History />} />
+        <Route path='/trustees' element={<Boardtrustees/>}/>
       </Routes>
       
       <Footer/>

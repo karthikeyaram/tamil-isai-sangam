@@ -300,6 +300,17 @@
         }
       }
     ],
+    "board":[      
+      {"title":"தமிழ் இசைச் சங்க ஆட்சிக் குழு",
+        "images":[
+          {"id":1,"img":"/assets/head img/acmuthiah.jpg","title":"திரு. ஏ.சி. முத்தையா","subtitle":"மதிப்பியல் செயலர்"},{"id":2,"img":"/assets/head img/plakshmanan.jpg","title":"திரு. பி. லெட்சுமணன்","subtitle":""},
+          {"id":3,"img":"/assets/head img/devaki_muthiah.jpg","title":"முனைவர் தேவகி முத்தையா","subtitle":""},{"id":4,"img":"/assets/head img/al_vadivelu.jpg","title":"திரு. ஏஎல் . வடிவேலு","subtitle":""},
+          {"id":5,"img":"/assets/head img/ashwin_muthiah.jpg","title":"திரு. அஸ்வின் சி. முத்தையா","subtitle":""},{"id":6,"img":"/assets/head img/sakthi_thirunakarasu.jpg","title":"திரு. சக்தி.அ. திருநாவுக்கரசு","subtitle":""},
+          {"id":7,"img":"/assets/head img/vali_arun.jpg","title":"திருமதி வள்ளி அருண்","subtitle":""},{"id":8,"img":"/assets/head img/rm_somasundram.jpg","title":"திரு . ஆர்எம். சோமசுந்தரம்","subtitle":""},
+          {"id":9,"img":"/assets/head img/ar_meiyappan.jpg","title":"திரு . ஏஆர் . மெய்யப்பன்","subtitle":""},{"id":10,"img":"/assets/head img/ar_nachiyappan.jpg","title":"திரு. ஏஆர் நாச்சியப்பன்","subtitle":"உதவிச் செயலர்"}
+        ] 
+    }
+    ],
     "gallery": [
       {
         "id": 1,
@@ -793,6 +804,17 @@
         "option2":" Forgot password"
 
       }
+    ],
+    "board":[      
+      {"title":"Board of Trustees",
+        "images":[
+          {"id":1,"img":"/assets/head img/acmuthiah.jpg","title":"Thiru. A.C. Muthiah","subtitle":"Hony.Secretary"},{"id":2,"img":"/assets/head img/plakshmanan.jpg","title":"Thiru. P. Lakshmanan","subtitle":""},
+          {"id":3,"img":"/assets/head img/devaki_muthiah.jpg","title":"Dr. Devaki Muthiah","subtitle":""},{"id":4,"img":"/assets/head img/al_vadivelu.jpg","title":"Thiru. AL. Vadivelu","subtitle":""},
+          {"id":5,"img":"/assets/head img/ashwin_muthiah.jpg","title":"Thiru. Ashwin C. Muthiah","subtitle":""},{"id":6,"img":"/assets/head img/sakthi_thirunakarasu.jpg","title":"Thiru. Sakthi A. Thirunavukkarasu","subtitle":""},
+          {"id":7,"img":"/assets/head img/vali_arun.jpg","title":"Tmt. Valli Arun","subtitle":""},{"id":8,"img":"/assets/head img/rm_somasundram.jpg","title":"Thiru. RM. Somasundram","subtitle":""},
+          {"id":9,"img":"/assets/head img/ar_meiyappan.jpg","title":"Thriu. AR. Meyyappan","subtitle":""},{"id":10,"img":"/assets/head img/ar_nachiyappan.jpg","title":"Thiru. AR. Nachiappan","subtitle":"Asst..Secretary"}
+        ] 
+    }
     ],
     "gallery": [
       {
