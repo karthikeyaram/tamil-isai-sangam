@@ -106,7 +106,7 @@ const Navbar = () => {
         <div className="row">
           {/* Logo Section */}
           <span className="col-xs-6 col-sm-3">
-            <a href="index.html">
+            <a href="/">
               <img src={logo} className="img-responsive" alt="Edumart Logo" />
             </a>
           </span>

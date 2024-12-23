@@ -578,10 +578,72 @@ textarea:focus::placeholder{
 	banner 1
 -----------------------*/
 .banner-outer {
-	display: block;
-	position: relative;
-	overflow-x: hidden;
+  display: block;
+  position: relative;
+  overflow: hidden; /* Ensure no extra content outside visible area */
+  width: 100%; /* Take full width */
+  min-height: 100vh; /* Full viewport height */
+  max-height: 100%;
 }
+
+.bx-viewport {
+  width: 100%;
+  height: 100%; /* Match parent's height */
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-slider {
+  display: flex; /* Align slides horizontally */
+  transition: transform 0.5s ease; /* Smooth slide transition */
+  height: 100%; /* Full height of the container */
+  width: 100%; /* Full width of the container */
+}
+
+.slide {
+  flex: 0 0 100%; /* Each slide takes up full width */
+  height: 100vh; /* Ensure slide takes up full viewport height */
+  background-size: cover; /* Ensure image covers the slide */
+  background-position: center; /* Center the image perfectly */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-left,
+.carousel-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.carousel-left {
+  left: 20px;
+}
+
+.carousel-right {
+  right: 20px;
+}
+
+.prev-btn,
+.next-btn {
+  background: rgba(0, 0, 0, 0.5); /* Transparent background */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
 .banner-slider .container {
 	display: table;
 	height: 100%;
@@ -729,8 +791,16 @@ textarea:focus::placeholder{
 .about {
 	display: block;
 	position: relative;
-	padding: 222px 0 100px 0;
+	padding: 222px 0 0px 0;
 	/* background: url(../images/about-bg.jpg) no-repeat center bottom; */
+}
+.container1{
+
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	
 }
 .about ul.our-links {
 	display: block;
@@ -912,7 +982,7 @@ textarea:focus::placeholder{
 -----------------------*/
 .padding-lg {
 	display: block;
-	padding-top: 90px;
+	padding-top: 20px;
 	padding-bottom: 90px;
 }
 .our-cources h2, 
@@ -1379,8 +1449,39 @@ ul.our-strength li .title {
 /* Caption Style 3 */
 .cs-style-3 figure {
 	overflow: hidden;
-	padding-bottom: 104px;
+	/* padding-bottom: 104px; */
 }
+/* -------------card----------------- */
+/* Zoom Effect on Image */
+.card-figure:hover .card-image {
+	transform: scale(1.1); /* Zoom in on hover */
+  }
+  
+  /* Animation for Card Title and Content */
+  .card-figure:hover .card-title,
+  .card-figure:hover .card-content {
+	animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	  transform: translateY(20px); /* Start slightly below */
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0); /* Move to original position */
+	}
+  }
+  
+  /* Optionally, you can add more hover effects like shadows */
+  .card-figure:hover .card {
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+  }
+  
+
+
+/* --------------card----------- */
 .cs-style-3 figure img {
 	-webkit-transition: -webkit-transform 0.4s;
 	-moz-transition: -moz-transform 0.4s;
