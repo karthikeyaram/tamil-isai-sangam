@@ -54,6 +54,7 @@ const Banner = () => {
   };
 
   const margazhiSpecial = homeData[language]?.home[0]?.margazhispecial || [];
+  const categorys = homeData[language]?.home[1]?.margazhispecial || [];
 
   return (
     <>
@@ -195,7 +196,7 @@ const Banner = () => {
                             style={{
                               backgroundSize: "cover",
                               backgroundPosition: "center",
-                              height: "300px", // Fixed height for consistent card height
+                              height: "200px", // Fixed height for consistent card height
                               borderRadius: "10px",
                               padding: "15px",
                               display: "flex",
@@ -207,6 +208,65 @@ const Banner = () => {
                             {/* Card Title */}
                             <h5 className="card-title">{card.cardtitle}</h5>
                             {/* Card Content */}
+                            <h6
+                              className="card-content"
+                              style={{ width: "100%" }}
+                            >
+                              {card.cardcontent}
+                            </h6>
+                          </div>
+                        </figure>
+                      </div>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="news-events padding-lg">
+        <div className="container1">
+          {categorys.map((special, index) => (
+            <div key={index}>
+              <h2>
+                <span>{special.title}</span> {special.subtitle}
+              </h2>
+              <ul className="row cs-style-3 d-flex">
+                {special.card &&
+                  special.card.map((card) => (
+                    <li
+                      key={card.id}
+                      className="col-sm-3" 
+                      style={{ listStyle: "none" }}
+                    >
+                      <div className="inner">
+                        <figure className="card-figure">
+                          <img
+                            src={card.image}
+                            alt={card.cardtitle}
+                            className="card-image"
+                            style={{
+                              width: "100%",
+                              height: "auto",
+                              borderRadius: "10px",
+                              transition: "transform 0.3s ease",
+                            }}
+                          />
+                          <div
+                            className="card"
+                            style={{
+                              backgroundSize: "cover",
+                              backgroundPosition: "center",
+                              height: "200px",
+                              borderRadius: "10px",
+                              padding: "15px",
+                              display: "flex",
+                              flexDirection: "column",
+                              justifyContent: "flex-end",
+                              width: "100%",
+                            }}
+                          >
+                            <h5 className="card-title">{card.cardtitle}</h5>
                             <h6
                               className="card-content"
                               style={{ width: "100%" }}

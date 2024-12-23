@@ -22,8 +22,7 @@ const Navbar = () => {
 
   const handleLanguageChange = (event) => {
     const selectedLanguage = event.target.value;
-    if ((language === "tamil" && selectedLanguage === "english") ||
-      (language === "english" && selectedLanguage === "tamil")) {
+    if (selectedLanguage !== language) {
       dispatch(toggleLanguage());
     }
   };
@@ -71,7 +70,7 @@ const Navbar = () => {
             {/* Top Navigation */}
             <ul className="top-nav hidden-xs">
               <li>
-                <a href="register.html">Register</a>
+                <a href="/register">Register</a>
               </li>
               <li>
                 <a href="apply-online.html">Apply Online</a>
@@ -134,7 +133,7 @@ const Navbar = () => {
                   {/* +91 94449 25880 / 92822 35964 */}
                 </li>
               </ul>
-              <a href="login.html" className="login">
+              <a href="/login" className="login">
                 Student Login<span className="icon-more-icon"> <IoIosPlayCircle /></span>
               </a>
             </div>
