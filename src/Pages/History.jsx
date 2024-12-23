@@ -2,14 +2,14 @@ import React from 'react'
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import histoydata from "../Data/Data.json";
+import histroydata from "../Data/Data.json";
 
 const History = () => {
     const { language } = useSelector((state) => state.language);
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const head = headData[language]?.histoy || [];
-    const headcontent = histoydata[language]?.histoys || [];
+    const head = histroydata[language]?.history || [];
+    const headcontent = histroydata[language]?.historys || [];
   
     useEffect(() => {
       const handleScroll = () => {
