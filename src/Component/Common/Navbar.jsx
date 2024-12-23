@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleLanguage } from "../../Redux/Slice/LanguageSlice";
 import { useNavigate } from "react-router-dom";
@@ -8,6 +9,9 @@ import "../../Assets/css/Custom.css";
 import { FaAngleDown } from "react-icons/fa";
 import logo from "../../Assets/img/logo_new.jpg";
 import { IoIosPlayCircle } from "react-icons/io";
+import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
+import { FaYoutube, FaSquareInstagram, FaGooglePlus } from "react-icons/fa6";
+import { IoReorderThreeOutline } from "react-icons/io5";
 
 const Navbar = () => {
   const { language } = useSelector((state) => state.language);
@@ -18,17 +22,20 @@ const Navbar = () => {
 
   const handleLanguageChange = (event) => {
     const selectedLanguage = event.target.value;
-    if ((language === "tamil" && selectedLanguage === "english") || 
-        (language === "english" && selectedLanguage === "tamil")) {
+    if ((language === "tamil" && selectedLanguage === "english") ||
+      (language === "english" && selectedLanguage === "tamil")) {
       dispatch(toggleLanguage());
     }
   };
 
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
-      {/* <button onClick={() => dispatch(toggleLanguage())}>
-        {language === "tamil" ? "ENGLISH" : "TAMIL"}
-      </button> */}
       <div className="header-top">
         <div className="container clearfix">
           <ul className="follow-us hidden-xs">
@@ -38,23 +45,23 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#">
-                <i className="fa fa-facebook-official" aria-hidden="true"></i>
+              <a href="#"><FaFacebook />
               </a>
             </li>
             <li>
-              <a href="#">
-                <i className="fa fa-google-plus" aria-hidden="true"></i>
+              <a href="#"><FaYoutube />
               </a>
             </li>
             <li>
-              <a href="#">
-                <i className="fa fa-youtube-play" aria-hidden="true"></i>
+              <a href="#"><FaSquareInstagram />
               </a>
             </li>
             <li>
-              <a href="#">
-                <i className="fa fa-instagram" aria-hidden="true"></i>
+              <a href="#"><FaGooglePlus />
+              </a>
+            </li>
+            <li>
+              <a href="#"><FaTwitterSquare />
               </a>
             </li>
           </ul>
@@ -85,8 +92,8 @@ const Navbar = () => {
                 </select>
               </div> */}
               <div className="select-lang2">
-                <select className="custom_select" defaultValue="en"  value={language}
-              onChange={handleLanguageChange}>
+                <select className="custom_select" defaultValue="en" value={language}
+                  onChange={handleLanguageChange}>
                   <option value="tamil">Tamil</option>
                   <option value="english">English</option>
                 </select>
@@ -99,7 +106,7 @@ const Navbar = () => {
         <div className="row">
           {/* Logo Section */}
           <span className="col-xs-6 col-sm-3">
-            <a href="index.html">
+            <a href="/">
               <img src={logo} className="img-responsive" alt="Edumart Logo" />
             </a>
           </span>
@@ -128,7 +135,7 @@ const Navbar = () => {
                 </li>
               </ul>
               <a href="login.html" className="login">
-                Student Login<span  className="icon-more-icon"> <IoIosPlayCircle/></span>
+                Student Login<span className="icon-more-icon"> <IoIosPlayCircle /></span>
               </a>
             </div>
           </div>
@@ -139,23 +146,24 @@ const Navbar = () => {
           <div className="navbar-header">
             <button
               aria-controls="navbar"
-              aria-expanded="false"
-              data-target="#navbar"
-              data-toggle="collapse"
-              class="navbar-toggle collapsed"
+              aria-expanded={isMenuOpen}
+              className={`navbar-toggle ${isMenuOpen ? "open" : "collapsed"}`}
               type="button"
+              onClick={toggleMenu}
             >
-              {" "}
-              <span class="sr-only">Toggle navigation</span>{" "}
-              <span class="icon-bar"></span> <span class="icon-bar"></span>{" "}
-              <span class="icon-bar"></span>{" "}
+              <IoReorderThreeOutline />
             </button>
           </div>
-          <div className="navbar-collapse collapse">
+          <div className={`navbar-collapse ${isMenuOpen ? "show" : "hide"}`}>
             <nav className="navbar">
               <ul className="nav navbar-nav">
                 {menu.map((item, index) => (
-                  <li key={index} className="dropdown">
+                  <li
+                    key={index}
+                    className="dropdown"
+                    onMouseEnter={(e) => e.currentTarget.classList.add("open")}
+                    onMouseLeave={(e) => e.currentTarget.classList.remove("open")}
+                  >
                     <a href="#" onClick={() => navigate(item.path)}>
                       {item.navtitle}
                       <FaAngleDown
@@ -170,27 +178,29 @@ const Navbar = () => {
                     {item.details && (
                       <ul className="dropdown-menu">
                         {item.details.map((detail, subIndex) => (
-                          <li key={subIndex} className="submenu-item">
+                          <li
+                            key={subIndex}
+                            className="submenu-item dropdown"
+                            onMouseEnter={(e) => e.currentTarget.classList.add("open")}
+                            onMouseLeave={(e) =>
+                              e.currentTarget.classList.remove("open")
+                            }
+                          >
                             <a href="#" onClick={() => navigate(detail.path)}>
                               {detail.subtitle}
                             </a>
                             {detail.childsubtitle && (
                               <ul className="dropdown-menu">
-                                {detail.childsubtitle.map(
-                                  (child, childIndex) => (
-                                    <li
-                                      key={childIndex}
-                                      className="dropdown-menu"
+                                {detail.childsubtitle.map((child, childIndex) => (
+                                  <li key={childIndex}>
+                                    <a
+                                      href="#"
+                                      onClick={() => navigate(child.path)}
                                     >
-                                      <a
-                                        href="#"
-                                        onClick={() => navigate(child.path)}
-                                      >
-                                        {child.description}
-                                      </a>
-                                    </li>
-                                  )
-                                )}
+                                      {child.description}
+                                    </a>
+                                  </li>
+                                ))}
                               </ul>
                             )}
                           </li>

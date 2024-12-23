@@ -88,10 +88,10 @@
                     "subtitle": "இசைவிழா",
                     "childsubtitle": [
                       { "description": "தெய்வீக அருளாளர்கள்", "path": "/DeivigaArulalarkal" },
-                      { "description": "இசை அருளாளர்கள்", "path": "/principals" },
-                      { "description": "இசைக் கலைவாணர்கள்", "path": "/principals" },
-                      { "description": "முஇசைப் பேரறிஞர்கள்", "path": "/principals" },
-                      { "description": "பண் இசைப் பேரறிஞர்கள்", "path": "/principals" }
+                      { "description": "இசை அருளாளர்கள்", "path": "/IsaiArulalarkal" },
+                      { "description": "இசைக் கலைவாணர்கள்", "path": "/IsaiKalaivanarkal" },
+                      { "description": "முஇசைப் பேரறிஞர்கள்", "path": "/IsaiPerairignarkal" },
+                      { "description": "பண் இசைப் பேரறிஞர்கள்", "path": "/PannIsaiPerarignarkal" }
                     ]
                   }]},
             { "navtitle": "தொடர்புக்கு", "path": "/contact-us" },
@@ -277,19 +277,19 @@
                     },
                     {
                       "description": "Isai Arulalarkal",
-                      "path": "/principals"
+                      "path": "/IsaiArulalarkal"
                     },
                     {
                       "description": "Isai Kalaivanarkal",
-                      "path": "/principals"
+                      "path": "/IsaiKalaivanarkal"
                     },
                     {
                       "description": "Isai Perarignarkal",
-                      "path": "/principals"
+                      "path": "/IsaiPerairignarkal"
                     },
                     {
                       "description": "Pann Isai Perarignarkal",
-                      "path": "/principals"
+                      "path": "/PannIsaiPerarignarkal"
                     }
                   ]
                 }
@@ -433,9 +433,7 @@
           {"id":29,"title":"Vedaranyam K.Muthukumarasamy Desikar ","image":"img17.jpg"},
           {"id":29,"title":"Palani Pa. Shnmugasundara Desikar ","image":"img17.jpg"},
           {"id":29,"title":"Karur Ku. Saminatha Desikar ","image":"img17.jpg"},
-          {"id":29,"title":"Palani Ka. Venkatesan ","image":"img17.jpg"}
-
-    
+          {"id":29,"title":"Palani Ka. Venkatesan ","image":"img17.jpg"}   
           
         ]
     }
