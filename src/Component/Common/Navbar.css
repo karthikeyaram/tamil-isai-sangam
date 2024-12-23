@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0px;
 	margin: 0px;
 	font-family: 'texgyreadventorbold';
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #24353b;
 }
 h1 {
@@ -791,7 +791,7 @@ textarea:focus::placeholder{
 .about {
 	display: block;
 	position: relative;
-	padding: 222px 0 100px 0;
+	padding: 222px 0 0px 0;
 	/* background: url(../images/about-bg.jpg) no-repeat center bottom; */
 }
 .container1{
@@ -801,6 +801,11 @@ textarea:focus::placeholder{
 		margin-right: auto;
 		margin-left: auto;
 	
+}
+@media (min-width: 992px) {
+    .container1 {
+        width: 1190px;
+    }
 }
 .about ul.our-links {
 	display: block;
@@ -922,7 +927,90 @@ textarea:focus::placeholder{
 */
 .about .video-block img {
 	width: 100%;
+	padding-top: 80px;
+	margin-top: 20px;
 }
+/* Image zoom effect with shadow */
+.video-block img {
+	width: 100%;
+	padding-top: 60px;
+	transition: transform 0.5s ease, filter 0.5s ease, box-shadow 0.3s ease;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);  /* Add shadow to image */
+  }
+  
+  .video-block img:hover {
+	transform: scale(1.1);  /* Zoom in effect */
+	filter: brightness(1.2);  /* Increase brightness */
+	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);  /* Shadow increases on hover */
+  }
+  
+  /* Slide-in animation for the image */
+  .video-block {
+	opacity: 0;
+	transform: translateX(-100%);
+	animation: slideIn 1s forwards;
+	transition: transform 1s ease;
+  }
+  
+  @keyframes slideIn {
+	100% {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+  
+  /* Animation for the content */
+  .col-md-7 h2,
+  .col-md-7 p {
+	opacity: 0;
+	transform: translateY(30px);
+	animation: fadeInUp 1s forwards; /* Keep the element visible after animation */
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);  /* Text shadow */
+  }
+  
+  /* Scroll animation for content */
+  @keyframes fadeInUp {
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  /* Hover effect for paragraphs */
+  .col-md-7 p:hover {
+	color: #007BFF;  /* Change text color on hover */
+	transform: translateX(10px);  /* Slight move effect */
+	transition: all 0.3s ease-in-out;
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);  /* Shadow effect on hover */
+  }
+  
+  /* Ensure animation runs only once when content is in view */
+  .reveal {
+	animation: revealText 1s ease-out forwards; /* Keep element visible */
+  }
+  
+  @keyframes revealText {
+	0% {
+	  opacity: 0;
+	  transform: translateY(30px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  /* Ensure animations are visible */
+  .visible {
+	opacity: 1 !important;
+	transform: translateY(0) !important;
+  }
+  
+  /* Add smooth scroll effect */
+  html {
+	scroll-behavior: smooth;
+  }
+  
 .about .video-block a {
 	width: 67px;
 	display: block;
@@ -982,8 +1070,8 @@ textarea:focus::placeholder{
 -----------------------*/
 .padding-lg {
 	display: block;
-	padding-top: 90px;
-	padding-bottom: 90px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .our-cources h2, 
 .how-study h2, 
@@ -999,7 +1087,7 @@ textarea:focus::placeholder{
 	padding-bottom: 44px;
 	font-family: 'texgyreadventorbold';
 	font-size: 36px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	text-align: center;
 }
 .our-cources h2 span, 
@@ -1449,8 +1537,39 @@ ul.our-strength li .title {
 /* Caption Style 3 */
 .cs-style-3 figure {
 	overflow: hidden;
-	padding-bottom: 104px;
+	/* padding-bottom: 104px; */
 }
+/* -------------card----------------- */
+/* Zoom Effect on Image */
+.card-figure:hover .card-image {
+	transform: scale(1.1); /* Zoom in on hover */
+  }
+  
+  /* Animation for Card Title and Content */
+  .card-figure:hover .card-title,
+  .card-figure:hover .card-content {
+	animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	  transform: translateY(20px); /* Start slightly below */
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0); /* Move to original position */
+	}
+  }
+  
+  /* Optionally, you can add more hover effects like shadows */
+  .card-figure:hover .card {
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+  }
+  
+
+
+/* --------------card----------- */
 .cs-style-3 figure img {
 	-webkit-transition: -webkit-transform 0.4s;
 	-moz-transition: -moz-transform 0.4s;
@@ -2487,6 +2606,36 @@ ul.makes-different-list li p{
 .about-right img {
 	width: 100%;
 }
+/* ------------------------------------- */
+/* Zoom-in effect on hover */
+.video-block img {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);  /* Default shadow */
+  }
+  
+  .video-block img:hover {
+	transform: scale(1.1);  /* Zoom in effect */
+	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);  /* Shadow increases on hover */
+  }
+  
+  /* Optional: Slide-in effect */
+  .video-block {
+	animation: slideIn 1s forwards;
+  }
+  
+  @keyframes slideIn {
+	0% {
+	  opacity: 0;
+	  transform: translateX(-100%);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+  
+/* ------------------------- */
+
 .why-choose.grey-bg {
 	background: #f3f6f8;
 }
@@ -4400,17 +4549,21 @@ ul.faq-listing li h2 {
 	display: block;
 	padding: 22px 0;
 	text-align: center;
-	background: rgba(255, 255, 255, 0.8);
+	/* background: #0a517a; */
+	background:rgba(255, 255, 255, 0.8);
+	color: white;
 }
 .login-wrapper .head-block h1 {
 	font-size: 34px;
 	text-transform: uppercase;
-	color: #353434;
+	/* color: #ffffff; */
+	color: #000;
 }
 .login-wrapper .cnt-block {
 	display: block;
 	padding: 40px;
-	background: #fff;
+	background: #fcfcfc;
+	color: #7f8385;
 }
 .form-outer input {
 	width: 100%;
@@ -4423,7 +4576,7 @@ ul.faq-listing li h2 {
 	border-bottom: 1px #dae4e8 solid;
 	font-size: 12px;
 	font-weight: 700;
-	color: #7f8385;
+	color: #ffffff;
 	z-index: 2;
 	position: relative;
     -webkit-transition: all 0.3s;
@@ -4929,7 +5082,7 @@ ol.ord-listing li:last-child {
 	font-size: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #7f8385;
+	color: white;
 	resize: none;
 }
 .datepicker {
@@ -4959,7 +5112,7 @@ ol.ord-listing li:last-child {
 	padding-bottom: 14px;
 	font-size: 13px;
 	text-transform: uppercase;
-	color: #353434;
+	color: #7f8385;
 }
 .form-outer ul.select-opt {
 	list-style: none;

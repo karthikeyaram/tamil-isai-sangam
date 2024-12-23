@@ -1,440 +1,1447 @@
-
-
-
 {
-    "tamil": {
-        "menu": [ {
-            "navtitle": "தமிழ் இசைச் சங்கம்",
-            "path": "/",
-            "details": [
-            {
-              "subtitle": "தமிழ் இசைச் சங்க வரலாறு",
-              "path": "/history"
-            },
-            {
-              "subtitle": "நிர்வாகக் குழு",
-              "childsubtitle": [
-                { "description": "தமிழ் இசைச் சங்க ஆட்சிக் குழு", "path": "/trustees" },
-                { "description": "தலைவர்கள்", "path": "/presidents-and-secretaries" }
-              ]
-            }
-          ]
-            },
-            {
-              "navtitle": "இசை விழா",
-              "path": "/isai-vizha",
-              "icon":"",
-              "details": [
-                {
-                  "subtitle": "பண்ஆராய்ச்சிகள்",
-                  "path": "/pann-research"
-                },
-                {
-                  "subtitle": "விருதுகள்",
-                  "path": "/awards"
-                },
-                {
-                  "subtitle": "சிறப்பு விருந்தினர்கள்",
-                  "path": "/cheif-guest"
-                }
-              ]
-            },
-            {
-              "navtitle": "தமிழ் இசை கல்லூரி",
-              "path": "/tamil-isai-college",
-              "details": [
-                {
-                  "subtitle": "தமிழ் இசைக் கல்லூரி வரலாறு",
-                  "childsubtitle": [
-                    { "description": "முன்னாள் முதல்வர்கள்", "path": "/principals" }
-                  ]
-                },
-                { "subtitle": "பகல் நேரக் கல்லூரி", "path": "/day-college" },
-                { "subtitle": "மாலை நேரக் கல்லூரி", "path": "/eve-college" },
-                { "subtitle": "TISGEC Course & Registration", "path": "/tisgec-course" }
-                ,{
-                    "subtitle": "E-Quiz Registration",
-                    "path": "/awards"
-                  },{
-                    "subtitle": "Undergraduate course",
-                    "path": "/awards"
-                  },{
-                    "subtitle": "Diploma course",
-                    "path": "/awards"
-                  },{
-                    "subtitle": "Special course",
-                    "path": "/awards"
-                  },{
-                    "subtitle": "நிகழ்நிலை (Online) வகுப்புகள்",
-                    "path": "/online-class"
-                  },{
-                    "subtitle": "தொலைநிலைக்கல்வி",
-                    "path": "/distance-education"
-                  },{
-                    "subtitle": "திறந்த நிலை கல்வி",
-                    "path": "/open-education"
-                  },{
-                    "subtitle": "ஊழியர்கள்",
-                    "path": "/staff"
-                  }
-      
-              ]
-            },
-            { "navtitle": "நூலகம்", "path": "/library" },
-            { "navtitle": "தொல் இசை கலஞ்சியம்", "path": "/thol-isai-kalanjiyam" },
-            { "navtitle": "ஊடகம்", "path": "/media" },
-            { "navtitle": "புகைப்படங்கள்", "path": "/" ,
-              "details":[{
-                    "subtitle": "இசைவிழா",
-                    "childsubtitle": [
-                      { "description": "தெய்வீக அருளாளர்கள்", "path": "/DeivigaArulalarkal" },
-                      { "description": "இசை அருளாளர்கள்", "path": "/IsaiArulalarkal" },
-                      { "description": "இசைக் கலைவாணர்கள்", "path": "/IsaiKalaivanarkal" },
-                      { "description": "முஇசைப் பேரறிஞர்கள்", "path": "/IsaiPerairignarkal" },
-                      { "description": "பண் இசைப் பேரறிஞர்கள்", "path": "/PannIsaiPerarignarkal" }
-                    ]
-                  }]},
-            { "navtitle": "தொடர்புக்கு", "path": "/contact-us" },
-            { "navtitle": "ஆடியோ", "path": "/audio" }],
-        "content": {
-            "home": "வணக்கம்! நாங்கள் உங்கள் தேவைகளுக்கு சரியான தீர்வுகளை வழங்குகிறோம்.",
-            "about": "நாங்கள் ஒரு முன்னணி நிறுவனம்."
-        },
-       
-
-       
-"gallery":[
-    {"id":1,"title": "திருஞானசம்பந்தர்","image":"img1.jpg"},
-    {"id":2,"title": "திருநாவுக்கரசர்","image":"img2.jpg"},
-    {"id":3,"title":"சுந்தரமூர்த்தி நாயனார்","image":"img3.jpg"},
-    {"id":4,"title":"மாணிக்கவாசகர்","image":"img4.jpg"},
-    {"id":5,"title":"பொய்கை ஆழ்வார்","image":"img5.jpg"},
-    {"id":6,"title":"பூதத்தாழ்வார்","image":"img6.jpg"},
-    {"id":7,"title":"பேயாழ்வார்","image":"img7.jpg"},
-    {"id":8,"title":"திருமழிசையாழ்வார்","image":"img8.jpg"},
-    {"id":9,"title":"குலசேகரர்","image":"img9.jpg"},
-    {"id":10,"title":"தொண்டரடிப்பொடியாழ்வார்","image":"img10.jpg"},
-    {"id":11,"title":"திருப்பாணாழ்வார்","image":"img11.jpg"},
-    {"id":12,"title":"பெரியாழ்வார்","image":"img12.jpg"},
-    {"id":13,"title":"மதுரகவியாழ்வார்","image":"img13.jpg"},
-    {"id":14,"title":"திருமங்கை ஆழ்வார்","image":"img14.jpg"},
-    {"id":15,"title":"ஆண்டாள்","image":"img15.jpg"},
-    {"id":16,"title":"நம்மாழ்வார்","image":"img16.jpg"},
-    {"id":17,"title":"அருணகிரிநாதர்","image":"img17.jpg"},
-    {"id":18,"title":"முத்துத் தண்டவர்","image":"img17.jpg"},
-    {"id":19,"title":"மணிமுத்த பிள்ளை","image":"img17.jpg"},
-    {"id":20,"title":"அருணாசல கவிராயர்","image":"img17.jpg"},
-    {"id":21,"title":"பழனி சுப்பிரமணிய பிள்ளை","image":"img17.jpg"},
-    {"id":22,"title":"மிருதங்கம் தக்ஷிணாமூர்த்தி பிள்ளை","image":"img17.jpg"},
-    {"id":23,"title":"சிட்டூர் சுப்பிரமணிய பிள்ளை","image":"img17.jpg"},
-    {"id":24,"title":"முசிரி சுப்பிரமணிய ஐயர்","image":"img17.jpg"},
-    {"id":25,"title":"வடிவேலு","image":"img17.jpg"},
-    {"id":26,"title":"தஞ்சை கண்ணுசாமி நாட்டுவனர்","image":"img17.jpg"},
-    {"id":27,"title":"இசைப் பேரறிஞர் எம்.எம். தண்டபாணி தேசிகர்","image":"img17.jpg"},
-    {"id":28,"title":"இசைப் பேரறிஞர் பி.சம்பமூர்த்தி","image":"img17.jpg"},
-    {"id":29,"title":"பொன்னையா","image":"img17.jpg"},
-    {"id":30,"title":"தஞ்சை க.பொன்னையா பிள்ளை","image":"img17.jpg"},
-    {"id":31,"title":"மயிலாடுதுறை வேதநாயகம் பிள்ளை","image":"img17.jpg"},
-    {"id":32,"title":"மலைக்கோட்டை வைலின் கோவிந்தசாமி பிள்ளை","image":"img17.jpg"},
-    {"id":33,"title":"காஞ்சிபுரம் நைனார் பிள்ளை","image":"img17.jpg"},
-    {"id":34,"title":"வீணை தனம்மாள்","image":"img17.jpg"},
-    {"id":35,"title":"திருக்கோடிக்காவல் கிருஷ்ணைய்யர்","image":"img17.jpg"},
-    {"id":36,"title":"ராஜரத்தினம் பிள்ளை","image":"img17.jpg"},
-    {"id":37,"title":"திருப்பாம்புரம் சுவாமிநாத பிள்ளை","image":"img17.jpg"},
-    {"id":38,"title":"மிருதங்கம் நாராயணசாமி அப்பா","image":"img17.jpg"},
-    {"id":39,"title":"பழக்காடு டி.எஸ்.மணி ஐயர்","image":"img17.jpg"},
-    {"id":40,"title":"திருவிடைமருதூர் பி.எஸ்.வீரசாமி பிள்ளை","image":"img17.jpg"},
-    {"id":41,"title":"தனக்கோடி அம்மாள்","image":"img17.jpg"},
-    {"id":42,"title":"சின்னையா","image":"img17.jpg"},
-    {"id":43,"title":"பம்மல் சம்பந்த மூடலியார்","image":"img17.jpg"},
-    {"id":44,"title":"மதுரை மணி ஐயர்","image":"img17.jpg"},
-    {"id":45,"title":"சங்கீத வித்வான் டி.எஸ்.சிவராமன்","image":"img17.jpg"}
-]
-
-    },
-    "english": {
-        "menu": [ {
-            "navtitle": "Home",
-            "path": "/",
-            "details": [
+  "tamil": {
+    "menu": [
+      {
+        "navtitle": "தமிழ் இசைச் சங்கம்",
+        "path": "/tamil-isai-sangam",
+        "details": [
+          {
+            "subtitle": "தமிழ் இசைச் சங்க வரலாறு",
+            "path": "/tamil-isai-history"
+          },
+          {
+            "subtitle": "நிர்வாகக் குழு",
+            "childsubtitle": [
               {
-                "subtitle": "History",
-                "path": "/history"
+                "description": "தமிழ் இசைச் சங்க ஆட்சிக் குழு",
+                "path": "/trustees"
               },
               {
-                "subtitle": "Board",
-                "childsubtitle": [
-                  {
-                    "description": "Board of Trustees",
-                    "path": "/trustees"
-                  },
-                  {
-                    "description": "Presidents and Secretaries",
-                    "path": "/presidents-and-secretaries"
-                  }
-                ]
+                "description": "தலைவர்கள்",
+                "path": "/presidents-and-secretaries"
               }
-            ]            
-            },
-            {
-              "navtitle": "Isai Vizha",
-              "path": "/isai-vizha",
-              "details": [
-                {
-                  "subtitle": "Tamil Pann Research",
-                  "path": "/tamil-pann-research"
-                },
-                {
-                  "subtitle": "Awards",
-                  "path": "/awards"
-                },
-                {
-                  "subtitle": "Special Guest of Honour",
-                  "path": "/history"
-                }
-              ]
-            },
-            {
-              "navtitle": "Tamil Isai College",
-              "path": "/tamil-isai-college",
-              "details": [
-                {
-                  "subtitle": "History",
-                  "childsubtitle": [
-                    {
-                      "description": "Former Principals",
-                      "path": "/principals"
-                    }
-                  ]
-                },
-                {
-                  "subtitle": "Day College",
-                  "path": "/day-college"
-                },
-                {
-                  "subtitle": "Evening College",
-                  "path": "/day-college"
-                },
-                {
-                  "subtitle": "TISGEC Course & Registration",
-                  "path": "/day-college"
-                },
-                {
-                  "subtitle": "E-Quiz Registration",
-                  "path": "/day-college"
-                },
-                {
-                  "subtitle": "Undergraduate course",
-                  "path": "/day-college"
-                },
-                {
-                  "subtitle": "Diploma course",
-                  "path": "/day-college"
-                },
-                {
-                  "subtitle": "Certificate course",
-                  "path": "/day-college"
-                },
-                {
-                  "subtitle": "Special course",
-                  "path": "/day-college"
-                },
-                {
-                  "subtitle": "Distance Education",
-                  "path": "/day-college"
-                },
-                {
-                  "subtitle": "Open University",
-                  "path": "/day-college"
-                },
-                {
-                  "subtitle": "Staffs",
-                  "path": "/day-college"
-                }
-              ]
-            },
-            {
-              "navtitle": "Library",
-              "path": "/library"
-            },
-            {
-              "navtitle": "Thol Isai Kalanjiyam",
-              "path": "/thol-isai-kalanjiyam"
-            },
-            {
-              "navtitle": "Media",
-              "path": "/media"
-            },
-            {
-              "navtitle": "Gallery",
-              "details": [
-                {
-                  "subtitle": "Isai Vizha",
-                  "childsubtitle": [
-                    {
-                      "description": "Deiviga Arulalarkal",
-                      "path": "/DeivigaArulalarkal"
-                    },
-                    {
-                      "description": "Isai Arulalarkal",
-                      "path": "/IsaiArulalarkal"
-                    },
-                    {
-                      "description": "Isai Kalaivanarkal",
-                      "path": "/IsaiKalaivanarkal"
-                    },
-                    {
-                      "description": "Isai Perarignarkal",
-                      "path": "/IsaiPerairignarkal"
-                    },
-                    {
-                      "description": "Pann Isai Perarignarkal",
-                      "path": "/PannIsaiPerarignarkal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "navtitle": "Audio",
-              "path": "/audio"
-            }],
-        "content": {
-            "home": "Welcome! We provide the best solutions for your needs.",
-            "about": "We are a leading company."
-        },
-        "gallery":[
-          {"id":1,"title": "Tirugnanasambandar","image":"img1.jpg"},
-          {"id":2,"title": "Tilrunavukkarasar","image":"img2.jpg"},
-          {"id":3, "title":"Sundaramurti Nayanar","image":"img3.jpg"},
-          {"id":4, "title":"Manikavasagar","image":"img4.jpg"},
-          {"id":5, "title":"Poygai Azhvar","image":"img5.jpg"},
-          {"id":6, "title":"Bhootathazhvar","image":"img6.jpg"},
-          {"id":7, "title":"Peyazhvar","image":"img7.jpg"},
-          {"id":8, "title":"Tirumazhisai Azhvar","image":"img8.jpg"},
-          {"id":9, "title":"Kulasekarar","image":"img9.jpg"},
-          {"id":10, "title":"Tondradippodi Azhvar","image":"img10.jpg"},
-          {"id":11, "title":"Tiruppanazhvar","image":"img11.jpg"},
-          {"id":12,"title":"Periyazhvar","image":"img12.jpg"},
-          {"id":13,"title":"Madhurakavi Azhvar","image":"img13.jpg"},
-          {"id":14,"title":"Tilrumangai Azhvar","image":"img14.jpg"},
-          {"id":15,"title":"Andal","image":"img15.jpg"},
-          {"id":16,"title":"Nammazhvar","image":"img16.jpg"},
-          {"id":17,"title":"Arunagirinathar","image":"img17.jpg"},
-          {"id":18,"title":"Muthu Thandavar","image":"img17.jpg"},
-          {"id":19,"title":"Manimutha Pillai","image":"img17.jpg"},
-          {"id":20,"title":"Arunachalakavirayar","image":"img17.jpg"},
-          {"id":21,"title":"Pazhani Subramania Pilla","image":"img17.jpg"},
-          {"id":22,"title":"Pazhani Subramania Pilla","image":"img17.jpg"},
-          {"id":23,"title":"Mridangam Dakshinamurthi Pillai","image":"img17.jpg"},
-          {"id":24,"title":"Chittoor Subramania Pillai","image":"img17.jpg"},
-          {"id":25,"title":"Musiri Subramania Iyer","image":"img17.jpg"},
-          {"id":26,"title":"Vadivelu","image":"img17.jpg"},
-          {"id":27,"title":"Tanjai Kannusami Nattuvanar","image":"img17.jpg"},
-          {"id":28,"title":"Isai Perarignar M.M.Dandapani Desikar","image":"img17.jpg"},
-          {"id":29,"title":"Isai Perarignar Fiddle Rajamanikkam Pillai","image":"img17.jpg"},
-          {"id":29,"title":"Isai Perarignar P.Sambamoorthy","image":"img17.jpg"},
-          {"id":29,"title":"Ponnayya","image":"img17.jpg"},
-          {"id":29,"title":"Tanjai Ka.Ponnayya Pillai","image":"img17.jpg"},
-          {"id":29,"title":"MayuramVedanayakam Pillai","image":"img17.jpg"},
-          {"id":29,"title":"Malaikkottai Fiddle Govindasami Pillai ","image":"img17.jpg"},
-          {"id":29,"title":"Kancheepuram Naina Pilla ","image":"img17.jpg"},
-          {"id":29,"title":"Veenai Dhanammal","image":"img17.jpg"},
-          {"id":29,"title":"Tirukkodikkaval Krishnayyar","image":"img17.jpg"},
-          {"id":29,"title":"Rajarathinam Pillai","image":"img17.jpg"},
-          {"id":29,"title":"Tiruppampuram Swaminatha Pillai","image":"img17.jpg"},
-          {"id":29,"title":"Mridangam Narayanasami Appa","image":"img17.jpg"},
-          {"id":29,"title":"Palakkad T.S.Mani Iyer","image":"img17.jpg"},
-          {"id":29,"title":"Tiruvidaimarudur P.S.Veerusami Pillai","image":"img17.jpg"},
-          {"id":29,"title":"Dhanakoti Ammal","image":"img17.jpg"},
-          {"id":29,"title":"Chinnayya","image":"img17.jpg"},
-          {"id":29,"title":"Pammal Sambanda Mudaliar","image":"img17.jpg"},
-          {"id":29,"title":"Madurai Mani Iyer","image":"img17.jpg"},
-          {"id":29,"title":"Madurai Mani Iyer","image":"img17.jpg"},
-          {"id":29,"title":"Shanmukha vadivu","image":"img17.jpg"},
-          {"id":29,"title":"Chidambaram Pataka. Sundaram Pillai","image":"img17.jpg"},
-          {"id":29,"title":"Kalki Krishnamurthi ","image":"img17.jpg"},
-          {"id":29,"title":"Mannargudi Konnakkol Pakkiria Pillai ","image":"img17.jpg"},
-          {"id":29,"title":"Tiruvananthapuram T.Lakshmana Pillai ","image":"img17.jpg"},
-          {"id":29,"title":"Kamakoti Ammal ","image":"img17.jpg"},
-          {"id":29,"title":"T.Balasaraswati ","image":"img17.jpg"},
-          {"id":29,"title":"Needmangalam Meenakshi Sundaram Pillai","image":"img17.jpg"},
-          {"id":29,"title":"Pandanainallur Meenakshi Sundaram Pillai","image":"img17.jpg"},
-          {"id":29,"title":"Papanasam Sivan ","image":"img17.jpg"},
-          {"id":29,"title":"Karukkurichi Arunachalam ","image":"img17.jpg"},
-          {"id":29,"title":"Tavil Panchapakesa Pillai","image":"img17.jpg"},
-          {"id":29,"title":"Mahakavi Subramania Bharatiyar","image":"img17.jpg"},
-          {"id":29,"title":"Madurai Ponnusami Pillai","image":"img17.jpg"},
-          {"id":29,"title":"Mridangam Azhaga Nambi Pillai ","image":"img17.jpg"},
-          {"id":29,"title":" Ariyukkudi Ramanuja Iyengar","image":"img17.jpg"},
-          {"id":29,"title":" Mayuram Govindaraja Pillai ","image":"img17.jpg"},
-          {"id":29,"title":" Swati Tirunal Maharaja","image":"img17.jpg"},
-          {"id":29,"title":" K.B.Sundarambali ","image":"img17.jpg"},
-
-          {"id":29,"title":" Mayuram Govindaraja Pillai ","image":"img17.jpg"},
-
-          {"id":29,"title":" T.K.C. ","image":"img17.jpg"},
-
-          {"id":29,"title":" Vazhuvoor P.Ramayya Pillai ","image":"img17.jpg"},
-          {"id":29,"title":" Kripananda Variyar ","image":"img17.jpg"},
-          {"id":29,"title":"Semmangudi R.Srinivsa Iyer ","image":"img17.jpg"},
-          {"id":29,"title":"M.S.Subbulakshmi","image":"img17.jpg"},
-          {"id":29,"title":"Madurai S.Somasundaram ","image":"img17.jpg"},
-          {"id":29,"title":"Ma.Pa.Periysami Tooran","image":"img17.jpg"},
-          {"id":29,"title":" D.K.Pattammal ","image":"img17.jpg"},
-          {"id":29,"title":" Tiruvizhimazhalai S.Subramania Pillai ","image":"img17.jpg"},
-          {"id":29,"title":" T.Balasaraswati","image":"img17.jpg"},
-          {"id":29,"title":" Tiruvizhimazhalai S.Natarajasundaram Pillai ","image":"img17.jpg"},
-          {"id":29,"title":" M.L.Vasanthkumari ","image":"img17.jpg"},
-          {"id":29,"title":"Ramanathapuram C.S.Murugabhoopillai ","image":"img17.jpg"},
-          {"id":29,"title":" Mi.Pa. Somasundaram ","image":"img17.jpg"},
-          {"id":29,"title":"Dr.S.Ramanathan ","image":"img17.jpg"},
-          {"id":29,"title":"Seerkazhi Thiru S. Govindarajan ","image":"img17.jpg"},
-          {"id":29,"title":"Namagiripattai Krishnan ","image":"img17.jpg"},
-          {"id":29,"title":"Lalgudi G.Jayarman ","image":"img17.jpg"},
-          {"id":29,"title":"Tanjai K.P.Kittappa ","image":"img17.jpg"},
-          {"id":29,"title":"Dharmapuram P.Saminathan (Tevram) ","image":"img17.jpg"},
-          {"id":29,"title":"A.K.C. Natarajan ","image":"img17.jpg"},
-          {"id":29,"title":"Kunnakkudi R.Vaidyanathan ","image":"img17.jpg"},
-          {"id":29,"title":"Valaiyappatti A.R.Subramaniam ","image":"img17.jpg"},
-          {"id":29,"title":" K.J. Yesudas ","image":"img17.jpg"},
-          {"id":29,"title":" Sheikh Chinna Maulana ","image":"img17.jpg"},
-          {"id":29,"title":" Dr.Selvi Padma Subramaniam (Bharatnatyam) ","image":"img17.jpg"},
-          {"id":29,"title":"Tiruppampuram Dr.S.Shanmukha Sundaram ","image":"img17.jpg"},
-          {"id":29,"title":"T.R.Pappa ","image":"img17.jpg"},
-          {"id":29,"title":"Tiruvizha R.Jayasankar ","image":"img17.jpg"},
-          {"id":29,"title":"Dr.N. Ramani (Flute) ","image":"img17.jpg"},
-          {"id":29,"title":"Kancheepuram A.Vinayaka Mudaliyar","image":"img17.jpg"},
-          {"id":29,"title":"Madurai T.N.Seshagopalan ","image":"img17.jpg"},
-          {"id":29,"title":"Kancheepuram M.M.Venkatavaradan","image":"img17.jpg"},
-          {"id":29,"title":"Dr.M.Balamuralikrishna ","image":"img17.jpg"},
-          {"id":29,"title":"M.S.Viswanathan","image":"img17.jpg"},
-          {"id":29,"title":"K.J. Sarasa ","image":"img17.jpg"},
-          {"id":29,"title":" Tiruvidaimarudur P.S.V.Raja","image":"img17.jpg"},
-          {"id":29,"title":"Bombay Sisters. C.Saroja and C.Lalitha ","image":"img17.jpg"},
-          {"id":29,"title":"Saidai T.Natarajan ","image":"img17.jpg"},
-          {"id":29,"title":"Semponarkoil S.R.D.Vaidyanathan ","image":"img17.jpg"},
-          {"id":29,"title":"Tmt. Aruna Sairam ","image":"img17.jpg"},
-          {"id":29,"title":"Thiru. T.N.Krishnan ","image":"img17.jpg"},
-          {"id":29,"title":"Tmt. Sudha Raghunathan ","image":"img17.jpg"},
-          {"id":29,"title":"Madurai M.P.N.Ponnusami ","image":"img17.jpg"},
-          {"id":29,"title":"Tmt. Krishna Kumari Navendran","image":"img17.jpg"},
-          {"id":29,"title":" Dr.Seergazhi G.Sivachidambaram ","image":"img17.jpg"},
-          {"id":29,"title":" Aridwaramangalam Thiru.A.K.Palanivel ","image":"img17.jpg"},
-          {"id":29,"title":" Thiru. Sanjai Subramaniam ","image":"img17.jpg"},
-          {"id":29,"title":" Thiru.T.M. Krishna","image":"img17.jpg"},
-          {"id":29,"title":"Umayalpuram Thiru. K. Sivaraman ","image":"img17.jpg"},
-          {"id":29,"title":"Tiruppanandal Thiru.S.Muthukkandasami Desikar ","image":"img17.jpg"},
-          {"id":29,"title":" Dharmapuram Thiru.S.Gnanaprakasa Desikar ","image":"img17.jpg"},
-          {"id":29,"title":"Tiruthani N.Swaminathan ","image":"img17.jpg"},
-          {"id":29,"title":"Thiru. Sami Dandapani ","image":"img17.jpg"},
-          {"id":29,"title":"Seergazhi S. Tirugnanasambandan ","image":"img17.jpg"},
-          {"id":29,"title":"Tiruvidaimarudur S.Sambanda Desikar ","image":"img17.jpg"},
-          {"id":29,"title":"Vedaranyam K.Muthukumarasamy Desikar ","image":"img17.jpg"},
-          {"id":29,"title":"Palani Pa. Shnmugasundara Desikar ","image":"img17.jpg"},
-          {"id":29,"title":"Karur Ku. Saminatha Desikar ","image":"img17.jpg"},
-          {"id":29,"title":"Palani Ka. Venkatesan ","image":"img17.jpg"}   
-          
+            ]
+          }
         ]
+      },
+      {
+        "navtitle": "இசை விழா",
+        "path": "/isai-vizha",
+        "icon": "",
+        "details": [
+          {
+            "subtitle": "பண்ஆராய்ச்சிகள்",
+            "path": "/pann-research"
+          },
+          {
+            "subtitle": "விருதுகள்",
+            "path": "/awards"
+          },
+          {
+            "subtitle": "சிறப்பு விருந்தினர்கள்",
+            "path": "/cheif-guest"
+          }
+        ]
+      },
+      {
+        "navtitle": "தமிழ் இசை கல்லூரி",
+        "path": "/tamil-isai-college",
+        "details": [
+          {
+            "subtitle": "தமிழ் இசைக் கல்லூரி வரலாறு",
+            "childsubtitle": [
+              {
+                "description": "முன்னாள் முதல்வர்கள்",
+                "path": "/principals"
+              }
+            ]
+          },
+          {
+            "subtitle": "பகல் நேரக் கல்லூரி",
+            "path": "/day-college"
+          },
+          {
+            "subtitle": "மாலை நேரக் கல்லூரி",
+            "path": "/eve-college"
+          },
+          {
+            "subtitle": "TISGEC Course & Registration",
+            "path": "/tisgec-course"
+          },
+          {
+            "subtitle": "E-Quiz Registration",
+            "path": "/awards"
+          },
+          {
+            "subtitle": "Undergraduate course",
+            "path": "/awards"
+          },
+          {
+            "subtitle": "Diploma course",
+            "path": "/awards"
+          },
+          {
+            "subtitle": "Special course",
+            "path": "/awards"
+          },
+          {
+            "subtitle": "நிகழ்நிலை (Online) வகுப்புகள்",
+            "path": "/online-class"
+          },
+          {
+            "subtitle": "தொலைநிலைக்கல்வி",
+            "path": "/distance-education"
+          },
+          {
+            "subtitle": "திறந்த நிலை கல்வி",
+            "path": "/open-education"
+          },
+          {
+            "subtitle": "ஊழியர்கள்",
+            "path": "/staff"
+          }
+        ]
+      },
+      {
+        "navtitle": "நூலகம்",
+        "path": "/library"
+      },
+      {
+        "navtitle": "தொல் இசை கலஞ்சியம்",
+        "path": "/thol-isai-kalanjiyam"
+      },
+      {
+        "navtitle": "ஊடகம்",
+        "path": "/media"
+      },
+      {
+        "navtitle": "புகைப்படங்கள்",
+        "path": "/",
+        "details": [
+          {
+            "subtitle": "இசைவிழா",
+            "childsubtitle": [
+              {
+                "description": "தெய்வீக அருளாளர்கள்",
+                "path": "/DeivigaArulalarkal"
+              },
+              {
+                "description": "இசை அருளாளர்கள்",
+                "path": "/principals"
+              },
+              {
+                "description": "இசைக் கலைவாணர்கள்",
+                "path": "/principals"
+              },
+              {
+                "description": "முஇசைப் பேரறிஞர்கள்",
+                "path": "/principals"
+              },
+              {
+                "description": "பண் இசைப் பேரறிஞர்கள்",
+                "path": "/principals"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "navtitle": "தொடர்புக்கு",
+        "path": "/contact-us"
+      },
+      {
+        "navtitle": "ஆடியோ",
+        "path": "/audio"
+      }
+    ],
+    "content": {
+      "home": "வணக்கம்! நாங்கள் உங்கள் தேவைகளுக்கு சரியான தீர்வுகளை வழங்குகிறோம்.",
+      "about": "நாங்கள் ஒரு முன்னணி நிறுவனம்."
+    },
+    "home": [
+      {
+        "margazhispecial": [
+          {
+            "title": "மார்கழி சிறப்பு போட்டி",
+            "subtitle": "தமிழ் இசை",
+            "card": [
+              {
+                "id": 1,
+                "image": "/assets/image/5.jpeg",
+                "cardtitle": "குரல் (வோகல்)",
+                "cardcontent": "திருப்பாவை, திருவெம்பாவை, திருப்பள்ளியெழுச்சி ஆகியவை பன்னிரு திருமுறையும் நாலாயிர திவ்யப் பிரபந்தத்திலும் அடங்கியவை."
+              },
+              {
+                "id": 2,
+                "image": "/assets/image/4.jpg",
+                "cardtitle": "இசைக்கருவிகள்",
+                "cardcontent": "மிருதங்கம், தவில், வீணை,நாதஸ்வரம்,வயலின்,புல்லாங்குழல்."
+              },
+              {
+                "id": 3,
+                "image": "/assets/image/2.jpg",
+                "cardtitle": "பரதநாட்டியம்",
+                "cardcontent": "நடனம்,அடைவுகள்,பாடல்கள் ,நடன ஆடைகள்."
+              }
+            ]
+          },
+          {
+            "title": "மார்கழி சிறப்பு போட்டி",
+            "subtitle": "வகைகள்",
+            "card": [
+              {
+                "id": 1,
+                "cardtitle": "சிறிய சிறுவர்",
+                "cardcontent": "ஏழு முதல் பத்தாம் ஆண்டு வயது."
+              },
+              {
+                "id": 2,
+                "cardtitle": "கீழ் நிலை",
+                "cardcontent": "பதினொன்று முதல் பதினைந்து ஆண்டு வயது பதிவு கட்டணம் ரூ.150."
+              },
+              {
+                "id": 3,
+                "cardtitle": "உயர்ந்த நிலை",
+                "cardcontent": "பதினாறு முதல் இருபத்தி ஒன்று ஆண்டு வயது."
+              },
+              {
+                "id": 4,
+                "cardtitle": "உயர்ந்த மூத்த நிலை",
+                "cardcontent": "இருபத்தி ஒன்று ஆண்டு வயது மற்றும் அதற்கு மேல் பதிவு கட்டணம் ரூ.250."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "head" : [
+      {
+        "head1": {
+          "thumbnail": "/assets/image/tamilisaisangam1.jpg"
+        },
+        "content": {
+          "title": "தமிழ் இசைச் சங்கம்",
+          "paragraphs": [
+            "தமிழ் இசையினை என்றும் வளர்க்கும் நிலையான நிறுவனமாகத் தமிழ் இசைச் சங்கமானது சென்னையில், 1943 ஆம் ஆண்டு, மே திங்களில் ராஜா சர் அண்ணாமலை செட்டியார் அவர்களால் துவங்கப்பட்டது. தமிழ் இசை வளர்ச்சிக்கும், தமிழ்ப் பண்பாட்டு வளர்ச்சிக்கும், இசை மேதைகளை ஒருங்கிணைக்கும் சங்கமாகவும், இசை வல்லுநர்களை உருவாக்கும் கல்லூரியாகவும் தமிழ் இசைச் சங்கமானது விளங்கி வருகின்றது.",
+            "தமிழ்ப் பண் ஆராய்ச்சியில் பெரும் பங்கினை தான் தம் பெரும் தமிழ்ச் சேவையால் தக்கவைத்துக் கொண்டுள்ளது. தமிழ்ப் பேரறிஞர்களை கெளரவப்படுத்தும் விருதான இசைப்பேரறிஞர் விருதை வழங்கி பெரும் இசைக் கலைஞர்களை கௌரவித்து வருகிறது. ஆண்டுதோறும் இசை ஆராய்ச்சிக் கூட்டங்களை நடத்தி அதன் மூலம் பல அரிய தமிழ் இசைச் செய்திகளை நாட்டிற்கு அளித்து வருகின்றது."
+            
+            
+          ]
+        }
+      }
+    ],
+    "heads" : [
+      {
+        "head2": {
+          "thumbnail": "/assets/image/tamilisai2.jpg"
+        },
+        "content": {
+          "title": "தமிழ் இசைச் சங்கம்",
+          "paragraphs": [  
+            "பண்டைய இசைக் கருவிகளின் தொகுப்புகளையும், அக்கருவிகளையும் பாதுகாப்பாக இன்றும் சேகரித்து வைத்துள்ளது. இதன் பொக்கிஷமாக விளங்கக் கூடிய பல அரிய தமிழ் இசை நூல்களின் சுரங்கமாகவும் விளங்கி வருகின்றது. பல இசைக் கலைஞர்கள் மற்றும் அறிஞர்களின் நூல்கள், தமிழ் இசைச் சங்கத்தினால் வெளியிடப்பட்டுள்ளன.",          
+            "தமிழ் இசைக் கல்லூரியானது தமிழ் இசைச் சங்கத்தின் பெரும் பணிகளுள் ஒன்றாகும். காலை நேர மற்றும் மாலை நேர இசை வகுப்புகளை குறைந்த கட்டணத்தில் நடத்தி பல இசைக் கலைஞர்களை உருவாக்கி வருகின்றது. அரசு அங்கீகாரம் பெற்ற பட்டயங்களை தேர்ச்சி பெற்ற மாணவர்களுக்கு ஆண்டு தோறும் வழங்கி மேன்மை படுத்தி வருகின்றது."
+            
+          ]
+        }
+      }
+    ],
+    "register":[
+      { "title":"பதிவு செய்யவும்",
+        "subtitle":"நான்",
+        "role":[{"id":1,"label":"பயனர்","value":"பயனர்"}],
+        "placeholder":[{"name":"பெயர்"},{"email":"மின்னஞ்சல்"},{"address":"முகவரி"},{"password":"கடவுச்சொல்"},{"mobileno":"தொலைபேசி எண்"}],
+          "button":"பதிவு செய்யவும்"
+      }
+    ],
+    "login":[
+      {
+        "title":" உள்நுழைக",
+        "placeholder":[{"email":"மின்னஞ்சல்"},{"password":"கடவுச்சொல்"}],
+        "subtitle":"பதிவு செய்யவும்",
+        "or":"அல்லது",
+        "option1":"நினைவில் ",
+        "option2":" கடவுச்சொல் மறந்துவிட்டதா?"
+      }
+    ],
+    "history" : [
+      {
+        "head1": {
+          "thumbnail": "/assets/image/rajasir_annamalai.jpg"
+        },
+        "content": {
+          "title": "தமிழ் இசைச் சங்க வரலாறு",
+          "subtitle":"தமிழ் இசைச் சங்கம் : தோற்றம் : 1943",
+          "paragraphs": [
+            "உலக நாடுகள் பலவற்றுள்ளும் பழமையும் நாகரீகமும் வாய்ந்த நாடுகளுள் நம் தமிழகமும் ஒன்று என்பது நமக்குப் பெருமை அளிப்பதாகும். இந்த நாட்டில்தான் இயல், இசை, நாடகம், சிற்பம், ஓவியம், கட்டடக்கலை, போன்ற நுண் கலைகள் ஆயிரமாயிரம் ஆண்டுகட்கு முன் சிறந்து வளர்ந்து வந்திருக்கின்றன.",
+            "ஆறு, ஏழு, எட்டு, ஒன்பதாம் நூற்றாண்டுகளில் தேவார மூவரும், திவ்வியப்பிரபந்தம் அருளிய ஆழ்வார்களும், முத்துத்தாண்டவர், அருணாசலக்கவிராயர், மாரிமுத்தாப்பிள்ளை, அருணகிரிநாதர், வள்ளலார், கோபாலகிருஷ்ணபாரதியார், மகாகவி சுப்ரமணிய பாரதியார், போன்ற எண்ணற்ற பெரியோர்கள் நமக்கு அளித்துச் சென்ற இசைப் பாடல்கள் பல ஆயிரம். ஆனால் இசையரங்குகளில் வேற்று மொழிப் பாடல்களே அதிகம் இடம் பெற்றன. கோவில்களில் மட்டும் ஓதுவார்களால் திருமுறை ஓதும் நிலையில் தமிழ் இசைப் பாடல்கள் பெயரளவில் இடம்பெற்றன."
+            ,"இந்த நிலையைக் கண்ட செட்டிநாட்டரசர் ராஜா சர் அண்ணாமலை செட்டியார் தமிழ்நாட்டில் அக்காலத்தில் புகழுடன் வாழ்ந்த பெருமக்களான சுதந்திர இந்தியாவின் முதல் நிதி அமைச்சர் டாக்டர் ஆர்.கே.சண்முகம் செட்டியார்,சுதந்திர இந்தியாவின் முதல் கவர்னர் ஜெனரல் ராஜாஜி, கல்கி, டி. கே. சி., சி. என். அண்ணாதுரை போன்ற பெருமக்கள் ஆதரவுடன் தமிழிசைச் சங்கத்தினை 1943-ல் சென்னையில் நிறுவினார்கள். இதன் மூலம் செட்டிநாட்டரசர் இசையின் மேல் கொண்டிருந்த ஆர்வம் தெள்ளிதின் புலப்படும்.",
+            "தமிழ்நாட்டில் நடைபெறும் இசையரங்குகளில் தமிழ்ப் பாடல்களே அதிகமாக இடம்பெற வேண்டும். தமிழ்நாட்டில் தமிழிசை பரவவேண்டுமென்பது வேறெந்த மொழிக்கும் இயக்கத்திற்கும் விரோதமானது அல்ல. மிக மிக நியாயமான குறிக்கோளாகும் என்று சங்கத்தின் குறிக்கோளினை விளக்கினார்கள்."
+            
+            
+          ]
+        }
+      }
+    ],
+    "historys" : [
+      {
+        "head2": {
+          "thumbnail": "/assets/image/rajasir_letter.jpg"
+        },
+        "content": {
+          "title": "தமிழ் இசைச் சங்க வரலாறு",
+          "paragraphs": [  
+            "தமிழிசைச் சங்கத்தினை 1943-ல் சென்னையில் தோற்றுவித்து இசைபரப்பும் பெருநோக்குடன் 1944-ல் ஒரு இசைக்கல்லூரியினையும் சங்கத்தின் சார்பில் தோற்றுவித்தார்கள். அரசரின் ஆவல் தமிழ் நாடெங்கும் தமிழிசை பரவ வேண்டுமென்பதே தம் வாழ்நாள் முழுவதும் தமிழிசை மேலும் மேலும் பரவிய வண்ணம் இருக்க வேண்டுமென எண்ணிய அரசர் சங்கத்தின் நிர்வாகத்திலும், இசை நூல்கள் வெளியிடுதல் போன்றவற்றிக்காக பெரும் பொருளை வழங்கியுள்ளார்கள்.",
+            "தந்தையைப் போன்று அவர்களின் மூத்த மகனார் ராஜா சர் முத்தையா செட்டியார் அவர்களும் தொடர்ந்து சங்கத்தின் பணிகளில் தம்மை ஈடுபடுத்திக் கொண்ட பெருமகனார் ஆவார். சங்கம் தொடங்கிய நாள் முதல் தம் வாழ்நாள் முழுவதும் சங்கத்தின் துணைத்தலைவராகப் பணியாற்றிய சாதனையாளர்.",          
+            "சங்கம் தொடங்கிய நாளிலிருந்து 1995 வரை அதன் மேம்பாடு கருதி 52 ஆண்டுகள் சங்கத்தின் மதிப்பியல் செயலராகப் பணியாற்றியவர் அரசர் அவர்களின் மூன்றாவது குமாரர் டாக்டர் எம்.ஏ.சிதம்பரம் செட்டியார் அவர்கள். நிகழ்ச்சிகள் துவங்குவதிலும் நிறைவடைவதிலும் நேரம் தவறாமையைக் கடைப்பிடிக்க வேண்டுமென்ற கொள்கைப் பற்றுடைய பெருமகனார்.",
+            "1995-ல் தம் தந்தையார் அறிவுரையின் பேரில் சங்கத்தின் மதிப்பியல் செயலர் பதவியை ஏற்று திறம்பட நடத்தி வருபவர் டாக்டர் ஏ.சி.முத்தையா அவர்கள்.",
+            "சங்கத்தின் நிர்வாகத்திலும் கல்லூரியின் மேம்பாட்டிலும் ஊக்கத்துடன் செயல்படுபவர். கல்லூரியின் தரத்தினை மேலும் மேலும் உயர்த்த ஆக்கப் பணிகளைத் தொடர்ந்து ஆற்றி வருபவர். கல்லூரியில் நாகசுரம், தவுல், தேவாரம் போன்ற துறையில் பயிலும் மாணவர்கட்குச் சலுகை பலவற்றைக் கல்லூரி தொடர்ந்து அளிக்க ஊக்குவிப்பவர்."
+            
+          ]
+        }
+      }
+    ],
+    "board":[
+
+    ],
+    "gallery": [
+      {
+        "id": 1,
+        "title": "திருஞானசம்பந்தர்",
+        "image": "img1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "திருநாவுக்கரசர்",
+        "image": "img2.jpg"
+      },
+      {
+        "id": 3,
+        "title": "சுந்தரமூர்த்தி நாயனார்",
+        "image": "img3.jpg"
+      },
+      {
+        "id": 4,
+        "title": "மாணிக்கவாசகர்",
+        "image": "img4.jpg"
+      },
+      {
+        "id": 5,
+        "title": "பொய்கை ஆழ்வார்",
+        "image": "img5.jpg"
+      },
+      {
+        "id": 6,
+        "title": "பூதத்தாழ்வார்",
+        "image": "img6.jpg"
+      },
+      {
+        "id": 7,
+        "title": "பேயாழ்வார்",
+        "image": "img7.jpg"
+      },
+      {
+        "id": 8,
+        "title": "திருமழிசையாழ்வார்",
+        "image": "img8.jpg"
+      },
+      {
+        "id": 9,
+        "title": "குலசேகரர்",
+        "image": "img9.jpg"
+      },
+      {
+        "id": 10,
+        "title": "தொண்டரடிப்பொடியாழ்வார்",
+        "image": "img10.jpg"
+      },
+      {
+        "id": 11,
+        "title": "திருப்பாணாழ்வார்",
+        "image": "img11.jpg"
+      },
+      {
+        "id": 12,
+        "title": "பெரியாழ்வார்",
+        "image": "img12.jpg"
+      },
+      {
+        "id": 13,
+        "title": "மதுரகவியாழ்வார்",
+        "image": "img13.jpg"
+      },
+      {
+        "id": 14,
+        "title": "திருமங்கை ஆழ்வார்",
+        "image": "img14.jpg"
+      },
+      {
+        "id": 15,
+        "title": "ஆண்டாள்",
+        "image": "img15.jpg"
+      },
+      {
+        "id": 16,
+        "title": "நம்மாழ்வார்",
+        "image": "img16.jpg"
+      },
+      {
+        "id": 17,
+        "title": "அருணகிரிநாதர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 18,
+        "title": "முத்துத் தண்டவர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 19,
+        "title": "மணிமுத்த பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 20,
+        "title": "அருணாசல கவிராயர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 21,
+        "title": "பழனி சுப்பிரமணிய பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 22,
+        "title": "மிருதங்கம் தக்ஷிணாமூர்த்தி பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 23,
+        "title": "சிட்டூர் சுப்பிரமணிய பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 24,
+        "title": "முசிரி சுப்பிரமணிய ஐயர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 25,
+        "title": "வடிவேலு",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 26,
+        "title": "தஞ்சை கண்ணுசாமி நாட்டுவனர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 27,
+        "title": "இசைப் பேரறிஞர் எம்.எம். தண்டபாணி தேசிகர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 28,
+        "title": "இசைப் பேரறிஞர் பி.சம்பமூர்த்தி",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "பொன்னையா",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 30,
+        "title": "தஞ்சை க.பொன்னையா பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 31,
+        "title": "மயிலாடுதுறை வேதநாயகம் பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 32,
+        "title": "மலைக்கோட்டை வைலின் கோவிந்தசாமி பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 33,
+        "title": "காஞ்சிபுரம் நைனார் பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 34,
+        "title": "வீணை தனம்மாள்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 35,
+        "title": "திருக்கோடிக்காவல் கிருஷ்ணைய்யர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 36,
+        "title": "ராஜரத்தினம் பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 37,
+        "title": "திருப்பாம்புரம் சுவாமிநாத பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 38,
+        "title": "மிருதங்கம் நாராயணசாமி அப்பா",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 39,
+        "title": "பழக்காடு டி.எஸ்.மணி ஐயர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 40,
+        "title": "திருவிடைமருதூர் பி.எஸ்.வீரசாமி பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 41,
+        "title": "தனக்கோடி அம்மாள்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 42,
+        "title": "சின்னையா",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 43,
+        "title": "பம்மல் சம்பந்த மூடலியார்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 44,
+        "title": "மதுரை மணி ஐயர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 45,
+        "title": "சங்கீத வித்வான் டி.எஸ்.சிவராமன்",
+        "image": "img17.jpg"
+      }
+    ],
+    "footers": [
+      {
+        "titles": [
+          {
+            "title": "© 2024 தமிழ் இசைச் சங்கம்"
+          }
+        ]
+      }
+    ]
+  },
+  "english": {
+    "menu": [
+      {
+        "navtitle": "tamil Isai Sangam",
+        "path": "/tamil-isai-sangam",
+        "details": [
+          {
+            "subtitle": "History",
+            "path": "/tamil-isai-history"
+          },
+          {
+            "subtitle": "Board",
+            "childsubtitle": [
+              {
+                "description": "Board of Trustees",
+                "path": "/trustees"
+              },
+              {
+                "description": "Presidents and Secretaries",
+                "path": "/presidents-and-secretaries"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "navtitle": "Isai Vizha",
+        "path": "/isai-vizha",
+        "details": [
+          {
+            "subtitle": "Tamil Pann Research",
+            "path": "/tamil-pann-research"
+          },
+          {
+            "subtitle": "Awards",
+            "path": "/awards"
+          },
+          {
+            "subtitle": "Special Guest of Honour",
+            "path": "/history"
+          }
+        ]
+      },
+      {
+        "navtitle": "Tamil Isai College",
+        "path": "/tamil-isai-college",
+        "details": [
+          {
+            "subtitle": "History",
+            "childsubtitle": [
+              {
+                "description": "Former Principals",
+                "path": "/principals"
+              }
+            ]
+          },
+          {
+            "subtitle": "Day College",
+            "path": "/day-college"
+          },
+          {
+            "subtitle": "Evening College",
+            "path": "/day-college"
+          },
+          {
+            "subtitle": "TISGEC Course & Registration",
+            "path": "/day-college"
+          },
+          {
+            "subtitle": "E-Quiz Registration",
+            "path": "/day-college"
+          },
+          {
+            "subtitle": "Undergraduate course",
+            "path": "/day-college"
+          },
+          {
+            "subtitle": "Diploma course",
+            "path": "/day-college"
+          },
+          {
+            "subtitle": "Certificate course",
+            "path": "/day-college"
+          },
+          {
+            "subtitle": "Special course",
+            "path": "/day-college"
+          },
+          {
+            "subtitle": "Distance Education",
+            "path": "/day-college"
+          },
+          {
+            "subtitle": "Open University",
+            "path": "/day-college"
+          },
+          {
+            "subtitle": "Staffs",
+            "path": "/day-college"
+          }
+        ]
+      },
+      {
+        "navtitle": "Library",
+        "path": "/library"
+      },
+      {
+        "navtitle": "Thol Isai Kalanjiyam",
+        "path": "/thol-isai-kalanjiyam"
+      },
+      {
+        "navtitle": "Media",
+        "path": "/media"
+      },
+      {
+        "navtitle": "Gallery",
+        "details": [
+          {
+            "subtitle": "Isai Vizha",
+            "childsubtitle": [
+              {
+                "description": "Deiviga Arulalarkal",
+                "path": "/DeivigaArulalarkal"
+              },
+              {
+                "description": "Isai Arulalarkal",
+                "path": "/principals"
+              },
+              {
+                "description": "Isai Kalaivanarkal",
+                "path": "/principals"
+              },
+              {
+                "description": "Isai Perarignarkal",
+                "path": "/principals"
+              },
+              {
+                "description": "Pann Isai Perarignarkal",
+                "path": "/principals"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "navtitle": "Audio",
+        "path": "/audio"
+      }
+    ],
+    "content": {
+      "home": "Welcome! We provide the best solutions for your needs.",
+      "about": "We are a leading company."
+    },
+    "home": [
+      {
+        "margazhispecial": [
+          {
+            "title": "Margazhi Special Competition",
+            "subtitle": "Tamil Music",
+            "card": [
+              {
+                "id": 1,
+                "image": "/assets/image/5.jpeg",
+                "cardtitle": "Vocal",
+                "cardcontent": "Thiruppavai, Thiruvempavai, Thirupalliyezhuchi in Panniru Thirumurai & Nalayira Diviya Prabhandham."
+              },
+              {
+                "id": 2,
+                "image": "/assets/image/4.jpg",
+                "cardtitle": "Instuments",
+                "cardcontent": "Mridangam, Thavil, Veena, Nadaswaram, Violin, Pullanguzhal."
+              },
+              {
+                "id": 3,
+                "image": "/assets/image/2.jpg",
+                "cardtitle": "Bharathanatyam",
+                "cardcontent": "Dance, Postures, Songs, Dance Costumes."
+              }
+            ]
+          },
+          {
+            "title": "Margazhi Special Competition",
+            "subtitle": "Category",
+            "card": [
+              {
+                "id": 1,
+                "cardtitle": "Sub Junior",
+                "cardcontent": "Age 7 to 10 years."
+              },
+              {
+                "id": 2,
+                "cardtitle": "Junior",
+                "cardcontent": "Age 11 to 15 years Registration Fee Rs.150."
+              },
+              {
+                "id": 3,
+                "cardtitle": "Senior",
+                "cardcontent": "Age 16 to 21 years."
+              },
+              {
+                "id": 4,
+                "cardtitle": "Super Senior",
+                "cardcontent": "Age 21 years and Above Registration Fee Rs.250."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "head" : [
+      {
+        "head1": {
+          "thumbnail": "/assets/image/tamilisaisangam1.jpg"
+        },
+        "content": {
+          "title": "Tamil Isai Sangam",
+          "paragraphs": [
+            "Tamil Isai Sangam was established in the year 1943 by Raja Sir, Annamalai Chettiyar with a vision to promote Tamil Isai. Tamil Isai Sangam plays a major role in co-ordinating Music artists for the growth of Tamil Isai and Tamil Culture. Moreover Tamil Isai Sangam has been producing the music scholars through Tamil Isai Kalloori, every year.",
+            "Tamil Isai Sangam has contributed a lot to pann research by encouraging the research scholars to conduct research with regard to the presence of the various segments of panns in the ancient religious literature. In order to honour the erudite Tamil Scholars in Tamil Isai, they are conferred with the award of “Tamil Isai Parerignar”. Conferences on research in music have been convened every year to make the rare aspects of music known to the country through such conferences.",
+            "There is a good collection of ancient musical instruments which have been kept safe for years together in the Tamil Isai Sangam. Moreover there is a treasure of collection of rare books on music in the library in Tamil Isai Sangam and Tamil Isai Kalloori. A remarkable feature is that books authored by Tamil Isai scholars have been published by Tamil Isai Sangam every year."
+            
+          ]
+        }
+      }
+    ],
+    "heads" : [
+      {
+        "head2": {
+          "thumbnail": "/assets/image/tamilisai2.jpg"
+        },
+        "content": {
+          "title": "Tamil Isai Sangam",
+          "paragraphs": [            
+            "The mission of Tamil Isai Sangam is to spread the Tamil Isai for and wide through Tamil Isai Kalloori which is the off-shoot of Tamil Isai Sangam.",
+            "Classes in the day as well as in the evening college have been conducted to facilitate the students who are infused with the desire to learn Tamil music in various disciplines. As a result, many great scholars have been successfully produced so far by the Tamil Isai Kalloori. It is quite relevant to make a mention at this juncture, that Certificate, Diploma, Under-Graduate Courses and Post-Graduate Courses that are offered by the Tamil Isai Kalloori at have already been approved by the Government of Tamil Nadu and University of Madras and at present by the Tamil Nadu Music and Fine Arts University."
+          ]
+        }
+      }
+    ],
+    "register":[
+      { "title":"Register Now",
+        "subtitle":"i am",
+        "role":[{"id":1,"label":"Student","value":"student"}],
+        "placeholder":[{"name":"Name"},{"email":"Email"},{"address":"Addess"},{"password":"Password"},{"mobileno":"MobileNo"}]
     }
+    ],
+    "login":[
+      {
+        "title":"LOGIN Now",
+        "placeholder":[{"email":"Email"},{"password":"Password"}],
+        "subtitle":"Register Now",
+        "or":"OR",
+        "option1":"Remember me",
+        "option2":" Forgot password"
+
+      }
+    ],
+    "gallery": [
+      {
+        "id": 1,
+        "title": "Tirugnanasambandar",
+        "image": "img1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Tilrunavukkarasar",
+        "image": "img2.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Sundaramurti Nayanar",
+        "image": "img3.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Manikavasagar",
+        "image": "img4.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Poygai Azhvar",
+        "image": "img5.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Bhootathazhvar",
+        "image": "img6.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Peyazhvar",
+        "image": "img7.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Tirumazhisai Azhvar",
+        "image": "img8.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Kulasekarar",
+        "image": "img9.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Tondradippodi Azhvar",
+        "image": "img10.jpg"
+      },
+      {
+        "id": 11,
+        "title": "Tiruppanazhvar",
+        "image": "img11.jpg"
+      },
+      {
+        "id": 12,
+        "title": "Periyazhvar",
+        "image": "img12.jpg"
+      },
+      {
+        "id": 13,
+        "title": "Madhurakavi Azhvar",
+        "image": "img13.jpg"
+      },
+      {
+        "id": 14,
+        "title": "Tilrumangai Azhvar",
+        "image": "img14.jpg"
+      },
+      {
+        "id": 15,
+        "title": "Andal",
+        "image": "img15.jpg"
+      },
+      {
+        "id": 16,
+        "title": "Nammazhvar",
+        "image": "img16.jpg"
+      },
+      {
+        "id": 17,
+        "title": "Arunagirinathar",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 18,
+        "title": "Muthu Thandavar",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 19,
+        "title": "Manimutha Pillai",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 20,
+        "title": "Arunachalakavirayar",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 21,
+        "title": "Pazhani Subramania Pilla",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 22,
+        "title": "Pazhani Subramania Pilla",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 23,
+        "title": "Mridangam Dakshinamurthi Pillai",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 24,
+        "title": "Chittoor Subramania Pillai",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 25,
+        "title": "Musiri Subramania Iyer",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 26,
+        "title": "Vadivelu",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 27,
+        "title": "Tanjai Kannusami Nattuvanar",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 28,
+        "title": "Isai Perarignar M.M.Dandapani Desikar",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Isai Perarignar Fiddle Rajamanikkam Pillai",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Isai Perarignar P.Sambamoorthy",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Ponnayya",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tanjai Ka.Ponnayya Pillai",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "MayuramVedanayakam Pillai",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Malaikkottai Fiddle Govindasami Pillai ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Kancheepuram Naina Pilla ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Veenai Dhanammal",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tirukkodikkaval Krishnayyar",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Rajarathinam Pillai",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tiruppampuram Swaminatha Pillai",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Mridangam Narayanasami Appa",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Palakkad T.S.Mani Iyer",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tiruvidaimarudur P.S.Veerusami Pillai",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Dhanakoti Ammal",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Chinnayya",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Pammal Sambanda Mudaliar",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Madurai Mani Iyer",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Madurai Mani Iyer",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Shanmukha vadivu",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Chidambaram Pataka. Sundaram Pillai",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Kalki Krishnamurthi ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Mannargudi Konnakkol Pakkiria Pillai ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tiruvananthapuram T.Lakshmana Pillai ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Kamakoti Ammal ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "T.Balasaraswati ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Needmangalam Meenakshi Sundaram Pillai",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Pandanainallur Meenakshi Sundaram Pillai",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Papanasam Sivan ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Karukkurichi Arunachalam ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tavil Panchapakesa Pillai",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Mahakavi Subramania Bharatiyar",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Madurai Ponnusami Pillai",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Mridangam Azhaga Nambi Pillai ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Ariyukkudi Ramanuja Iyengar",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Mayuram Govindaraja Pillai ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Swati Tirunal Maharaja",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " K.B.Sundarambali ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Mayuram Govindaraja Pillai ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " T.K.C. ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Vazhuvoor P.Ramayya Pillai ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Kripananda Variyar ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Semmangudi R.Srinivsa Iyer ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "M.S.Subbulakshmi",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Madurai S.Somasundaram ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Ma.Pa.Periysami Tooran",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " D.K.Pattammal ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Tiruvizhimazhalai S.Subramania Pillai ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " T.Balasaraswati",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Tiruvizhimazhalai S.Natarajasundaram Pillai ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " M.L.Vasanthkumari ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Ramanathapuram C.S.Murugabhoopillai ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Mi.Pa. Somasundaram ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Dr.S.Ramanathan ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Seerkazhi Thiru S. Govindarajan ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Namagiripattai Krishnan ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Lalgudi G.Jayarman ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tanjai K.P.Kittappa ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Dharmapuram P.Saminathan (Tevram) ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "A.K.C. Natarajan ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Kunnakkudi R.Vaidyanathan ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Valaiyappatti A.R.Subramaniam ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " K.J. Yesudas ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Sheikh Chinna Maulana ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Dr.Selvi Padma Subramaniam (Bharatnatyam) ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tiruppampuram Dr.S.Shanmukha Sundaram ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "T.R.Pappa ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tiruvizha R.Jayasankar ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Dr.N. Ramani (Flute) ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Kancheepuram A.Vinayaka Mudaliyar",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Madurai T.N.Seshagopalan ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Kancheepuram M.M.Venkatavaradan",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Dr.M.Balamuralikrishna ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "M.S.Viswanathan",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "K.J. Sarasa ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Tiruvidaimarudur P.S.V.Raja",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Bombay Sisters. C.Saroja and C.Lalitha ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Saidai T.Natarajan ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Semponarkoil S.R.D.Vaidyanathan ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tmt. Aruna Sairam ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Thiru. T.N.Krishnan ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tmt. Sudha Raghunathan ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Madurai M.P.N.Ponnusami ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tmt. Krishna Kumari Navendran",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Dr.Seergazhi G.Sivachidambaram ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Aridwaramangalam Thiru.A.K.Palanivel ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Thiru. Sanjai Subramaniam ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Thiru.T.M. Krishna",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Umayalpuram Thiru. K. Sivaraman ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tiruppanandal Thiru.S.Muthukkandasami Desikar ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": " Dharmapuram Thiru.S.Gnanaprakasa Desikar ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tiruthani N.Swaminathan ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Thiru. Sami Dandapani ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Seergazhi S. Tirugnanasambandan ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Tiruvidaimarudur S.Sambanda Desikar ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Vedaranyam K.Muthukumarasamy Desikar ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Palani Pa. Shnmugasundara Desikar ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Karur Ku. Saminatha Desikar ",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Palani Ka. Venkatesan ",
+        "image": "img17.jpg"
+      }
+    ],
+    "footers": [
+      {
+        "titles": [
+          {
+            "title": "© 2024 Tamil Isai Sangam"
+          }
+        ]
+      }
+    ]
+  }
 }

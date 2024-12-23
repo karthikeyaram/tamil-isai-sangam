@@ -4889,6 +4889,11 @@ textarea.input-group-sm>.input-group-btn>.btn {
     white-space: nowrap;
     vertical-align: middle
 }
+.register .regiter-inner {
+    max-width: 1000px;
+    padding: 0 15px;
+    margin: 30px auto;
+}
 
 .input-group-addon {
     padding: 6px 12px;
