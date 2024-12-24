@@ -14,6 +14,8 @@ import Tamilisaisangam from "../Pages/Tamilisaisangam";
 import Register from "../Component/Register/Register";
 import Login from "../Component/Login/Login";
 import History from "../Pages/History";
+import Museum from '../Component/Museum'
+import Contact from '../Component/Contact'
 
 const Routercomponent = () => {
   return (
@@ -40,9 +42,11 @@ const MainRoutes = () => {
         <Route path='/library' element={<Library/>}/>
         <Route path="/tamil-isai-sangam" element={<Tamilisaisangam />} />
         <Route path="/register" element={<Register />} />
+        <Route path='/contact' element={<Contact/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/tamil-isai-history" element={<History />} />
         <Route path='/media' element={<Media/>}/>
+        <Route path='/museum' element={<Museum/>}/>
         <Route path='/IsaiKalaivanarkal'  element={<IsaiKalaivanarkal/>}/>
         <Route path='/IsaiPerairignarkal' element={<IsaiPerairignarkal/>}/>
         <Route path='/PannIsaiPerarignarkal' element={<PannIsaiPerarignarkal/>}/>

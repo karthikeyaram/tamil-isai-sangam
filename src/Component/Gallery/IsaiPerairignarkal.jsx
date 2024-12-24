@@ -15,19 +15,30 @@ const IsaiPerairignarkal = () => {
   const headerStyle = {
     display: 'flex',
     justifyContent: 'center',
-    gap: '20px',
+    gap: '30px',
     marginBottom: '40px',
+    padding: '15px 30px',
+    borderRadius: '10px',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
+    position: 'relative',
+    animation: 'fadeIn 1s ease-in-out',
   };
 
   const headerItemStyle = (name) => ({
-    fontSize: '15px',
-    fontWeight: '100',
-    color: activeHeader === name ? '#F39C12' : '#333',
-    textTransform: 'uppercase',
+    fontSize: '18px',
+    fontWeight: '600',
+    color: activeHeader === name ? '#F39C12' : '#333333',
+    textTransform: 'capitalize',
     cursor: 'pointer',
-    padding: '10px 20px',
+    padding: '12px 24px',
     borderRadius: '5px',
-    transition: 'color 0.3s ease, background-color 0.3s ease',
+    transition: 'color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease',
+    boxShadow: activeHeader === name ? '0 0 10px rgba(243, 156, 18, 0.6)' : 'none',
+    '&:hover': {
+      color: '#F39C12',
+      transform: 'scale(1.1)',
+      boxShadow: '0 0 10px rgba(243, 156, 18, 0.4)',
+    },
   });
 
   const images = [
@@ -48,44 +59,28 @@ const IsaiPerairignarkal = () => {
     { src: 'img29 (37).jpg', name: 'Image 15' },
     { src: 'img29 (36).jpg', name: 'Image 16' },
     { src: 'img29 (35).jpg', name: 'Image 17' },
-    { src: 'img29 (34).jpg', name: 'Image 17' },
-    { src: 'img29 (33).jpg', name: 'Image 17' },
-    { src: 'img29 (32).jpg', name: 'Image 17' },
-    { src: 'img29 (31).jpg', name: 'Image 17' },
-    { src: 'img29 (30).jpg', name: 'Image 17' },
-    { src: 'img29 (29).jpg', name: 'Image 17' },
-    { src: 'img29 (28).jpg', name: 'Image 17' },
-    { src: 'img29 (27).jpg', name: 'Image 17' },
-    { src: 'img29 (26).jpg', name: 'Image 17' },
-    { src: 'img29 (25).jpg', name: 'Image 17' },
-    { src: 'img29 (24).jpg', name: 'Image 17' },
-    { src: 'img29 (23).jpg', name: 'Image 17' },
-    { src: 'img29 (22).jpg', name: 'Image 17' },
-    { src: 'img29 (21).jpg', name: 'Image 17' },
-    { src: 'img29 (20).jpg', name: 'Image 17' },
-    { src: 'img29 (19).jpg', name: 'Image 17' },
-    { src: 'img29 (18).jpg', name: 'Image 17' },
-    { src: 'img29 (17).jpg', name: 'Image 17' },
-    { src: 'img29 (16).jpg', name: 'Image 17' },
-    { src: 'img29 (15).jpg', name: 'Image 17' },
-    { src: 'img29 (14).jpg', name: 'Image 17' },
-    { src: 'img29 (13).jpg', name: 'Image 17' },
-    { src: 'img29 (12).jpg', name: 'Image 17' },
-    { src: 'img29 (11).jpg', name: 'Image 17' },
-    { src: 'img29 (10).jpg', name: 'Image 17' },
-    { src: 'img29 (9).jpg', name: 'Image 17' },
-    { src: 'img29 (7).jpg', name: 'Image 17' },
-    { src: 'img29 (6).jpg', name: 'Image 17' },
-    { src: 'img29 (5).jpg', name: 'Image 17' },
-    { src: 'img29 (4).jpg', name: 'Image 17' },
-    { src: 'img29 (3).jpg', name: 'Image 17' },
-    { src: 'img29 (2).jpg', name: 'Image 17' },
   ];
 
-  const [loaded, setLoaded] = useState(false);
+  const [visibleImages, setVisibleImages] = useState([]);
 
   useEffect(() => {
-    setLoaded(true);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleImages((prev) => [...prev, entry.target]);
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+      }
+    );
+
+    const imageElements = document.querySelectorAll('.gallery-item');
+    imageElements.forEach((image) => observer.observe(image));
+
+    return () => observer.disconnect();
   }, []);
 
   const galleryContainerStyle = {
@@ -95,18 +90,22 @@ const IsaiPerairignarkal = () => {
     padding: '20px',
   };
 
-  const galleryItemStyle = {
+  const galleryItemStyle = (isVisible, index) => ({
     position: 'relative',
     overflow: 'hidden',
     borderRadius: '10px',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+    boxShadow: isVisible ? '0 4px 12px rgba(0, 0, 0, 0.2)' : 'none',
     transition: 'transform 0.3s ease, box-shadow 0.3s ease',
     cursor: 'pointer',
     textAlign: 'center',
-    opacity: loaded ? 1 : 0,
-    transform: loaded ? 'none' : 'translateY(20px)',
-    transition: 'opacity 0.8s ease, transform 0.8s ease',
-  };
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible
+      ? 'translateX(0)'
+      : index % 2 === 0
+      ? 'translateX(-100px)'
+      : 'translateX(100px)',
+    transition: `opacity 0.8s ease, transform 0.8s ease, transition-delay ${index * 0.2}s`,
+  });
 
   const galleryImageStyle = {
     width: '100%',
@@ -159,7 +158,14 @@ const IsaiPerairignarkal = () => {
       </div>
 
       <div style={{ textAlign: 'center' }}>
-        <h6 style={{ fontSize: '26px', fontWeight: '500', color: '#F39C12', marginBottom: '40px' }}>
+        <h6
+          style={{
+            fontSize: '26px',
+            fontWeight: '500',
+            color: '#F39C12',
+            marginBottom: '40px',
+          }}
+        >
           {activeHeader}
         </h6>
       </div>
@@ -168,15 +174,20 @@ const IsaiPerairignarkal = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            style={galleryItemStyle}
+            className="gallery-item"
+            style={galleryItemStyle(visibleImages.includes(document.querySelector(`.gallery-item:nth-child(${index + 1})`)), index)}
             onMouseEnter={(e) => {
-              e.currentTarget.querySelector('img').style.transform = 'scale(1.08)';
+              e.currentTarget.querySelector('img').style.transform = 'scale(1.1)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.querySelector('img').style.transform = 'scale(1)';
             }}
           >
-            <img src={image.src} alt={image.name} style={galleryImageStyle} />
+            <img
+              src={image.src}
+              alt={image.name}
+              style={galleryImageStyle}
+            />
             <div className="overlay" style={overlayStyle}>
               <div className="overlay-text" style={overlayTextStyle}>
                 {image.name}
@@ -186,6 +197,43 @@ const IsaiPerairignarkal = () => {
           </div>
         ))}
       </div>
+
+      <style>
+        {`
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+              transform: translateY(-20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          @keyframes slideInFromLeft {
+            0% {
+              opacity: 0;
+              transform: translateX(-100px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+
+          @keyframes slideInFromRight {
+            0% {
+              opacity: 0;
+              transform: translateX(100px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };

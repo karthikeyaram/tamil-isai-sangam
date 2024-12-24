@@ -1,5 +1,25 @@
 {
   "tamil": {
+
+    "categories": [
+      {
+        "title": "தேவாரம் திருப்பாடிகள்",
+        "description": "இந்த பகுதி தேவாரம் திருப்பாடிகளையும் அதன் பண்டித மற்றும் கலாசார விளக்கங்களையும் உள்ளடக்கியது."
+      },
+      {
+        "title": "இசை தமிழ் நூல்கள்",
+        "description": "இசை தமிழ் நூல்கள் தமிழ்ச் சங்கீத நூல்களின் தொகுப்பு, பல்வேறு வகையான இசை மற்றும் இசைக் கலைபாடங்களை ஆராயும்."
+      },
+      {
+        "title": "சமய நூல்கள்",
+        "description": "சமய நூல்கள் ஆன்மிகத்தைப் பற்றிய பல்வேறு மதப்புத்தகங்களையும் அதன் விளக்கங்களையும் உள்ளடக்கியது."
+      },
+      {
+        "title": "இசை ஆராய்ச்சி நூல்கள்",
+        "description": "இசை ஆராய்ச்சி நூல்கள் தமிழ்ச் சங்கீதத்தில் ஆராய்ச்சிப் பணிகளை மற்றும் அதன் கலாசார முக்கியத்துவத்தைப் பற்றிய நூல்களாகும்."
+      }
+    ],
+
     "menu": [
       {
         "navtitle": "தமிழ் இசைச் சங்கம்",
@@ -108,7 +128,7 @@
       },
       {
         "navtitle": "தொல் இசை கலஞ்சியம்",
-        "path": "/thol-isai-kalanjiyam"
+        "path": "/museum"
       },
       {
         "navtitle": "ஊடகம்",
@@ -127,19 +147,19 @@
               },
               {
                 "description": "இசை அருளாளர்கள்",
-                "path": "/principals"
+                "path": "/IsaiArulalarkal"
               },
               {
                 "description": "இசைக் கலைவாணர்கள்",
-                "path": "/principals"
+                "path": "/IsaiKalaivanarkal"
               },
               {
                 "description": "முஇசைப் பேரறிஞர்கள்",
-                "path": "/principals"
+                "path": "/IsaiPerairignarkal"
               },
               {
                 "description": "பண் இசைப் பேரறிஞர்கள்",
-                "path": "/principals"
+                "path": "/PannIsaiPerarignarkal"
               }
             ]
           }
@@ -147,7 +167,7 @@
       },
       {
         "navtitle": "தொடர்புக்கு",
-        "path": "/contact-us"
+        "path": "/contact"
       },
       {
         "navtitle": "ஆடியோ",
@@ -540,7 +560,37 @@
       }
     ]
   },
+
+
   "english": {
+
+
+    "categories": [
+      {
+        "title": "Tevaram Tiruppadigangal",
+        "description": "This section covers Tevaram Tiruppadigangal and its various interpretations in religious and cultural contexts."
+      },
+      {
+        "title": "Isai Tamil Noolgal",
+        "description": "Isai Tamil Noolgal is a collection of Tamil music books that explore different genres and musical forms."
+      },
+      {
+        "title": "Samaya Noolgal",
+        "description": "Samaya Noolgal includes various religious texts and scriptures that highlight different aspects of spirituality."
+      },
+      {
+        "title": "Isai Araychi Noolgal",
+        "description": "Isai Araychi Noolgal delves into the study of Tamil music theory and its cultural relevance."
+      }
+    ],
+
+   
+     
+    
+
+
+
+
     "menu": [
       {
         "navtitle": "tamil Isai Sangam",
@@ -648,7 +698,7 @@
       },
       {
         "navtitle": "Thol Isai Kalanjiyam",
-        "path": "/thol-isai-kalanjiyam"
+        "path": "/museum"
       },
       {
         "navtitle": "Media",
@@ -666,23 +716,27 @@
               },
               {
                 "description": "Isai Arulalarkal",
-                "path": "/principals"
+                "path": "/IsaiArulalarkal"
               },
               {
                 "description": "Isai Kalaivanarkal",
-                "path": "/principals"
+                "path": "/IsaiKalaivanarkal"
               },
               {
                 "description": "Isai Perarignarkal",
-                "path": "/principals"
+                "path": "/IsaiPerairignarkal"
               },
               {
                 "description": "Pann Isai Perarignarkal",
-                "path": "/principals"
+                "path": "/PannIsaiPerarignarkal"
               }
             ]
           }
         ]
+      },
+      {
+        "navtitle": "Contact",
+        "path": "/contact"
       },
       {
         "navtitle": "Audio",
@@ -944,496 +998,497 @@
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 30,
         "title": "Isai Perarignar P.Sambamoorthy",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 31,
         "title": "Ponnayya",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 32,
         "title": "Tanjai Ka.Ponnayya Pillai",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 33,
         "title": "MayuramVedanayakam Pillai",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 34,
         "title": "Malaikkottai Fiddle Govindasami Pillai ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 35,
         "title": "Kancheepuram Naina Pilla ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 36,
         "title": "Veenai Dhanammal",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 37,
         "title": "Tirukkodikkaval Krishnayyar",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 38,
         "title": "Rajarathinam Pillai",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 39,
         "title": "Tiruppampuram Swaminatha Pillai",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 40,
         "title": "Mridangam Narayanasami Appa",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 41,
         "title": "Palakkad T.S.Mani Iyer",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 42,
         "title": "Tiruvidaimarudur P.S.Veerusami Pillai",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 43,
         "title": "Dhanakoti Ammal",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 44,
         "title": "Chinnayya",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 45,
         "title": "Pammal Sambanda Mudaliar",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 46,
         "title": "Madurai Mani Iyer",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 47,
         "title": "Madurai Mani Iyer",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 48,
         "title": "Shanmukha vadivu",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 49,
         "title": "Chidambaram Pataka. Sundaram Pillai",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 50,
         "title": "Kalki Krishnamurthi ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 51,
         "title": "Mannargudi Konnakkol Pakkiria Pillai ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 52,
         "title": "Tiruvananthapuram T.Lakshmana Pillai ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 53,
         "title": "Kamakoti Ammal ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 54,
         "title": "T.Balasaraswati ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 55,
         "title": "Needmangalam Meenakshi Sundaram Pillai",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 56,
         "title": "Pandanainallur Meenakshi Sundaram Pillai",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 57,
         "title": "Papanasam Sivan ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 58,
         "title": "Karukkurichi Arunachalam ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 59,
         "title": "Tavil Panchapakesa Pillai",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 60,
         "title": "Mahakavi Subramania Bharatiyar",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 61,
         "title": "Madurai Ponnusami Pillai",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 62,
         "title": "Mridangam Azhaga Nambi Pillai ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 63,
         "title": " Ariyukkudi Ramanuja Iyengar",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 64,
         "title": " Mayuram Govindaraja Pillai ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 65,
         "title": " Swati Tirunal Maharaja",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 66,
         "title": " K.B.Sundarambali ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 67,
         "title": " Mayuram Govindaraja Pillai ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 68,
         "title": " T.K.C. ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 69,
         "title": " Vazhuvoor P.Ramayya Pillai ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 70,
         "title": " Kripananda Variyar ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 71,
         "title": "Semmangudi R.Srinivsa Iyer ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 72,
         "title": "M.S.Subbulakshmi",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 73,
         "title": "Madurai S.Somasundaram ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 74,
         "title": "Ma.Pa.Periysami Tooran",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 75,
         "title": " D.K.Pattammal ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 76,
         "title": " Tiruvizhimazhalai S.Subramania Pillai ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 77,
         "title": " T.Balasaraswati",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 78,
         "title": " Tiruvizhimazhalai S.Natarajasundaram Pillai ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 79,
         "title": " M.L.Vasanthkumari ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 80,
         "title": "Ramanathapuram C.S.Murugabhoopillai ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 81,
         "title": " Mi.Pa. Somasundaram ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 82,
         "title": "Dr.S.Ramanathan ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 83,
         "title": "Seerkazhi Thiru S. Govindarajan ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 84,
         "title": "Namagiripattai Krishnan ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 85,
         "title": "Lalgudi G.Jayarman ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 86,
         "title": "Tanjai K.P.Kittappa ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 87,
         "title": "Dharmapuram P.Saminathan (Tevram) ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 88,
         "title": "A.K.C. Natarajan ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 89,
         "title": "Kunnakkudi R.Vaidyanathan ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 90,
         "title": "Valaiyappatti A.R.Subramaniam ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 91,
         "title": " K.J. Yesudas ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 92,
         "title": " Sheikh Chinna Maulana ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 93,
         "title": " Dr.Selvi Padma Subramaniam (Bharatnatyam) ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 94,
         "title": "Tiruppampuram Dr.S.Shanmukha Sundaram ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 95,
         "title": "T.R.Pappa ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 96,
         "title": "Tiruvizha R.Jayasankar ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 97,
         "title": "Dr.N. Ramani (Flute) ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 98,
         "title": "Kancheepuram A.Vinayaka Mudaliyar",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 99,
         "title": "Madurai T.N.Seshagopalan ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 100,
         "title": "Kancheepuram M.M.Venkatavaradan",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 101,
         "title": "Dr.M.Balamuralikrishna ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 102,
         "title": "M.S.Viswanathan",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 103,
         "title": "K.J. Sarasa ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 104,
         "title": " Tiruvidaimarudur P.S.V.Raja",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 105,
         "title": "Bombay Sisters. C.Saroja and C.Lalitha ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 106,
         "title": "Saidai T.Natarajan ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 107,
         "title": "Semponarkoil S.R.D.Vaidyanathan ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 108,
         "title": "Tmt. Aruna Sairam ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 109,
         "title": "Thiru. T.N.Krishnan ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 110,
         "title": "Tmt. Sudha Raghunathan ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 111,
         "title": "Madurai M.P.N.Ponnusami ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 112,
         "title": "Tmt. Krishna Kumari Navendran",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 113,
         "title": " Dr.Seergazhi G.Sivachidambaram ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 114,
         "title": " Aridwaramangalam Thiru.A.K.Palanivel ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 115,
         "title": " Thiru. Sanjai Subramaniam ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 116,
         "title": " Thiru.T.M. Krishna",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 117,
         "title": "Umayalpuram Thiru. K. Sivaraman ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 118,
         "title": "Tiruppanandal Thiru.S.Muthukkandasami Desikar ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 119,
         "title": " Dharmapuram Thiru.S.Gnanaprakasa Desikar ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 120,
         "title": "Tiruthani N.Swaminathan ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 121,
         "title": "Thiru. Sami Dandapani ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 122,
         "title": "Seergazhi S. Tirugnanasambandan ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 123,
         "title": "Tiruvidaimarudur S.Sambanda Desikar ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 124,
         "title": "Vedaranyam K.Muthukumarasamy Desikar ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 125,
         "title": "Palani Pa. Shnmugasundara Desikar ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 126,
         "title": "Karur Ku. Saminatha Desikar ",
         "image": "img17.jpg"
       },
       {
-        "id": 29,
+        "id": 127,
         "title": "Palani Ka. Venkatesan ",
         "image": "img17.jpg"
       }
     ],
+   
     "footers": [
       {
         "titles": [
@@ -1443,5 +1498,7 @@
         ]
       }
     ]
+
+    
   }
 }

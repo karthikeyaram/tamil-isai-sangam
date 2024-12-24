@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+// import librarys from '../Data/Data.json'
+// import { useSelector } from 'react-redux';
 
 const Library = () => {
+  // const [language] = useSelector((state) =>state.language);
+  //  const librarydata = librarys[language]?.categories || [];
   const [openIndex, setOpenIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -59,6 +63,21 @@ const Library = () => {
   return (
     <div className="row padding-lg">
       <div className="col-sm-12" style={{ marginLeft: "10px" }}>
+        
+        {/* Added Header */}
+        <div style={{
+          // backgroundColor: '#F39C12', 
+          color: '#F39C12', 
+          textAlign: 'center', 
+          padding: '20px', 
+          fontSize: '30px', 
+          fontWeight: 'bold', 
+          borderRadius: '10px', 
+          marginBottom: '30px'
+        }}>
+       Tamil Music Library
+        </div>
+
         <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
           {[...Array(rows)].map((_, rowIndex) => (
             <div className="row" key={rowIndex}>
@@ -115,3 +134,4 @@ const Library = () => {
 };
 
 export default Library;
+
