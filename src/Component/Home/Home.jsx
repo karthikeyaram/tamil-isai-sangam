@@ -25,26 +25,27 @@ const Banner = () => {
       description:
         "Experience the pinnacle of technology and creativity with us.",
       buttonLink: "services.html",
-      Image: require("../../Assets/banner/slider_01.jpg"),
+      Image: require("../../Assets/banner/slider_02.jpg"),
     },
     {
       title: "Build Your",
       spatitile: "Dream Career",
       description: "Empower your future with our world-class education.",
       buttonLink: "career.html",
-      Image: require("../../Assets/banner/slider_01.jpg"),
+      Image: require("../../Assets/banner/slider_03.jpg"),
     },
   ];
 
-  // Auto Slide Logic
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000); // Change every 5 seconds
+    }, 5000); 
 
-    return () => clearInterval(interval); // Clean up interval on component unmount
+    return () => clearInterval(interval); 
   }, [slides.length]);
 
+ 
+   
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
@@ -58,45 +59,62 @@ const Banner = () => {
 
   return (
     <>
-      <div className="banner-outer">
-        <div className="bx-wrapper">
-          <div className="bx-viewport">
-            <div
-              className="banner-slider"
-              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+      <div
+      style={{
+        position: "relative",
+        overflow: "hidden",
+        width: "100%",
+        height: "350px", 
+      }}
+    >
+      <div style={{ position: "relative", width: "100%", height: "100%" }}>
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundImage: `url(${slide.Image})`,
+              backgroundSize: "contain", 
+              backgroundRepeat: "no-repeat", 
+              backgroundPosition: "top", 
+              opacity: index === currentSlide ? 1 : 0,
+              transition: "opacity 1.5s ease-in-out",
+            }}
+          >
+            {/* <div
+              style={{
+                position: "absolute",
+                bottom: "20%",
+                left: "10%",
+                color: "#fff",
+                textShadow: "1px 1px 5px rgba(0, 0, 0, 0.5)",
+              }}
             >
-              {slides.map((slide, index) => (
-                <div
-                  className="slide"
-                  key={index}
-                  style={{
-                    backgroundImage: `url(${slide.Image})`,
-                  }}
-                >
-                  <div className="content">
-                    <h1>{slide.title}</h1>
-                    <p>{slide.description}</p>
-                    <a href={slide.buttonLink} className="btn">
-                      Know More
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
+              <h1>{slide.title}</h1>
+              <p>{slide.description}</p>
+              <a
+                href={slide.buttonLink}
+                style={{
+                  display: "inline-block",
+                  marginTop: "10px",
+                  padding: "10px 20px",
+                  backgroundColor: "#007bff",
+                  color: "#fff",
+                  textDecoration: "none",
+                  borderRadius: "4px",
+                }}
+              >
+                Know More
+              </a>
+            </div> */}
           </div>
-        </div>
-        {/* Left and Right Carousels */}
-        <div className="carousel-left">
-          <button className="prev-btn" onClick={prevSlide}>
-            &#10094;
-          </button>
-        </div>
-        <div className="carousel-right">
-          <button className="next-btn" onClick={nextSlide}>
-            &#10095;
-          </button>
-        </div>
+        ))}
       </div>
+    </div>
       <div className="about">
         <div className="container1">
           <ul className="row our-links">

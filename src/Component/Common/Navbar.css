@@ -4486,7 +4486,7 @@ ul.faq-listing li h2 {
 }
 .panel-default .panel-title a:before{
 	top:-20px;
-	content:" - ";
+	/* content:" - "; */
 	color:#284962;
 }
 .panel-default .panel-title a.collapsed{
@@ -4495,6 +4495,7 @@ ul.faq-listing li h2 {
 .panel-default .panel-title a.collapsed:before{
 	content:" + ";
 	color:#b9c5cf;
+	
 }
 .panel-default .panel-body{ 
 	padding:0 0 15px 50px;
