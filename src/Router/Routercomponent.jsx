@@ -15,6 +15,13 @@ import Register from "../Component/Register/Register";
 import Login from "../Component/Login/Login";
 import History from "../Pages/History";
 import Boardtrustees from "../Pages/Boardtrustees";
+import Boardpresident from "../Pages/Boardpresident";
+import Pannresearch from "../Pages/Pannresearch";
+import Awards from "../Pages/Awards";
+import Chiefguest from "../Pages/Chiefguest";
+import Collegehistory from "../Pages/Collegehistory";
+import Formerpincipals from "../Pages/Formerpincipals";
+import Daycollege from "../Pages/Daycollege";
 
 const Routercomponent = () => {
   return (
@@ -44,10 +51,16 @@ const MainRoutes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/tamil-isai-history" element={<History />} />
         <Route path='/trustees' element={<Boardtrustees/>}/>
-        <Route path='/media' element={<Media/>}/>
-        <Route path='/IsaiKalaivanarkal'  element={<IsaiKalaivanarkal/>}/>
-        <Route path='/IsaiPerairignarkal' element={<IsaiPerairignarkal/>}/>
-        <Route path='/PannIsaiPerarignarkal' element={<PannIsaiPerarignarkal/>}/>
+        <Route path='/presidents-and-secretaries' element={<Boardpresident/>}/>
+        <Route path='/tamil-pann-research' element={<Pannresearch/>}/>
+        <Route path='/awards' element={<Awards/>}/>
+        <Route path='/cheif_guest' element={<Chiefguest/>}/>
+        <Route path='/tamilisai-college-history' element={<Collegehistory/>}/>
+        <Route path='/tamilisai-college-principals' element={<Formerpincipals/>}/>
+        <Route path='/tamilisai-day-college' element={<Daycollege/>}/>
+
+
+      
       </Routes>
       
       <Footer/>

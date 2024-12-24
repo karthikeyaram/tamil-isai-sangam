@@ -802,9 +802,14 @@ textarea:focus::placeholder{
 		margin-left: auto;
 	
 }
-@media (min-width: 992px) {
+@media (min-width: 1025px) {
     .container1 {
         width: 1190px;
+    }
+}
+@media (width: 1024px) {
+    .container1 {
+        width: 1020px;
     }
 }
 .about ul.our-links {
@@ -926,7 +931,7 @@ textarea:focus::placeholder{
 }
 */
 .about .video-block img {
-	width: 100%;
+	width: 85%;
 	padding-top: 80px;
 	margin-top: 20px;
 }
@@ -964,8 +969,7 @@ textarea:focus::placeholder{
   .col-md-7 p {
 	opacity: 0;
 	transform: translateY(30px);
-	animation: fadeInUp 1s forwards; /* Keep the element visible after animation */
-	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);  /* Text shadow */
+	animation: fadeInUp 1s forwards; 
   }
   
   /* Scroll animation for content */
@@ -982,6 +986,12 @@ textarea:focus::placeholder{
 	transform: translateX(10px);  /* Slight move effect */
 	transition: all 0.3s ease-in-out;
 	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);  /* Shadow effect on hover */
+  }
+  .col-md-12 p:hover {
+	color: #007BFF;  /* Change text color on hover */
+	transform: translateX(10px);  /* Slight move effect */
+	transition: all 0.3s ease-in-out;
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);  
   }
   
   /* Ensure animation runs only once when content is in view */
@@ -1115,7 +1125,7 @@ textarea:focus::placeholder{
 	top: 0px;
 	z-index: 1;
 	content: "";
-	background: #383838;
+	background: #fdfdfd;
 	opacity: 0.8;
 }
 .our-cources .container {
@@ -1126,7 +1136,7 @@ textarea:focus::placeholder{
 	color: #fff;
 }
 .our-cources h2 span {
-	color: #d5d4d3;
+	color: #020202;
 }
 .our-cources ul.course-list {
 	display: block;
@@ -2844,6 +2854,7 @@ a.download-prospects:hover span {
 }
 .about.inner p {
 	padding-bottom: 20px;
+	text-align: justify;
 }
 .about .btn-wrapper {
 	display: block;
@@ -2924,7 +2935,7 @@ a.download-cert:hover {
 	text-align: left;
 }
 .our-cources ul.inner li {
-	margin-bottom: 140px;
+	/* margin-bottom: 140px; */
 }
 .our-cources ul.inner li:before {
 	width: 100%;
