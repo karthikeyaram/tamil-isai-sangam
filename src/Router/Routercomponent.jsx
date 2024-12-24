@@ -22,6 +22,7 @@ import Chiefguest from "../Pages/Chiefguest";
 import Collegehistory from "../Pages/Collegehistory";
 import Formerpincipals from "../Pages/Formerpincipals";
 import Daycollege from "../Pages/Daycollege";
+import CompetitionForm from '../Component/Home/Competitionform'
 
 const Routercomponent = () => {
   return (
@@ -58,8 +59,8 @@ const MainRoutes = () => {
         <Route path='/tamilisai-college-history' element={<Collegehistory/>}/>
         <Route path='/tamilisai-college-principals' element={<Formerpincipals/>}/>
         <Route path='/tamilisai-day-college' element={<Daycollege/>}/>
-
-
+        <Route path='/competition-form' element={<CompetitionForm/>}/>
+        
       
       </Routes>
       

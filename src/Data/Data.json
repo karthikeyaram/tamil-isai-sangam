@@ -168,19 +168,19 @@
             "card": [
               {
                 "id": 1,
-                "image": "/assets/image/5.jpeg",
+                "image": "/assets/image/55.jpg",
                 "cardtitle": "குரல் (வோகல்)",
                 "cardcontent": "திருப்பாவை, திருவெம்பாவை, திருப்பள்ளியெழுச்சி ஆகியவை பன்னிரு திருமுறையும் நாலாயிர திவ்யப் பிரபந்தத்திலும் அடங்கியவை."
               },
               {
                 "id": 2,
-                "image": "/assets/image/4.jpg",
+                "image": "/assets/image/44.jpg",
                 "cardtitle": "இசைக்கருவிகள்",
-                "cardcontent": "மிருதங்கம், தவில், வீணை,நாதஸ்வரம்,வயலின்,புல்லாங்குழல்."
+                "cardcontent": "மிருதங்கம்,தவில்,நாதஸ்வரம், வயலின்,புல்லாங்குழல்."
               },
               {
                 "id": 3,
-                "image": "/assets/image/2.jpg",
+                "image": "/assets/image/33.jpg",
                 "cardtitle": "பரதநாட்டியம்",
                 "cardcontent": "நடனம்,அடைவுகள்,பாடல்கள் ,நடன ஆடைகள்."
               }

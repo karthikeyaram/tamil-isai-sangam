@@ -1109,8 +1109,10 @@ textarea:focus::placeholder{
 .how-apply h2 span {
 	display: block;
 	font-family: 'texgyreadventorregular';
-	font-size: 14px;
-	opacity: 0.8;
+	font-size: 22px;
+    opacity: 0.8;
+    padding-bottom: 10px;
+	color: #081d2d;
 }
 .our-cources {
 	display: block;

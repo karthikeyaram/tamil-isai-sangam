@@ -130,7 +130,7 @@ const Banner = () => {
                 />
               </div>
               <div className="detail">
-                <h3>Apply Online</h3>
+               <a href="/competition-form"> <h3 style={{cursor:"pointer"}} >Competition Apply Online</h3></a>
                 <p>Lorem Ipsum is simply dummy text of the printing...</p>
                 <a href="apply-online.html" className="more">
                   <MdKeyboardArrowRight />
@@ -221,6 +221,7 @@ const Banner = () => {
                               flexDirection: "column",
                               justifyContent: "flex-end",
                               width: "100%",
+                              backgroundColor:"#C1C2C2"
                             }}
                           >
                             {/* Card Title */}

@@ -173,7 +173,7 @@ const Daycollege = () => {
           {note.map((item, index) => (
             <div className="containers1" key={index} style={{display:"block"}}>
               <h1>{item.title}</h1>
-              <div className="col-sm-9">
+              <div className="col-sm-9" style={{width:"80%"}}>
                 <div className="notes">
                   <div className="point">
                     <p>{item.point}</p>
