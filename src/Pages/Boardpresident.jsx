@@ -1,20 +1,20 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import boardData from "../Data/Data.json";
-import "./page.css";
+import presidentdata from "../Data/Data.json"
 
-const Boardtrustees = () => {
-  const { language } = useSelector((state) => state.language);
-  const board = boardData[language]?.board[0] || {};
+const Boardpresident = () => {
+
+    const { language } = useSelector((state) => state.language);
+  const president = presidentdata[language]?.presidents[0] || {};
 
   return (
     <>
       <div className="container1">
         <h1 className="text-center my-4">
-          {board.title || "Board of Trustees"}
+          {president.title || "Board of Trustees"}
         </h1>
         <div className="row">
-          {board.images?.map((member) => (
+          {president.images?.map((member) => (
             <div className="col-lg-3 col-md-4 col-sm-6 mb-4" key={member.id}>
               <div className="card-container">
                 <div className="card text-center">
@@ -45,4 +45,4 @@ const Boardtrustees = () => {
   );
 };
 
-export default Boardtrustees;
+export default Boardpresident;
