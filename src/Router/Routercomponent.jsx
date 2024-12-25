@@ -31,6 +31,7 @@ import Eveningcollege from '../Pages/Eveningcollege'
 import TISGECcourse from '../Pages/TISGECcourse'
 import Registrationfom from '../Pages/Registrationfom'
 import Equiezregistration from '../Pages/Equiezregistration'
+import Staff from '../Pages/Staff'
 
 const Routercomponent = () => {
   return (
@@ -52,6 +53,7 @@ const MainRoutes = () => {
       
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path='/staff' element={<Staff/>}/>
         <Route path="/DeivigaArulalarkal" element={<DeivigaArulalarkal />} />
         <Route path='/IsaiArulalarkal' element={<IsaiArulalarkal/>}/>
         <Route path='/library' element={<Library/>}/>
