@@ -1,94 +1,110 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React,{useEffect,useState} from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import jsondata from '../../Data/Data.json'
 
 const IsaiArulalarkal = () => {
-  const [activeHeader, setActiveHeader] = useState('IsaiArulalarkal');
+   const [activeHeader, setActiveHeader] = useState('IsaiArulalarkal');
+    const headerNames = [
+      { name: 'DeivigaArulalarkal', path: '/DeivigaArulalarkal' },
+      { name: 'IsaiArulalarkal', path: '/IsaiArulalarkal' },
+      { name: 'IsaiKalaivanarkal', path: '/IsaiKalaivanarkal' },
+      { name: 'IsaiPerairignarkal', path: '/IsaiPerairignarkal' },
+      { name: 'PannIsaiPerarignarkal', path: '/PannIsaiPerarignarkal' },
+    ];
+  const { language } = useSelector((state) => state.language);
+  const galleryd = jsondata[language]?.blog2 || []; // Added fallback to prevent undefined errors
 
-  const headerNames = [
-    { name: 'DeivigaArulalarkal', path: '/DeivigaArulalarkal' },
-    { name: 'IsaiArulalarkal', path: '/IsaiArulalarkal' },
-    { name: 'IsaiKalaivanarkal', path: '/IsaiKalaivanarkal' },
-    { name: 'IsaiPerairignarkal', path: '/IsaiPerairignarkal' },
-    { name: 'PannIsaiPerarignarkal', path: '/PannIsaiPerarignarkal' },
-  ];
 
   const headerStyle = {
     display: 'flex',
     justifyContent: 'center',
-    gap: '20px',
+    gap: '30px',
     marginBottom: '40px',
+    padding: '15px 30px',
+    borderRadius: '10px',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)', 
+    position: 'relative',
+    animation: 'fadeIn 1s ease-in-out', 
   };
 
   const headerItemStyle = (name) => ({
-    fontSize: '15px',
-    fontWeight: '100',
-    color: activeHeader === name ? '#F39C12' : '#333',
-    textTransform: 'uppercase',
+    fontSize: '18px',
+    fontWeight: '600',
+    color: activeHeader === name ? '#F39C12' : '#333333', 
+    textTransform: 'capitalize', 
     cursor: 'pointer',
-    padding: '10px 20px',
+    padding: '12px 24px',
     borderRadius: '5px',
-    transition: 'color 0.3s ease, background-color 0.3s ease',
+    transition: 'color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease',
+    boxShadow: activeHeader === name ? '0 0 10px rgba(243, 156, 18, 0.6)' : 'none', 
+    '&:hover': {
+      color: '#F39C12', 
+      transform: 'scale(1.1)', 
+      boxShadow: '0 0 10px rgba(243, 156, 18, 0.4)', 
+    },
   });
 
   const images = [
-    { src: 'img18.jpg', name: 'Image 18' },
-    { src: 'img19.jpg', name: 'Image 19' },
-    { src: 'img20.jpg', name: 'Image 20' },
+    { src: 'img18.jpg' },
+    { src: 'img19.jpg' },
+    { src: 'img20.jpg'},
+   
   ];
 
-  const [loaded, setLoaded] = useState(false);
+  const [visibleImages, setVisibleImages] = useState([]);
 
   useEffect(() => {
-    setLoaded(true);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleImages((prev) => [...prev, entry.target]);
+          }
+        });
+      },
+      {
+        threshold: 0.2, 
+      }
+    );
+
+    const imageElements = document.querySelectorAll('.gallery-item');
+    imageElements.forEach((image) => observer.observe(image));
+
+    return () => observer.disconnect();
   }, []);
 
   const galleryContainerStyle = {
     display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
-    gap: '10px',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+    gap: '20px',
     padding: '20px',
-    justifyItems: 'center',
   };
 
-  const galleryItemStyle = {
+  const galleryItemStyle = (isVisible, index) => ({
     position: 'relative',
     overflow: 'hidden',
     borderRadius: '10px',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+    boxShadow: isVisible ? '0 4px 12px rgba(0, 0, 0, 0.2)' : 'none',
     transition: 'transform 0.3s ease, box-shadow 0.3s ease',
     cursor: 'pointer',
     textAlign: 'center',
-    opacity: loaded ? 1 : 0,
-    transform: loaded ? 'none' : 'translateY(20px)',
-    transition: 'opacity 0.8s ease, transform 0.8s ease',
-  };
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible
+      ? index % 2 === 0
+        ? 'translateX(0)' 
+        : 'translateX(0)' 
+      : index % 2 === 0
+      ? 'translateX(-100px)'
+      : 'translateX(100px)', 
+    transition: `opacity 1s ease, transform 1s ease, transition-delay ${index * 0.3}s`, // Sequential delay for each image
+  });
 
   const galleryImageStyle = {
     width: '100%',
     height: '200px',
-    objectFit: 'cover',
-    transition: 'transform 0.3s ease',
-  };
-
-  const overlayStyle = {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    background: 'rgba(0, 0, 0, 0.5)',
-    opacity: 0,
-    transition: 'opacity 0.3s ease',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  };
-
-  const overlayTextStyle = {
-    color: 'white',
-    fontSize: '18px',
-    fontWeight: 'bold',
-    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)',
+    objectFit: 'contain',
+    transition: 'transform 0.3s ease', 
   };
 
   const imageNameStyle = {
@@ -100,7 +116,8 @@ const IsaiArulalarkal = () => {
 
   return (
     <div>
-      <div style={headerStyle}>
+
+<div style={headerStyle}>
         {headerNames.map(({ name, path }) => (
           <Link
             key={name}
@@ -119,32 +136,98 @@ const IsaiArulalarkal = () => {
         </h6>
       </div>
 
+
       <div style={galleryContainerStyle}>
         {images.map((image, index) => (
           <div
             key={index}
-            style={galleryItemStyle}
-            onMouseEnter={(e) => {
-              e.currentTarget.querySelector('img').style.transform = 'scale(1.08)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.querySelector('img').style.transform = 'scale(1)';
-            }}
+            className="gallery-item"
+            style={galleryItemStyle(visibleImages.includes(document.querySelector(`.gallery-item:nth-child(${index + 1})`)), index)}
           >
             <img
               src={image.src}
               alt={image.name}
               style={galleryImageStyle}
             />
-            <div className="overlay" style={overlayStyle}>
-              <div className="overlay-text" style={overlayTextStyle}>
-                {image.name}
-              </div>
+
+            {/* Display the first title from galleryd under the image */}
+            <div style={imageNameStyle}>
+              {galleryd[0]?.gallery2?.[index]?.title || 'No Title Available'}
             </div>
-            <div style={imageNameStyle}>{image.name}</div>
+
+{/* <div className="overlay" >
+              {galleryd.map((item, idx) => (
+                <div key={idx} className="gal">
+                  {item.gallery2?.map((img, id) => (
+                    <div key={id} className="overlay-text">
+                      {img.title}
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div> */}
+
+
+            
           </div>
         ))}
       </div>
+      
+      
+      
+            {/* <div className="overlay" >
+              {galleryd.map((item, idx) => (
+                <div key={idx} className="gal">
+                  {item.gallery2?.map((img, id) => (
+                    <div key={id} className="overlay-text">
+                      {img.title}
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div> */}
+
+
+
+            <style>
+        {`
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+              transform: translateY(-20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          @keyframes slideInFromLeft {
+            0% {
+              opacity: 0;
+              transform: translateX(-100px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+
+          @keyframes slideInFromRight {
+            0% {
+              opacity: 0;
+              transform: translateX(100px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+        `}
+      </style>
+
+            
+            {/* <div style={imageNameStyle}>{image.name}</div> */}
     </div>
   );
 };

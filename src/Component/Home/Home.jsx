@@ -198,17 +198,17 @@ const Banner = () => {
                       <div className="inner">
                         <figure className="card-figure">
                           {/* Image */}
-                          <img
+                           <img
                             src={card.image}
                             alt={card.cardtitle}
                             className="card-image"
                             style={{
                               width: "100%",
-                              height: "auto", // Maintain aspect ratio
+                              height: "auto", 
                               borderRadius: "10px",
-                              transition: "transform 0.3s ease", // Smooth zoom effect
+                              transition: "transform 0.3s ease", 
                             }}
-                          />
+                          /> 
                           <div
                             className="card"
                             style={{
@@ -221,7 +221,8 @@ const Banner = () => {
                               flexDirection: "column",
                               justifyContent: "flex-end",
                               width: "100%",
-                              backgroundColor:"#C1C2C2"
+                              backgroundColor:"#C1C2C2",
+                              marginBottom:"30px"
                             }}
                           >
                             {/* Card Title */}

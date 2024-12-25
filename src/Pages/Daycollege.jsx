@@ -8,10 +8,10 @@ const Daycollege = () => {
   const principal = coursedata[language]?.Daycollege || [];
   const note = coursedata[language]?.notes || [];
 
-  const [expandedCourse, setExpandedCourse] = useState(null); // State for expanded card
+  const [expandedCourse, setExpandedCourse] = useState(null);
 
   const handleToggle = (index) => {
-    setExpandedCourse(expandedCourse === index ? null : index); // Toggle expansion for clicked card
+    setExpandedCourse(expandedCourse === index ? null : index);
   };
 
   return (
@@ -46,9 +46,11 @@ const Daycollege = () => {
                           className="course-description"
                           style={{ fontWeight: "bold" }}
                         ></p>
-                        <p className="course-fee">
-                          <span>FEES: {item.fee}</span>
-                        </p>
+                        <div className="row">
+                          <p className="course-fee">
+                            <span>FEES: {item.fee}</span>
+                          </p>
+                        </div>
                       </div>
                     </figure>
 
@@ -84,9 +86,20 @@ const Daycollege = () => {
                       }`}
                     >
                       <div className="additional-content">
-                        <p style={{ color: "black", fontSize: "14px" }}>
-                          {item.description}
-                        </p>
+                        {item.description && Array.isArray(item.description) ? (
+                          item.description.map((paragraph, idx) => (
+                            <p
+                              key={idx}
+                              style={{ color: "black", fontSize: "14px" }}
+                            >
+                              {paragraph}
+                            </p>
+                          ))
+                        ) : (
+                          <p style={{ color: "black", fontSize: "14px" }}>
+                            {item.description}
+                          </p>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -94,7 +107,7 @@ const Daycollege = () => {
               ))}
             </ul>
 
-            <div className="row">
+            {/* <div className="row">
               <div className="col-sm-12">
                 <nav aria-label="Page navigation" className="text-center">
                   <ul className="pagination">
@@ -166,14 +179,18 @@ const Daycollege = () => {
                   </ul>
                 </nav>
               </div>
-            </div>
+            </div> */}
           </div>
         ))}
         <div className="row">
           {note.map((item, index) => (
-            <div className="containers1" key={index} style={{display:"block"}}>
+            <div
+              className="containers1"
+              key={index}
+              style={{ display: "block" }}
+            >
               <h1>{item.title}</h1>
-              <div className="col-sm-9" style={{width:"80%"}}>
+              <div className="col-sm-9" style={{ width: "100%" }}>
                 <div className="notes">
                   <div className="point">
                     <p>{item.point}</p>
