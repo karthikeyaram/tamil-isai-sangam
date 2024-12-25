@@ -5238,7 +5238,7 @@ ul.select-opt li .check::before {
 }
 .generic-wrapper .head-block {
 	display: block;
-	padding-bottom: 50px;
+	padding-bottom: 22px;
 }
 .generic-wrapper .head-block h2 {
 	padding-bottom: 10px;
@@ -5387,7 +5387,7 @@ a.btn-circle:hover {
 .coming-soon .cnt-block h1{ 
 	display: block; 
 	padding-bottom: 40px; 
-	font-size: 60px;
+	font-size: 50px;
 }
 .stay-connected{
     width: 100%;
