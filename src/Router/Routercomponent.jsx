@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import Library from '../Component/Library'
+
 import IsaiArulalarkal from '../Component/Gallery/IsaiArulalarkal'
 import IsaiKalaivanarkal from '../Component/Gallery/IsaiKalaivanarkal'
 import IsaiPerairignarkal from '../Component/Gallery/IsaiPerairignarkal'
@@ -14,8 +14,11 @@ import Tamilisaisangam from "../Pages/Tamilisaisangam";
 import Register from "../Component/Register/Register";
 import Login from "../Component/Login/Login";
 import History from "../Pages/History";
-import Museum from '../Component/Museum'
+
 import Contact from '../Component/Contact'
+import Boardtrustees from "../Pages/Boardtrustees";
+import Museum from '../Component/Gallery/Museum'
+import Library from '../Component/Library'
 
 const Routercomponent = () => {
   return (
@@ -50,6 +53,7 @@ const MainRoutes = () => {
         <Route path='/IsaiKalaivanarkal'  element={<IsaiKalaivanarkal/>}/>
         <Route path='/IsaiPerairignarkal' element={<IsaiPerairignarkal/>}/>
         <Route path='/PannIsaiPerarignarkal' element={<PannIsaiPerarignarkal/>}/>
+        <Route path='/trustees' element={<Boardtrustees/>}/>
       </Routes>
       
       <Footer/>

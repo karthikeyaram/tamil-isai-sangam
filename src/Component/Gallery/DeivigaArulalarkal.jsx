@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import jsondata from '../../Data/Data.json';
 
 const DeivigaArulalarkal = () => {
   const [activeHeader, setActiveHeader] = useState('DeivigaArulalarkal');
-
   const headerNames = [
     { name: 'DeivigaArulalarkal', path: '/DeivigaArulalarkal' },
     { name: 'IsaiArulalarkal', path: '/IsaiArulalarkal' },
@@ -12,6 +13,9 @@ const DeivigaArulalarkal = () => {
     { name: 'PannIsaiPerarignarkal', path: '/PannIsaiPerarignarkal' },
   ];
 
+  const { language } = useSelector((state) => state.language);
+  const galleryd = jsondata[language]?.gallery || [];
+
   const headerStyle = {
     display: 'flex',
     justifyContent: 'center',
@@ -19,46 +23,46 @@ const DeivigaArulalarkal = () => {
     marginBottom: '40px',
     padding: '15px 30px',
     borderRadius: '10px',
-    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)', // Soft shadow for depth
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)', 
     position: 'relative',
-    animation: 'fadeIn 1s ease-in-out', // Fade-in effect
+    animation: 'fadeIn 1s ease-in-out', 
   };
 
   const headerItemStyle = (name) => ({
     fontSize: '18px',
     fontWeight: '600',
-    color: activeHeader === name ? '#F39C12' : '#333333', // Active link color in golden
-    textTransform: 'capitalize', // Keeping text natural without uppercase
+    color: activeHeader === name ? '#F39C12' : '#333333', 
+    textTransform: 'capitalize', 
     cursor: 'pointer',
     padding: '12px 24px',
     borderRadius: '5px',
     transition: 'color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease',
-    boxShadow: activeHeader === name ? '0 0 10px rgba(243, 156, 18, 0.6)' : 'none', // Glow effect for active item
+    boxShadow: activeHeader === name ? '0 0 10px rgba(243, 156, 18, 0.6)' : 'none', 
     '&:hover': {
-      color: '#F39C12', // Highlight text color on hover
-      transform: 'scale(1.1)', // Slight zoom effect on hover
-      boxShadow: '0 0 10px rgba(243, 156, 18, 0.4)', // Subtle glow on hover
+      color: '#F39C12', 
+      transform: 'scale(1.1)', 
+      boxShadow: '0 0 10px rgba(243, 156, 18, 0.4)', 
     },
   });
 
   const images = [
-    { src: 'img1.jpg', name: 'Image 1' },
-    { src: 'img2.jpg', name: 'Image 2' },
-    { src: 'img3.jpg', name: 'Image 3' },
-    { src: 'img4.jpg', name: 'Image 4' },
-    { src: 'img5.jpg', name: 'Image 5' },
-    { src: 'img6.jpg', name: 'Image 6' },
-    { src: 'img7.jpg', name: 'Image 7' },
-    { src: 'img8.jpg', name: 'Image 8' },
-    { src: 'img9.jpg', name: 'Image 9' },
-    { src: 'img10.jpg', name: 'Image 10' },
-    { src: 'img11.jpg', name: 'Image 11' },
-    { src: 'img12.jpg', name: 'Image 12' },
-    { src: 'img13.jpg', name: 'Image 13' },
-    { src: 'img14.jpg', name: 'Image 14' },
-    { src: 'img15.jpg', name: 'Image 15' },
-    { src: 'img16.jpg', name: 'Image 16' },
-    { src: 'img17.jpg', name: 'Image 17' },
+    { src: 'img1.jpg' },
+    { src: 'img2.jpg' },
+    { src: 'img3.jpg'},
+    { src: 'img4.jpg' },
+    { src: 'img5.jpg'},
+    { src: 'img6.jpg'},
+    { src: 'img7.jpg'},
+    { src: 'img8.jpg'},
+    { src: 'img9.jpg' },
+    { src: 'img10.jpg' },
+    { src: 'img11.jpg' },
+    { src: 'img12.jpg' },
+    { src: 'img13.jpg' },
+    { src: 'img14.jpg' },
+    { src: 'img15.jpg' },
+    { src: 'img16.jpg' },
+    { src: 'img17.jpg' }
   ];
 
   const [visibleImages, setVisibleImages] = useState([]);
@@ -73,7 +77,7 @@ const DeivigaArulalarkal = () => {
         });
       },
       {
-        threshold: 0.2, // Make the image visible when it is 20% in view
+        threshold: 0.2, 
       }
     );
 
@@ -101,11 +105,11 @@ const DeivigaArulalarkal = () => {
     opacity: isVisible ? 1 : 0,
     transform: isVisible
       ? index % 2 === 0
-        ? 'translateX(0)' // Slide from left for even-index images
-        : 'translateX(0)' // Slide from right for odd-index images
+        ? 'translateX(0)' 
+        : 'translateX(0)' 
       : index % 2 === 0
-      ? 'translateX(-100px)' // Slide in from left
-      : 'translateX(100px)', // Slide in from right
+      ? 'translateX(-100px)'
+      : 'translateX(100px)', 
     transition: `opacity 1s ease, transform 1s ease, transition-delay ${index * 0.3}s`, // Sequential delay for each image
   });
 
@@ -113,28 +117,7 @@ const DeivigaArulalarkal = () => {
     width: '100%',
     height: '200px',
     objectFit: 'contain',
-    transition: 'transform 0.3s ease', // Smooth transform on hover
-  };
-
-  const overlayStyle = {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    background: 'rgba(0, 0, 0, 0.5)',
-    opacity: 0,
-    transition: 'opacity 0.3s ease',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  };
-
-  const overlayTextStyle = {
-    color: 'white',
-    fontSize: '18px',
-    fontWeight: 'bold',
-    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)',
+    transition: 'transform 0.3s ease', 
   };
 
   const imageNameStyle = {
@@ -142,23 +125,6 @@ const DeivigaArulalarkal = () => {
     fontSize: '16px',
     fontWeight: '500',
     color: '#333',
-  };
-
-  const headingStyle = {
-    textAlign: 'center',
-    fontSize: '36px', // Slightly smaller font for a more professional look
-    fontWeight: '700',
-    color: '#4A90E2',
-    marginBottom: '40px',
-    letterSpacing: '2px',
-    textShadow: '2px 2px 8px rgba(0, 0, 0, 0.3)',
-    backgroundColor: '#F4F4F4',
-    padding: '20px',
-    borderRadius: '10px',
-    boxShadow: '0 6px 12px rgba(0, 0, 0, 0.15)',
-    transition: 'transform 0.5s ease, opacity 0.5s ease',
-    opacity: 0,
-    animation: 'fadeIn 1s ease-in-out forwards', // Fade in animation for heading
   };
 
   return (
@@ -188,24 +154,17 @@ const DeivigaArulalarkal = () => {
             key={index}
             className="gallery-item"
             style={galleryItemStyle(visibleImages.includes(document.querySelector(`.gallery-item:nth-child(${index + 1})`)), index)}
-            onMouseEnter={(e) => {
-              e.currentTarget.querySelector('img').style.transform = 'scale(1.1)'; // Zoom in effect on hover
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.querySelector('img').style.transform = 'scale(1)'; // Reset scale on mouse leave
-            }}
           >
             <img
               src={image.src}
               alt={image.name}
               style={galleryImageStyle}
             />
-            <div className="overlay" style={overlayStyle}>
-              <div className="overlay-text" style={overlayTextStyle}>
-                {image.name}
-              </div>
+
+            {/* Display the first title from galleryd under the image */}
+            <div style={imageNameStyle}>
+              {galleryd[0]?.gallery1?.[index]?.title || 'No Title Available'}
             </div>
-            <div style={imageNameStyle}>{image.name}</div>
           </div>
         ))}
       </div>
