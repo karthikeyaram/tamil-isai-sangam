@@ -34,7 +34,7 @@
         "details": [
           {
             "subtitle": "பண்ஆராய்ச்சிகள்",
-            "path": "/pann-research"
+            "path": "/tamil-pann-research"
           },
           {
             "subtitle": "விருதுகள்",
@@ -42,7 +42,7 @@
           },
           {
             "subtitle": "சிறப்பு விருந்தினர்கள்",
-            "path": "/cheif-guest"
+            "path": "/cheif_guest"
           }
         ]
       },
@@ -52,16 +52,17 @@
         "details": [
           {
             "subtitle": "தமிழ் இசைக் கல்லூரி வரலாறு",
+            "path": "/tamilisai-college-history",
             "childsubtitle": [
               {
                 "description": "முன்னாள் முதல்வர்கள்",
-                "path": "/principals"
+                "path": "/tamilisai-college-principals"
               }
             ]
           },
           {
             "subtitle": "பகல் நேரக் கல்லூரி",
-            "path": "/day-college"
+            "path": "/tamilisai-day-college"
           },
           {
             "subtitle": "மாலை நேரக் கல்லூரி",
@@ -170,19 +171,19 @@
             "card": [
               {
                 "id": 1,
-                "image": "/assets/image/5.jpeg",
+                "image": "/assets/image/55.jpg",
                 "cardtitle": "குரல் (வோகல்)",
                 "cardcontent": "திருப்பாவை, திருவெம்பாவை, திருப்பள்ளியெழுச்சி ஆகியவை பன்னிரு திருமுறையும் நாலாயிர திவ்யப் பிரபந்தத்திலும் அடங்கியவை."
               },
               {
                 "id": 2,
-                "image": "/assets/image/4.jpg",
+                "image": "/assets/image/44.jpg",
                 "cardtitle": "இசைக்கருவிகள்",
-                "cardcontent": "மிருதங்கம், தவில், வீணை,நாதஸ்வரம்,வயலின்,புல்லாங்குழல்."
+                "cardcontent": "மிருதங்கம்,தவில்,நாதஸ்வரம், வயலின்,புல்லாங்குழல்."
               },
               {
                 "id": 3,
-                "image": "/assets/image/2.jpg",
+                "image": "/assets/image/33.jpg",
                 "cardtitle": "பரதநாட்டியம்",
                 "cardcontent": "நடனம்,அடைவுகள்,பாடல்கள் ,நடன ஆடைகள்."
               }
@@ -2048,26 +2049,26 @@
           },
           {
             "subtitle": "Special Guest of Honour",
-            "path": "/history"
+            "path": "/cheif_guest"
           }
         ]
       },
       {
-        "navtitle": "Tamil Isai College",
-        "path": "/tamil-isai-college",
+        "navtitle": "Tamil Isai College",        
         "details": [
           {
             "subtitle": "History",
+              "path": "/tamilisai-college-history",
             "childsubtitle": [
               {
                 "description": "Former Principals",
-                "path": "/principals"
+                "path": "/tamilisai-college-principals"
               }
             ]
           },
           {
             "subtitle": "Day College",
-            "path": "/day-college"
+            "path": "/tamilisai-day-college"
           },
           {
             "subtitle": "Evening College",
@@ -2270,6 +2271,43 @@
 
       }
     ],
+    
+    "history" : [
+      {
+        "head1": {
+          "thumbnail": "/assets/image/rajasir_annamalai.jpg"
+        },
+        "content": {
+          "title": "History",
+          "subtitle":"Tamil Isai Sangam: Established in 1943",
+          "paragraphs": [
+            "Tamil Nadu famous for its rich heritage and culture has nurtured the fine arts especially music and dance from time immemorial. Countless number of Tamil Songs have been composed by the Tevaram Moovar, Alwars, Muthuthandavar, Marimutha pillai, Arunachala Kavirayar and Arunagirinathar. Composers like Ramalinga Swamigal, Gopalakrishna Bharati, Neelakandha Sivan, Papanasam Sivan, Mahakavi Subramania Bharati and many others have composed hundreds of Tamil songs. To promote Tamil Isai and to give it a Pride of place in a music concert, Raja Sir Annamalai Chettiar founded the Tamil Isai Sangam in 1943 with the patronage and sponsorship of the first Indian Finance Minister Dr. R.K.Shanmugam Chettiar, the first Indian Governor General Thiru C.Rajagopalachari, Thiru Kalki Krishnamoorthy, T.K.Chidambaranathan Mudaliyar, Thiru C.N.Annadurai and others.",
+            "The sole aim of Tamil Isai Sangam was to give a predominant place for Tamil songs in Music Concerts and not using them as tail enders."
+            ,"In 1944 Tamil Isai Kalloori was established with the intention of teaching and promoting Tamil Isai throughout India especially in Tamil Nadu."
+            
+            
+          ]
+        }
+      }
+    ],
+    "historys" : [
+      {
+        "head2": {
+          "thumbnail": "/assets/image/rajasir_letter.jpg"
+        },
+        "content": {
+          "title": "History",
+          "paragraphs": [  
+            "Chettinad Arasar extended financial assistance to meet the expenses of running the Tamil Isai Kalloori.",
+            "Following in his father's footsteps, Raja Sir Muthiah Chettiar also committed himself to the development of Tamil Isai Sangam. He had involved himself in the activities of the sangam as the Vice President for several decades since its inception.",          
+            "Dr. M.A.Chidambaram Chettiar, the third son of Raja Sir Annamalai Chettiar served the institution as the Honorary Secretary for 52 years.",
+            "In 1995 Dr. A.C.Muthiah assumed office as the Honorary Secretary of Tamil Isai Sangam and has been efficiently managing the affairs of the Tamil Isai Kalloori till date. Very much involved in the activities of the Tamil Isai Kalloori, Dr. A.C.Muthiah is always working towards its upgradation. Scholarships are being given to the students who wish to learn Nagaswaram and Tavil, thus promoting the art form."
+            
+            
+          ]
+        }
+      }
+    ],
     "board":[      
       {"title":"Board of Trustees",
         "images":[
@@ -2281,9 +2319,364 @@
         ] 
     }
     ],
+    "presidents":[      
+      {"title":"Presidents and Secretaries",
+        "images":[
+          {"id":1,"img":"/assets/head img/acmuthiah.jpg","title":"Prof. E. Sundaramoorthy","subtitle":"President"},{"id":2,"img":"/assets/head img/plakshmanan.jpg","title":"Hon’ble Justice Dr. P.R. Gokulakrishnan","subtitle":"President (1992-2019)"},
+          {"id":3,"img":"/assets/head img/devaki_muthiah.jpg","title":"Thiru S. Sriram","subtitle":" Assistant Secretary (1947 - 1992)"},{"id":4,"img":"/assets/head img/al_vadivelu.jpg","title":"Dr. M.A. Chidambaram Chettiyar","subtitle":"Honorary Secretary (1943 - 1995)"},
+          {"id":5,"img":"/assets/head img/ashwin_muthiah.jpg","title":"Justice Dr.S. Maharajan","subtitle":"President (1978 - 1982)"},{"id":6,"img":"/assets/head img/sakthi_thirunakarasu.jpg","title":"Divan Bahadur T.M. Narayanasamy Pillai","subtitle":"President (1956 - 1978)"},
+          {"id":7,"img":"/assets/head img/vali_arun.jpg","title":"Divan Bahadur T.M. Narayanasamy Pillai","subtitle":"President (1956 - 1978)"},{"id":8,"img":"/assets/head img/rm_somasundram.jpg","title":"Divan Bahadur C.S. Rathina Sababathy Mudaliar","subtitle":"President (1953 - 1956)"},
+          {"id":9,"img":"/assets/head img/ar_meiyappan.jpg","title":"Dr. R.K. Shanmugam Chettiyar","subtitle":"President (1948 - 1953)"},{"id":10,"img":"/assets/head img/ar_nachiyappan.jpg","title":"Dr. Raja Sir. Muthiya Chettiyar","subtitle":"Vice President (1943 - 1982)"}
+          ,{"id":9,"img":"/assets/head img/ar_meiyappan.jpg","title":"Dr. Raja Sir. M. Annamalai Chettiyar","subtitle":"President (1943 - 1948)"}
+        ] 
+    }
+    ],
+    "panresearch":[
+      {
+        "head1": {
+          "thumbnail": "/assets/image/rajasir_annamalai.jpg"
+        },
+        "content": {
+          "title": "Tamil Pann Research",
+          "subtitle":"",
+          "paragraphs": [
+            "Tamil language is the oldest of all languages of the world. Similarly Tamil Isai also had its origin more than 2000 years ago. There is a mention about yaazh in the ancient Tamil grammar Tholkappiyam and other Tamil Literature Kurinji, Mullai, Marutham, Neithal and Palai.",
+            "It will not be an exaggerated panegyric to state that Silapathigaram is the treasure of Isai and many aspects of Isai and dance are found in it. Adiyarkunallar and Aarumbathanar who interpreted Silapathigaram had contributed a lot to Tamil Isai and Dance."
+            ,"The fact remains intact that panns are present in the religious literary works namely Thevaram and Thiruvasagam composed by Thirugnanasambanthar, Thirunavookarasar, Sundarar and Manickavasagar during seventh, eighth and nineth centuries and also by Karaikkal Ammaiyar during the third Century. Pursuant to the research already undertaken in Pann, the recent methods adopted in Pann research are categorically and critically analysed by the well experienced and efficient scholars in music and Oduwars on the dates 22, 23, 24 and 25 in the month of December every year right from the year 1949."
+            ,"There is a mention about 11991 Panns in Silapathigaram and 103 Panns in Thavaram and 23 panns in Divyaprabhandum. The main objective of the conference on Pann research is to compare these Panns with the Panns (ragams) of the modern-day songs."
+            ,"The proceedings of the research conference would be recorded and a comprehensive report is prepared on the outcome of the conference every year and the same would be circulated among all the participants in the research conference."
+            ,"Panns were researched during the conferences conducted so far and subsequently a conclusion was arrived at out of comparison of the Panns with the tunes of the modern ragas as detailed below."
+          ]
+        }
+      }
+    ],
+    "table":[
+      {"s.no":"S.No","title":"Name of the Panns","title2":"Equivalent Raga",
+      "data":[
+        { "no": 1, "name": "Panchamam", "subname": "Ahiri" }, { "no": 2, "name": "Puraneermai", "subname": "Bhoopalam" },
+    { "no": 3, "name": "Andhalikurinji", "subname": "Sama" }, { "no": 4, "name": "Gandhara Panchamam", "subname": "Kedaragavlai" },
+    { "no": 5, "name": "Thakkesi", "subname": "Kambhodhi" }, { "no": 6, "name": "Sevvazhi", "subname": "Yedukulakambhodhi" },
+    { "no": 7, "name": "Vyazhakurinji", "subname": "Saurastram" },{ "no": 8, "name": "Seekamaram", "subname": "Nadhanamakriya" },
+    { "no": 9, "name": "Kausigam", "subname": "Bhairavi" },{ "no": 10, "name": "Sendurutthi", "subname": "Madhanamakriya" },
+    { "no": 11, "name": "Pazham Panjuram", "subname": "Sankhara Bharanam" }, { "no": 12, "name": "Kolli", "subname": "Navaroj" },
+    { "no": 13, "name": "Kolli Kouvanam", "subname": "Navaroj" }, { "no": 14, "name": "Gandharam", "subname": "Navaroj" },
+    { "no": 15, "name": "Piyandhai Gandharam", "subname": "Navaroj" }, { "no": 16, "name": "Megharagakurinji", "subname": "Neelambari" },
+    { "no": 17, "name": "Sadhari", "subname": "Pantuvarali" }, { "no": 18, "name": "Nattaragam", "subname": "Pantuvarali" },
+    { "no": 19, "name": "Thakkaragam", "subname": "Arabhi" }, { "no": 20, "name": "Pazhamthakkargam", "subname": "Suddha Saveri" },
+    { "no": 21, "name": "Indhalam", "subname": "Mayamalava Gavlai" },{ "no": 22, "name": "Nattapadai", "subname": "Ghambeeranattai" },
+    { "no": 23, "name": "Yazhmuri", "subname": "Atthana" },{ "no": 24, "name": "Palaiyazh", "subname": "Harikambhodhi" },
+    { "no": 25, "name": "Velavali", "subname": "Velavali" },{ "no": 26, "name": "Cheeragam", "subname": "Sreeragam" },
+    { "no": 27, "name": "Malagari", "subname": "Malagari" }, { "no": 28, "name": "Narayani", "subname": "Narayani" },
+    { "no": 29, "name": "Bhairavam", "subname": "Bhairavam" }, { "no": 30, "name": "Varati", "subname": "Varali" },
+    { "no": 31, "name": "Dhanasi", "subname": "Dhanyasi" },{ "no": 32, "name": "Ramakri", "subname": "Ramakriya" },
+    { "no": 33, "name": "Salarapani", "subname": "Anandabhairavi" },{ "no": 34, "name": "Padumalai", "subname": "Natabhairavi" },
+    { "no": 35, "name": "Mullai", "subname": "Mohanam" },{ "no": 36, "name": "Marudhayazh", "subname": "Kharaharapriya" },
+    { "no": 37, "name": "Sevvazhi Yazh", "subname": "Todi" },{ "no": 38, "name": "Kaudi", "subname": "Gauri" },
+    { "no": 39, "name": "Paadai", "subname": "Paadi" },{ "no": 40, "name": "Kuzhari", "subname": "Gurjari" },
+    { "no": 41, "name": "Nagadhoni", "subname": "Nagadhvani" },{ "no": 42, "name": "Udhayagiri", "subname": "Revagupti" },
+    { "no": 43, "name": "Nagaragam", "subname": "Nagasvaravali" },{ "no": 44, "name": "Kedhalikurinji", "subname": "Kedharam" },
+    { "no": 45, "name": "Udhayagiri", "subname": "Revagupti" },{ "no": 46, "name": "Nagaragam", "subname": "Nagasvaravali" },
+    { "no": 47, "name": "Soorthungaragam", "subname": "Sooryakantham" },{ "no": 48, "name": "Megharagam", "subname": "Kokilapriya" },
+    { "no": 49, "name": "Seekandi", "subname": "Sikandi" }
+                    
+      ]
+    }
+    ],
+    "table2":[
+      {"s.no":"S.No","title":"Name of the Panns","title2":"Equivalent Raga",
+      "data":[
+        { "no": 50, "name": "Sayavelarkolli", "subname": "Sarasangi" },{ "no": 51, "name": "Manral", "subname": "Nattaikurinji" },
+        { "no": 52, "name": "Andhi", "subname": "Vasantha" },{ "no": 53, "name": "Chandi", "subname": "Purvikalyani" },
+        { "no": 54, "name": "Surudigandharam", "subname": "Gandharvamanohari" },{ "no": 55, "name": "Pakkazhi", "subname": "Balachandrika" },
+        { "no": 56, "name": "Viyandham", "subname": "Vilasini" },{ "no": 57, "name": "Anandhai", "subname": "Bhogavasantham" },
+        { "no": 58, "name": "Marul", "subname": "Kokilanandi" },{ "no": 59, "name": "Saaral", "subname": "Ratnakanthi" },
+        { "no": 60, "name": "Kurinjiyah", "subname": "Natabhairavi" },{ "no": 61, "name": "Mandaliyazh", "subname": "Charukesi" },
+        { "no": 62, "name": "Thanukanchi", "subname": "Dhenuka" },{ "no": 63, "name": "Thathala Panchamam", "subname": "Malava Panchamam" },
+        { "no": 64, "name": "Thiradam", "subname": "Thirumoorthi" },{ "no": 65, "name": "Velarkolli", "subname": "Reethichandrika" },
+        { "no": 66, "name": "Kinnaragam", "subname": "Keeravani" },{ "no": 67, "name": "Nirupathungaram", "subname": "Shanmukhapriya" },
+        { "no": 68, "name": "Thaaraooandiram", "subname": "Mechakalyani" },{ "no": 69, "name": "Devathali", "subname": "Subhapantuvarali" },
+        { "no": 70, "name": "Sendhu", "subname": "Chakrava" },{ "no": 71, "name": "Achari", "subname": "Vakulabharanam" },
+        { "no": 72, "name": "Thaanu", "subname": "Thaamarasi" },{ "no": 73, "name": "Vipanchi", "subname": "Malayamarutham" },
+        { "no": 74, "name": "Cheevani", "subname": "Cheevani – Sreemani" },{ "no": 75, "name": "Kanchi", "subname": "Meghanchi – Kanchanavati" },
+        { "no": 76, "name": "Sadhakkiyam", "subname": "Sreemanjani" },{ "no": 77, "name": "Varunam", "subname": "Thakkanadi – Vasantha" },
+        { "no": 78, "name": "Yamai", "subname": "Agnikopam" },{ "no": 79, "name": "Mallari", "subname": "Ghambheeranattai" },
+        { "no": 80, "name": "Pungaali", "subname": "Kalaavati" },{ "no": 81, "name": "Serundhi", "subname": "Bhudharanjani" },
+        { "no": 82, "name": "Azhungu", "subname": "Manohari" },{ "no": 83, "name": "Sayai", "subname": "Jayantasena" },
+        { "no": 84, "name": "Sogavaraati", "subname": "Amrutha Dhanyasi" },{ "no": 85, "name": "Dheepavaraati", "subname": "Kannada Maruva" },
+        { "no": 86, "name": "Periyavaraati", "subname": "Kannada Salavi" },{ "no": 87, "name": "Ariyavelarkolli", "subname": "Chalanavarali" },
+        { "no": 88, "name": "Chittiravelarkolli", "subname": "Abhogi" },{ "no": 89, "name": "Naanupanchamam", "subname": "Hamsavinodhini" },
+        { "no": 90, "name": "Desakri", "subname": "Ranjani" },{ "no": 91, "name": "Malarvakri", "subname": "Hindolam" },
+        { "no": 92, "name": "Ariyaguchari", "subname": "Amrutavarsini" },{ "no": 93, "name": "Savagakurinji", "subname": "" },
+        { "no": 94, "name": "Mudhirnadhakurinji", "subname": "Suddha Dhanyasi" },{ "no": 95, "name": "Payyulkanji", "subname": "Yogini" },
+        { "no": 96, "name": "Kondargiri", "subname": "Kannada Gavlai" },{ "no": 97, "name": "Anuthrapanchamam", "subname": "Kamala" },
+        { "no": 98, "name": "Andhaalipaadai", "subname": "Bahudhari" }       
+        
+      ]
+    }
+    ],
+    "awards":[
+  {"title1":"Awards",
+  "para":["Dr.Annamalai Chettiyar deeply moved by the deplorable state of affairs of Tamil Isai which has a long tradition, had attempted to regain the glory of Tamil Isai by establishing the Tamil Isai Sangam. His lofty aim in this regard was ably supported by the great Tamil Scholars like Dr.R.K.Shanmugam Chettiyar, Kalki, Chakravarthy, Rajagopalachary and Peraringnar C.N. Annadurai. The recognition of the Sangam is evident from the support and patronage extended by the Chennai Iyal, Isai, Nadaga Mantram and the Sangeetha Nadaka Academy based in Delhi and the Ministry of Culture at Delhi.","The Sangam had the privilege of being honored by the towering personalities like Dr.Babu Rajendra Prasad, the first President of Independent India, followed by successive Presidents of India namely Dr.S.Radhakrishnan, Dr.Jahir Husai and Dr.A.P.J. Abldul Kalam by their gracious visit to the Sangam."]
+  ,"title2":"Isai Perarignar Title Awardees",
+  "s.no":"S.No","title":"Awardees","title3":"Year",
+  "data":[{ "no": 1, "year": 1957, "name": "Thiru M.M. Dandapani Desikar" },{ "no": 2, "year": 1957, "name": "Thiru P.Sambamoorthi" },
+  { "no": 3, "year": 1957, "name": "Kumbakonam Thiru K. Rajamanikyam Pillai" },{ "no": 4, "year": 1959, "name": "Thiru.P.S. Veerusami Pillai" },
+  { "no": 5, "year": 1960, "name": "Ariyakudi Thiru.T.Ramanuja Iyangar" },{"no": 6, "year": 1961, "name": "Vazhuvur Thiru P.Ramayya Pillai" },
+  { "no": 7, "year": 1962, "name": "Madurai Thiru Mani Iyer" },{ "no": 8, "year": 1963, "name": "Musiri THiru Subramaniya Iyer" },
+  { "no": 9, "year": 1964, "name": "Chittur Thiru.Subramanya Pillai" },{ "no": 10, "year": 1965, "name": "Thiru Papanasam Sivan" },
+  { "no": 11, "year": 1966, "name": "Thirumathi K.B. Sundarambal" },{ "no": 12, "year": 1967, "name": "Thirumuruga Thiru Krupananda Variyar" },
+  { "no": 13, "year": 1968, "name": "Palakkadu Thiru T.S. Mani Iyer" },{ "no": 14, "year": 1969, "name": "Semmangudi Thiru R.Srinivasa Iyer" },
+  { "no": 15, "year": 1970, "name": "Thirumathi M.S. Subbulakshmi" },{ "no": 16, "year": 1971, "name": "Madurai Thiru.S.Somasundaram" },
+  { "no": 17, "year": 1972, "name": "Thiru.M.P.Periyasami Thooran" },{ "no": 18, "year": 1973, "name": "Thirumathi D.K. Pattammal" },
+  { "no": 19, "year": 1974, "name": "Thiruvizhimizhalai Thiru.S.Subbiyamaniyan Pillai" },{ "no": 20, "year": 1975, "name": "Thirumathi T.Balasarasvati" },
+  { "no": 21, "year": 1976, "name": "Mayuram Thiru.V.R.Govindaraja Pillai" },{ "no": 22, "year": 1977, "name": "Thiruvizhimizhalai Thiru.S.Nataraja Sundaram Pillai" },
+  { "no": 23, "year": 1978, "name": "Thirumathi M.L. Vasanthakumari" },{ "no": 24, "year": 1979, "name": "Ramanadhapuram Thiru.C.S. Muruga Bhoopathi" },
+  { "no": 25, "year": 1980, "name": "Thiru.M.P.Somasundaram (Somu)" },{ "no": 26, "year": 1981, "name": "Dr.S. Ramathan" },
+  { "no": 27, "year": 1982, "name": "Isaimani Seerkazhi Thiru S. Govindarajan" },{ "no": 28, "year": 1983, "name": "Namagiripettai Thiru K/Krishnan" },
+  { "no": 29, "year": 1984, "name": "Lalgudi Thiru G.Jayaraman" },{ "no": 30, "year": 1985, "name": "Thanjai Thiru K.P.Kittappa Pillai" },
+  { "no": 31, "year": 1986, "name": "Dharmapuram Thiru P.Saminathan" },{ "no": 32, "year": 1987, "name": "Thiru R.S. Manohar" }
+  ]    
+}
+],
+"awards2":[
+  {"s.no":"S.No","title":"Awardees","title3":"Year",
+  "data":[{ "no": 33, "year": 1988, "name": "Thiru A.K.C. Natarajan" },{ "no": 34, "year": 1989, "name": "Kunnakudi Thiru R.Vaidhiyanathan" },
+  { "no": 35, "year": 1990, "name": "Valayapatti thiru A.R.Subbiramaniyan" },{ "no": 36, "year": 1991, "name": "Maharajapuram Thiru.V.Santhanam" },
+  { "no": 37, "year": 1992, "name": "Dr.K.J. Yesudas" },{ "no": 38, "year": 1993, "name": "Dr.Sheik Chinna Moulana" },
+  { "no": 39, "year": 1994, "name": "Dr.Selvi Padma Subramanyan" },{ "no": 40, "year": 1995, "name": "Thiruppamburam Dr.S.Shanmugasundaram" },
+  { "no": 41, "year": 1996, "name": "Thiru.T.R. Pappa" },{ "no": 42, "year": 1997, "name": "Thiruvizha Thiru.R. Jayasankar" },
+  { "no": 43, "year": 1998, "name": "Thiru.N.Ramani" },{ "no": 44, "year": 1999, "name": "Kanchipuram Thiru.A.Vinayaka Mudaliyar" },
+  { "no": 45, "year": 2000, "name": "Madurai Thiru.T.N.Seshagopalan" },{ "no": 46, "year": 2001, "name": "Kanchipuram Thiru.M.N.Venkatavaradan" },
+  { "no": 47, "year": 2002, "name": "Dr.M.Balamurali Krishna" },{ "no": 48, "year": 2003, "name": "Thiru.M.S. Viswanathan" },
+  { "no": 49, "year": 2004, "name": "Thirumathi K.J.Sarasa" },{ "no": 50, "year": 2005, "name": "Thiruvidaimaruthur P.S.V. Raja" },
+  { "no": 51, "year": 2006, "name": "Bombay Sisters Thirumathi C.Saroja & Thirumathi C.Lalitha" },{ "no": 52, "year": 2007, "name": "Saisai Thiru.T.Natarajan" },
+  { "no": 53, "year": 2008, "name": "Sembanarkoil Thiru.S.R.T.Vaidhyanathan" },{ "no": 54, "year": 2009, "name": "Thirumathi Aruna Sairam" },
+  { "no": 55, "year": 2010, "name": "Thiru.T.N.Krishna" },{ "no": 56, "year": 2011, "name": "Thirumathi Sudha Raghunathan" },
+  { "no": 57, "year": 2012, "name": "Madhurai Thiru M.P.N.Ponnuswamy" },{ "no": 58, "year": 2013, "name": "Thirumathi Krishnakumari Narendran" },
+  { "no": 59, "year": 2014, "name": "Seerkazhi Dr.G.Sivachidambaram" },{ "no": 60, "year": 2015, "name": "Haridhavra Mangalam Thiru.A.K.PAzhanivel" },
+  { "no": 61, "year": 2016, "name": "Thiru.Sanjay Subramanyan" },{ "no": 62, "year": 2017, "name": "Thiru T.M.Krishna" },
+  { "no": 63, "year": 2018, "name": "Padma Vibhushan Umayalpuram Thiru K. Sivaraman" },{ "no": 64, "year": 2019, "name": "Thiru A. Kanyakumari" }
+  ]    
+}
+],
+"awards3":[
+  {"s.no":"S.No","title1":"Pan Isai Perarignar Awardees","title":"Awardees","title3":"Year",
+  "data":[ { "no": 1, "year": 2009, "name": "Thiruppanandal; Thiru S.Muthukandasami Desikar" },{ "no": 2, "year": 2010, "name": "Darumapuram Thiru.S.Gnanaprakasa Desikar" },
+  { "no": 3, "year": 2011, "name": "Thirttani Thiru.Swamionathan" },{ "no": 4, "year": 2012, "name": "Thiru Samidhandapani" },
+  { "no": 5, "year": 2013, "name": "Seerkazhi Thiru.S.Thirugnana sambandan" },{ "no": 6, "year": 2014, "name": "Thiruvidaimarudhur Thiru S.Sambandha Desikar" },
+  { "no": 7, "year": 2015, "name": "Vedaranyam Thiru S.Muthu Kumara Desikar" },{ "no": 8, "year": 2016, "name": "Pazhani Thiru.P.Shanmuga sundara Desikar" },
+  { "no": 9, "year": 2017, "name": "Karuru Thiru Saminatha Desikar" },{ "no": 10, "year": 2018, "name": "Palani Thiru ka. Venkatesan" },
+  { "no": 11, "year": 2019, "name": "Thiru A. Balasubramaniya Odhuvar" }
+  ]    
+}
+],
+"guest":[
+  {"title1":"Special Guests of Honour",
+  "para":["The great philanthropist Raja Sir Annamalai Chettiyar, who was closely associated with Tamil Isai for several centuries, can be considered as the one who took the initiative to revive Tamil Isai, which can be regarded as the first recognition for the Tamil Isai Sangam.","The enthusiasm and contributions of great individuals such as the Tamil scholars and enthusiasts of that time—Dr. R.K. Shanmugam Chettiyar, T.K.C., Kalki, Chakravarthy Rajagopalachari, and the distinguished scholar C.N. Annadurai—became a strong support for the noble goal of the Tamil Isai Sangam.","The support provided by the Government of Tamil Nadu through the Chennai Iyal, Isai, Nadaga Manram, as well as the Sangeet Natak Akademi in New Delhi and the Ministry of Culture, serves as a testimony to the recognition of the Sangam.",
+  "Not only the participation of several Tamil Nadu ministers but also the visits of eminent personalities such as the first President of India Dr. Rajendra Prasad, the second President Dr. S. Radhakrishnan, and Dr. Zakir Husain as well as Dr. A.P.J. Abdul Kalam have added significance to the occasion.","The special guests who have attended the annual music festivals and important events of the Sangam."]
+  ,"s.no":"S.No","title":"Chief Guest","title3":"Year",
+  "data":[
+    {"no": 1, "name": "Doctor. Raja Sir Annamalai Chettiyar", "period": "1943 - 1944"},
+    {"no": 2, "name": "Mr. Pumal Chala Mudaliar", "period": "1943 - 1944"},
+    {"no": 3, "name": "Mr. DK Chidambaram Mudaliar", "period": "1943 - 1944"},
+    {"no": 4, "name": "Divan Bahadur Th.M. Narayanasamy Pillai", "period": "1944 - 1945"},
+    {"no": 5, "name": "Sir. PD Iracan", "period": "1944 - 1945"},
+    {"no": 6, "name": "Mr. M. Radhakrishna Pillai", "period": "1945 - 1946"},
+    {"no": 7, "name": "Thiruvarur Mr. V. Kalyanasundara Mudaliar", "period": "1945 - 1946"},
+    {"no": 8, "name": "Ravapagathur T.M.Chinnaiya Pillai", "period": "1946 - 1947"},
+    {"no": 9, "name": "Minister Mr. M/Paktavatcalam", "period": "1946 - 1947"},
+    {"no": 10, "name": "Kalki Mr. K. Kiruttinamurthi", "period": "1947 - 1948"},
+    {"no": 11, "name": "Minister Thiru T.S. Avinasilingam Chettiyar", "period": "1947 - 1948"},
+    {"no": 12, "name": "Tirucies. Muthuranga Mudaliar", "period": "1948 - 1949"},
+    {"no": 13, "name": "Chief Minister Oomandur Thiru Ramasami Reddiyar", "period": "1948 - 1949"},
+    {"no": 14, "name": "Mr. S. Ramasamy Naidu", "period": "1949 - 1950"},
+    {"no": 15, "name": "Namakkal Thiru.V. Ramalingam Pillai", "period": "1949 - 1950"},
+    {"no": 16, "name": "Mr. D. Sutthanta Bharathiyar", "period": "1949 - 1950"},
+    {"no": 17, "name": "Prime Minister Mr. B.S.Kumaraswamy Raja", "period": "1950 - 1951"},
+    {"no": 18, "name": "Mr. S.Natesapillai", "period": "1951 - 1952"},
+    {"no": 19, "name": "Prime Minister Thiru C. Rasagopalachariar", "period": "1952 - 1953"},
+    {"no": 20, "name": "Minister Mr. C. Subramaniam", "period": "1953 - 1954"},
+    {"no": 21, "name": "Prime Minister Mr. K Kamaraj", "period": "1954 - 1955"},
+    {"no": 22, "name": "Mr. P.S.Kumarasamy Raja", "period": "1954 - 1955"},
+    {"no": 23, "name": "Thavathiru Kundrakudi Adigalar", "period": "1955 - 1956"},
+    {"no": 24, "name": "Prof. Meenakshi Sundaram Pillai", "period": "1955 - 1956"},
+    {"no": 25, "name": "Minister Mr. O.V. Alakecan", "period": "1956 - 1957"},
+    {"no": 26, "name": "Legislative Chairman Mr. M.A.Manikavelu Nayakar", "period": "1957 - 1958"},
+    {"no": 27, "name": "Minister Mr. M.Paktavatcalam", "period": "1958 - 1959"},
+    {"no": 28, "name": "Dr. Subaruayan", "period": "1959 - 1960"},
+    {"no": 29, "name": "Minister Thiru. M. Paktavatcalam", "period": "1960 - 1961"},
+    {"no": 30, "name": "Thiruvatti Chowdhamam Kailasam", "period": "1961 - 1962"},
+    {"no": 31, "name": "Legislative chairman Th.Chellapandiyan", "period": "1962 - 1963"},
+    {"no": 32, "name": "Minister Mr. C.Subramaniam", "period": "1963 - 1964"},
+    {"no": 33, "name": "Minister Mr. Nallasenapathi pleaded the sugar", "period": "1964 - 1965"},
+    {"no": 34, "name": "Minister Mr. C Poovaraghavan", "period": "1965 - 1966"},
+    {"no": 35, "name": "Minister Mr. V. Ramaiya", "period": "1966 - 1967"},
+    {"no": 36, "name": "Mr. C. Rasagopalachariyar", "period": "1967 - 1968"},
+    {"no": 37, "name": "Minister Kalainar M. Karunanidhi", "period": "1968 - 1969"},
+    {"no": 38, "name": "Minister Mr. KA Mathizhagan", "period": "1969 - 1970"},
+    {"no": 39, "name": "Secretary-General of the naavait Mr.Narasimhan", "period": "1970 - 1971"},
+    {"no": 40, "name": "Governor of Tamil Nadu KK Shah", "period": "1971 - 1972"},
+    {"no": 41, "name": "Minister Prof.Thiru.K. Anbazhagan", "period": "1972 - 1973"},
+    {"no": 42, "name": "High Court Judge Thiru. P.R. Gokulakrishnan", "period": "1973 - 1974"},
+    {"no": 43, "name": "High Court Judge Thiru. M.M. Ismail", "period": "1974 - 1975"},
+    {"no": 44, "name": "Minister Thiru.K.Rasaram", "period": "1975 - 1976"},{"no": 45, "name": "Governor of Tamil Nadu Mohanlal Sukatiya", "period": "1976 - 1977"},
+    {"no": 46, "name": "Chief Minister of Tamilnadu Thiru. M.G. Ramachandran", "period": "1977 - 1978"},
+    {"no": 47, "name": "Legislative Assembly Chairman Thiru. M.P.Sivagnam", "period": "1978 - 1979"},
+    {"no": 48, "name": "Minister Thiru. Rama Veerappan", "period": "1979 - 1980"},
+    {"no": 49, "name": "Dr. R Nedunchezhiyan", "period": "1980 - 1981"},
+    {"no": 50, "name": "Minister Thiru.S.Ramachandran", "period": "1981 - 1982"},
+    {"no": 51, "name": "Minister of State Thiru.R.V.Swaminathan", "period": "1982 - 1983"},
+    {"no": 52, "name": "Minister Thiru.C. Arankanayakam", "period": "1983 - 1984"},
+{"no": 53, "name": "The Governor of Tamilnadu SS Khurana", "period": "1984 - 1985"}
+      ]        
+      }
+      ],
+      "guest1":[
+  {"s.no":"S.No","title":"Chief Guest","title3":"Year",
+  "data":[  
+{"no": 54, "name": "Sikkim Governor DV Rajeshwar", "period": "1985 - 1986"},
+{"no": 55, "name": "Thiru.G.Karuppaiah Mooppanar", "period": "1986 - 1987"},
+{"no": 56, "name": "Minister of State P. Chidambaram", "period": "1987 - 1988"},
+{"no": 57, "name": "Tamil Nadu Governor His Excellency Dr B.C.Alexander", "period": "1988 - 1989"},
+{"no": 58, "name": "Hon'ble Chief Minister of Tamil Nadu Dr. M.Karunanidhi", "period": "1989 - 1990"},
+{"no": 59, "name": "Tamil Nadu Governor Surjit Singh Barnala Rev.", "period": "1990 - 1991"},
+{"no": 60, "name": "His Excellency the Governor of Tamil Nadu Bhisma Narayan Singh", "period": "1991 - 1992"},
+{"no": 61, "name": "Hon'ble Finance Minister Dr. Ira. Nedunchezhiyan", "period": "1992 - 1993"},
+{"no": 62, "name": "Hon'ble Chief Minister of Tamil rebel leader Dr. J. Jayalalithaa", "period": "1993 - 1994"},
+{"no": 63, "name": "Dr. M.S Subbulakshmi", "period": "1994 - 1995"},
+{"no": 64, "name": "Hon'ble Mr.KV. Thangabal", "period": "1995 - 1996"},
+{"no": 65, "name": "Hon'ble Judge Thiru. K.S Paktavatcalam", "period": "1996 - 1997"},
+{"no": 66, "name": "Hon'ble Chief Minister of Tamil Nadu Dr. Karunanidhi", "period": "1997 - 1998"},
+{"no": 67, "name": "Padma Vibhushan Dr. Sevaliar Sivaji Ganesan", "period": "1998 - 1999"},
+{"no": 68, "name": "Honorable vaiko", "period": "1999 - 2000"},
+{"no": 69, "name": "Mayor of the City of Rev. Tiru.Mukastal", "period": "2000 - 2001"},
+{"no": 70, "name": "Tamil, Professor Dr.A.S. Nanasampanthan", "period": "2001 - 2002"},
+{"no": 71, "name": "Dr. APJ Abdulkalam Dul Kalam, the President of Bharat President", "period": "2002 - 2003"},
+{"no": 72, "name": "Governor of Tamilnadu Raman Rao", "period": "2003 - 2004"},
+{"no": 73, "name": "Reserve Bank and former Governor of AP Dr. C Arankarajan", "period": "2004 - 2005"},
+{"no": 74, "name": "Chief Minister of Tamil Nadu Surjit Singh Barnala", "period": "2005 - 2006"},
+{"no": 75, "name": "Uttar Pradesh Governor's Nobel laureate T.V Rajeshwar", "period": "2006 - 2007"},
+{"no": 76, "name": "Perur Atheenam Shanthalinga Ramasamy Adikalar", "period": "2007 - 2008"},
+{"no": 77, "name": "Rama. Veerappan, Chairman, Chennai Kamban Kazhagam", "period": "2008 - 2009"},
+{"no": 78, "name": "Hon'ble Judge P Sadasivam, Supreme Court, New Delhi Kunnarukudi Ponnambala Adikalar", "period": "2009 - 2010"},
+{"no": 79, "name": "Hon'ble Minister of State for Law Dr. S. Jagathrakshakan Chekkizhar Adipodi Mudumunivar TN.Ramachandran", "period": "2010 - 2011"},
+{"no": 80, "name": "Kaviya Kavinar Vali", "period": "2011 - 2012"},
+{"no": 81, "name": "Supreme Court Judge is Hon'ble F.M. Ibrahim Califullah", "period": "2012 - 2013"},
+{"no": 82, "name": "Former Chief Justice of Jharkhand State Hon'ble Chief Minister Thiru.M. Karpakavinayakam", "period": "2013 - 2014"},
+{"no": 83, "name": "The Madras High Court Judge is Hon'ble S. Nakamuttu", "period": "2014 - 2015"},
+{"no": 84, "name": "Kavipperarasu Vairamuthu", "period": "2015 – 2016"},
+{"no": 85, "name": "His Excellency the Governor Thiru.Shanmuganathan", "period": "2016 – 2017"},
+{"no": 86, "name": "Hindu Thiru.N.Ram", "period": "2017 - 2018"},
+{"no": 87, "name": "Former MP Thiru La Ganesan", "period": "2018 - 2019"}
 
+      ]        
+      }
+      ],
+      "collegehistory":[
+        {
+          "head": {
+            "thumbnail": "/assets/image/rajasir_annamalai.jpg"
+          },
+            "title": "Tamil Isai College - History",
+            "title2":"Tamil Music College: Established in 1944.",
+            "paragraphs": [
+              "The evening college for the Tamil Isai Kalloori was established in January 1944 under the auspices of the Tamil Isai Sangam. A full fledged day college started functioning from the year 1995. Diploma courses were offered in Vocal, Veena Violin, Mridangam, Bharatanatyam, Nattuvangam, Nagaswaram, Tavil and Tevaram.",
+              "Under graduate degree courses were offered in Vocal and Veena from 2007 with the affiliation of Madras University. In 2011 Post graduate degree courses were also started with the affiliation of Madras University. From 2017, the college is under the Tamil Nadu Music and Fine Arts University.",
+              "From 2016 onwards with the affiliation of Tanjavur Tamil University, courses in distance education and also M.Phil., and Ph.D. degrees in Music are offered."
+              ,"The special feature of this Kalloori is that there is no age bar for students. Anyone with interest and aptitude in music can join and benefit."
+            ]
+        }
+      ],
+      "principals":[
+        {
+          "title":"Former Principals",
+          "paragraphs":[
+            "Rao Bahadur T.M.Chinnayya Pillai headed the Advisory Committee of the College. Comprising of the following members:","Diwan Bahadur Narayanaswami Pillai, Thiru. Mu. Aa. Chidambaram, ‘Isai Arasu Thiru.M.M.Dandapani Desikar, Professor Le. Pa. Karu Ramanathan Chettiar, Professor P.Sambamoorthy, Thiruppampuram Thiru. T. N. Swaminatha Pillai and many others."
+            ,"The following Isai Peraringnars Ariyakkudi Ramanuja Iyengar, Thiruvidaimarudur P. S. Veerusami Pillai, Palakkad T. S. Mani Iyer, Pazhani M. Subramania Pillai, Tmt. M. L. Vasanthakumari, Madurai Thiru.S.Somasundaram, Dr. S. Ramanathan, Seergazhi.Thiru. S.Govindarajan and Thiru.C.S.Murugabhoopathy served in the capacity of Honorary Principals for the evening session of this College.","At the inception of the Tamil Isai Kalloori, Keezhvelur Meenakshi Sundaram Pillai served as the Principal of the College. After his period, Tanjai Ka.Pa.Krishnamoorthi Pillai and Chittoor V.Ramachandran also served the College. Following them both Thiru.T.Sankaran and Mee.Pa.Somasundaram served as the Directors of the evening college.",
+            "Till 18-05-2010, Professor Dr. Tiruppampuram S. Shanmughasundaram worked as the Director of both the morning and evening sessions of the College.","Next Professor Kalaimamani Sangeetha Vidwan, Dr. P. T. Chelladurai served as the Principal of the Day College which was established in 1995. He was also the Director for the Day College from 2010. Kalaimamani Vedaranyam V. G. Balasubramaniam served as the Vice-Principal for the evening College.","For the Academic year 2008 to 2009, Dr.A.Sumati was the Principal-in-charge and from2010 to 2012 she served in the capacity of the Principal of the College (Both day and evening). Following her Dr.Lakshmi Podhuval served as the Principal of the College from 2012-2013 to 2016. At present Dr. V. V. Meenakshi is serving as the Principal of the College."
+          
+          ]
+        }
+      ], "Daycollege":[
+        {
+          "title":"Day College",
+          "title1":"The Day College commences at 10:00 AM and continues till 4:00 PM (2019 - 2020).",
+            "title2":"Courses offered (conducted):",
+            "courses":[
+              {
+                "title3":"“Post-Graduate Degree Course: M.A.Music in Vocal ",
+                "image":"/assets/image/course-img1.jpg",
+                "duration":"2 Year",
+                "description":"Educational Qualification Completion of Higher Secondary (+2), Bachelor of Music (B.Music) or any undergraduate degree with a certificate or diploma in music.",
+                "course":"Courses"
+              },{
+                "title3":"““Under-Graduate Degree Course: B.A.Music ",
+                "image":"/assets/image/course-img1.jpg",
+                "duration":"3 Year",
+                "description":"Educational Qualification : Pass in Higher Secondary (+2)",
+                "course":"Courses"
+              },{
+                "title3":"““ Diploma Course in Vocal, Veena, Violin, Flute and Folk.",
+                "image":"/assets/image/course-img1.jpg",
+                "duration":"3 Year",
+                "description":"Educational Qualification : 10th Grade Completion",
+                "course":"Courses"
+              }
+              ,{
+                "title3":"““‘Diploma Course in Nadaswaram and Tavil.",
+                "image":"/assets/image/course-img1.jpg",
+                "duration":"3 Year",
+                "description":"Educational Qualification: 5th Grade Completion",
+                "course":"Courses"
+              }
+              ,{
+                "title3":"““‘Diploma Course in Mridangam",
+                "image":"/assets/image/course-img1.jpg",
+                "duration":"3 Year",
+                "description":"Educational Qualification: 10th Grade Completion",
+                "course":"Courses"
+              }
+              ,{
+                "title3":"““Three-year (Rural Arts) Diploma",
+                "image":"/assets/image/course-img1.jpg",
+                "duration":"3 Year",
+                "description":"Educational Qualification: 10th Grade Completion",
+                "course":"Courses"
+              }
+              ,{
+                "title3":"““‘Diploma Course in Bharatnatyam only for girls.",
+                "image":"/assets/image/course-img1.jpg",
+                "duration":"3 Year",
+                "description":"Educational Qualification: 10th Grade Completion",
+                "course":"Courses"
+              }
+              ,{
+                "title3":"““ ‘Diploma Course in Nattuvangam only for girls.",
+                "image":"/assets/image/course-img1.jpg",
+                "duration":"2 Year",
+                "description":"Educational Qualification: 10th Grade Completion",
+                "course":"Courses"
+              }
+              ,{
+                "title3":"“““One year Diploma in Teaching of Music ‘Isai Asiriyar Payirchi’.",
+                "image":"/assets/image/course-img1.jpg",
+                "duration":"1 Year",
+                "course":"Courses",
+                "description":"Educational Qualification : 10th Std. and Diploma"
+              }
 
-
+            ]
+        }
+      ],
+      "notes":[
+        {
+          "title":"Note",
+          "point":"Diploma students will be provided with vocal music / instrumental music as an elective subject.",
+          "point1":"Scholarship will be given to students learning Nadaswaram and Tavil at the end of the three year course.",
+          "point2":"Musicology (Theory of Music) is a compulsory subject for all the students.",
+          "point3":"Every year the College reopens in the month of June or The Academic year starts during the month of June."
+        }
+      ],
     "gallery": [
 
       {
