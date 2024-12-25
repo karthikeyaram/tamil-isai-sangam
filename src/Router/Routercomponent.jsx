@@ -27,6 +27,7 @@ import Collegehistory from "../Pages/Collegehistory";
 import Formerpincipals from "../Pages/Formerpincipals";
 import Daycollege from "../Pages/Daycollege";
 import CompetitionForm from '../Component/Home/Competitionform'
+import Staff from '../Pages/Staff'
 
 const Routercomponent = () => {
   return (
@@ -48,6 +49,7 @@ const MainRoutes = () => {
       
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path='/staff' element={<Staff/>}/>
         <Route path="/DeivigaArulalarkal" element={<DeivigaArulalarkal />} />
         <Route path='/IsaiArulalarkal' element={<IsaiArulalarkal/>}/>
         <Route path='/library' element={<Library/>}/>
