@@ -23,6 +23,10 @@ import Collegehistory from "../Pages/Collegehistory";
 import Formerpincipals from "../Pages/Formerpincipals";
 import Daycollege from "../Pages/Daycollege";
 import CompetitionForm from '../Component/Home/Competitionform'
+import Eveningcollege from '../Pages/Eveningcollege'
+import TISGECcourse from '../Pages/TISGECcourse'
+import Registrationfom from '../Pages/Registrationfom'
+import Equiezregistration from '../Pages/Equiezregistration'
 
 const Routercomponent = () => {
   return (
@@ -60,6 +64,11 @@ const MainRoutes = () => {
         <Route path='/tamilisai-college-principals' element={<Formerpincipals/>}/>
         <Route path='/tamilisai-day-college' element={<Daycollege/>}/>
         <Route path='/competition-form' element={<CompetitionForm/>}/>
+        <Route path='/tamilisai-eve-college' element={<Eveningcollege/>}/>
+        <Route path='/TISGEC-course' element={<TISGECcourse/>}/>
+        <Route path='/register-form' element={<Registrationfom/>}/>
+        <Route path='/equiez-register-form' element={<Equiezregistration/>}/>
+
         
       
       </Routes>

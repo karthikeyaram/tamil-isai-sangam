@@ -45,7 +45,6 @@
       },
       {
         "navtitle": "தமிழ் இசை கல்லூரி",
-        "path": "/tamil-isai-college",
         "details": [
           {
             "subtitle": "தமிழ் இசைக் கல்லூரி வரலாறு",
@@ -63,15 +62,15 @@
           },
           {
             "subtitle": "மாலை நேரக் கல்லூரி",
-            "path": "/eve-college"
+            "path": "/tamilisai-eve-college"
           },
           {
-            "subtitle": "TISGEC Course & Registration",
-            "path": "/tisgec-course"
+            "subtitle": "TISGEC பாடநெறி மற்றும் பதிவு",
+            "path": "/TISGEC-course"
           },
           {
             "subtitle": "E-Quiz Registration",
-            "path": "/awards"
+            "path": "/equiez-register-form"
           },
           {
             "subtitle": "Undergraduate course",
@@ -603,54 +602,54 @@
                 "title3":"“இசை முதுநிலை” (எம்.ஏ.மியூசிக்) குரலிசை பட்டப்படிப்பு",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"2 Year",
-                "description":"கல்வித் தகுதி மேல்நிலை வகுப்பில் (+2) தேர்ச்சி,இசை இளையர் (பி.மியூசிக் ) (அ) ஏதேனும் ஒரு பட்டப்படிப்பு மற்றும் இசையில் சான்றிதழ் (அ) பட்டயப்படிப்பு",
+                "description":["கல்வித் தகுதி மேல்நிலை வகுப்பில் (+2) தேர்ச்சி,இசை இளையர் (பி.மியூசிக் ) (அ) ஏதேனும் ஒரு பட்டப்படிப்பு மற்றும் இசையில் சான்றிதழ் (அ) பட்டயப்படிப்பு"],
                 "course":"Courses"
               },{
                 "title3":"““இசை இளையர்” (பி.ஏ.மியூசிக்) குரலிசை பட்டப்படிப்பு",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"3 Year",
-                "description":"கல்வித் தகுதி : மேல்நிலை வகுப்பில் (+2) தேர்ச்சி",
+                "description":["கல்வித் தகுதி : மேல்நிலை வகுப்பில் (+2) தேர்ச்சி"],
                 "course":"Courses"
               },{
                 "title3":"““(குரலிசை, வீணை, வயலின், புல்லாங்குழல்) பட்டயப்படிப்பு",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"3 Year",
-                "description":"கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி",
+                "description":["கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி"],
                 "course":"Courses"
               }
               ,{
                 "title3":"““ (நாகசுரம், தவில்) பட்டயப்படிப்பு",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"3 Year",
-                "description":"கல்வித் தகுதி : 5ஆம் வகுப்பு தேர்ச்சி",
+                "description":["கல்வித் தகுதி : 5ஆம் வகுப்பு தேர்ச்சி"],
                 "course":"Courses"
               }
               ,{
                 "title3":"““ (மிருதங்கம்) பட்டயப்படிப்பு",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"3 Year",
-                "description":"கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி",
+                "description":["கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி"],
                 "course":"Courses"
               }
               ,{
                 "title3":"““(கிராமியக்கலை ) பட்டயப்படிப்பு",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"3 Year",
-                "description":"கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி",
+                "description":["கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி"],
                 "course":"Courses"
               }
               ,{
                 "title3":"““ (பரதநாட்டியம்) பட்டயப்படிப்பு (பெண்களுக்கு மட்டும்)",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"3 Year",
-                "description":"கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி",
+                "description":["கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி"],
                 "course":"Courses"
               }
               ,{
                 "title3":"““(நட்டுவாங்கம்) பட்டயப்படிப்பு (பெண்களுக்கு மட்டும்)",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"2 Year",
-                "description":"கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி",
+                "description":["கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி"],
                 "course":"Courses"
               }
               ,{
@@ -658,7 +657,7 @@
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"1 Year",
                 "course":"Courses",
-                "description":"கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி இசைத்தகுதி : ‘இசைக்கலைமணி’பட்டயம் அல்லது பல்கலைக்கழக இசைப் பட்டம்"
+                "description":["கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி","இசைத்தகுதி : ‘இசைக்கலைமணி’ பட்டயம் அல்லது பல்கலைக்கழக இசைப் பட்டம்"]
               }
 
             ]
@@ -673,6 +672,210 @@
           "point3":"ஆண்டுதோறும் சூன் திங்கள் கல்லூரி தொடங்கும்."
         }
       ],
+      "evecollege":[
+        {
+          "title":"மாலை நேரக் கல்லூரி",
+          "title1":"மாலை நேரத் தமிழ் இசைக் கல்லூரி வகுப்புகள் மாலை 5:00 மணிக்குத் தொடங்கி இரவு 7:15 மணி வரை நடைபெறும். கல்வியாண்டு (2019 - 2020).",
+            "title2":"பயிற்றுவிக்கப்பெறும் வகுப்புகள்",
+            "courses":[
+              {
+                "title3":"“கர்நாடக இசைக்கலைச் சான்றிதழ் (குரலிசை, வயலின், பரதநாட்டியம்)",
+                "image":"/assets/image/course-img1.jpg",
+                "duration":"2 Year",
+                "description":["கல்வித் தகுதி : 8-ஆம் வகுப்புத் தேர்ச்சி"],
+                "course":"Courses"
+              },{
+                "title3":"“இசைச் செல்வம்” சான்றிதழ் படிப்பு (குரலிசை, பரதநாட்டியம்)",
+                "image":"/assets/image/course-img1.jpg",
+                "duration":"1 Year",
+                "description":[
+                  "கல்வித் தகுதி : 10ஆம் வகுப்புத் தேர்ச்சி", "இசைத் தகுதி : “கர்நாடக இசைக்கலைச் சான்றிதழ்” தேர்ச்சி."
+                ],
+                "course":"Courses"
+              },{
+                "title3":"“இசைமணி” சான்றிதழ் படிப்பு (குரலிசை, பரதநாட்டியம்)",
+                "image":"/assets/image/course-img1.jpg",
+                "duration":"3 Year",
+                "description":[
+                  "கல்வித் தகுதி : 10ஆம் வகுப்புத் தேர்ச்சி", "இசைத் தகுதி : “கர்நாடக இசைக்கலைச் சான்றிதழ், இசைச்செல்வம் தேர்ச்சி."
+                ],
+                "course":"Courses"
+              }              
+
+            ]
+        }
+      ],
+      "notes2":[
+        {
+          "title":"குறிப்புகள்",
+          "point":"ஆண்டுதோறும் சூன் திங்கள் கல்லூரி தொடங்கும்."
+        }
+      ],
+      "coursereg":[
+
+      ],
+      "terms":[
+        {
+          "id": "terms",
+          "label": "terms",
+           "subLabel": "",
+          "iconClass": "icon-semester-icon",
+          "content": [
+              {
+                  "column": [
+                      [
+                          {
+                              "title": "This course is called as TISGEC – Tamil Isai Sangam Grade Exam Course"
+                          },
+                          {
+                              "title": "This course is Beneficial to all school going children." },
+                          {  "title": "The Grade exams will be divided into 8 level." }, {  "title": "These 8 Grades will be of 6 months duration each.." },{  "title": "Exam will be conducted once in 6 months." },{  "title": "Syllabus will be issued by Tamil Isai Sangam." },
+                          {  "title": "Exams will be conducted and after successful completion of each Grade Certificate will be issued by Tamil Isai Sangam, Raja Annamalai Mandram, Chennai – 600 108." },{  "title": "All Private Music and Dance Teachers and Music Institution can register their names and get Registration number for each Grade every six months after paying the prescribed Application and Registration Fees every six months for each Grade (Annexure 1)" }
+                          ,{"title": "After Registration, the Teachers/Institution can register their students appearing for Grade Exam by paying the prescribed fees (Annexure 2)" },
+                          {"title": "The students can take up only one Grade at a time." }
+                        ],
+                      [
+                          {"title": "The age limit for a student to take up the exam will be 7 years completion for Music and 8 years completion for Natyam on the date of application." },{"title": "The student will be eligible to take up exams only if he/she has passed the previous level." },{"title": "The first three levels will have only practical exams." }
+                            ,{"title": "The syllabus for each Grade will be given by Tamil Isai Sangam." },{"title": "The training for the exams shall be given by the teacher only." },{"title": "Tamil Isai Sangam will not conduct classes to train the students." },{"title": "The examinations will be conducted and Certificates after each level will be issued by Tamil Isai Sangam." },  
+                            {"title": "The Teacher / Faculty should accompany the students for the exam to do Nattuvangam for Natya Students." },{"title": "Only Tamil Compositions should be performed." }
+                          ]
+                  ]
+              }
+          ]
+      }
+      ],
+      "tablecontent":[{
+          "title":"கூட்டுத்தொகை அமைப்பு",
+            "title1":"VOCAL / VEENA / VIOLIN / FLUTE / MIRDANGAM / TAVIL / /NAGASWARAM / BHARATHANATYAM / FOLK",
+            "thead":"1. REGISTRATION FEES: (For Institution and/or Teachers-including Application Fees)",
+              "thead1":{"name":"Grade","name1":"For Indian","name2":"For Foreigners"},
+            "table":[{"grade":"Grade","amount":"Rs.1,250/-","amount2":"Rs.3,000/-"}]
+      }],
+      "tablecontent2":[{
+         "thead":"2. Students Registration fees: (For each student)",
+            "thead1":{"title":"Registration Fees (including Application, Exam and Certificate)","name":"Grade","name1":"For Indian students","name2":"For foreigners students"},
+          "table":[{"grade":"Grade 1","amount":"Rs.500/-","amount2":"Rs.5,500/-"},{"grade":"Grade 2","amount":"Rs.750/-","amount2":"Rs.6,000/-"},{"grade":"Grade 3","amount":"Rs.1,000/-","amount2":"Rs.7,000/-"},{"grade":"Grade 4","amount":"Rs.1,800/-","amount2":"Rs.8,000/-"},{"grade":"Grade 5","amount":"Rs.2,000/-","amount2":"Rs.9,000/-"},{"grade":"Grade 6","amount":"Rs.2,200/-","amount2":"Rs.10,000/-"},{"grade":"Grade 7","amount":"Rs.2,500/-","amount2":"Rs.12,000/-"},
+          {"grade":"Grade 8","amount":"Rs.2,500/-","amount2":"Rs.15,000/-"},{"grade":"Grade","amount":"Rs.1,250/-","amount2":"Rs.3,000/-"}]
+    }],
+    "stepses":[
+      
+      {
+        
+      "number": 1,
+      "icon":"/Assets/image/registration-ico.png",
+      "title": "பதிவு.",
+      "description": "",
+      "title2":"கற்றுக்கொள்ள பல வழிகள் உள்ளன.",
+      "title3":"படிவத்தை எப்படி பூர்த்தி செய்ய வேண்டும்."
+    },
+    {
+      "number": 2,
+      "icon": "/Assets/image/doc-ico.png",
+      "title": "ஆவணங்கள்.",
+      "description": ""
+    },
+    { 
+      "number": 3,
+      "icon": "/Assets/image/get-start-ico.png",
+      "title": "இப்போது தொடங்குங்கள்.",
+      "description": "",
+      "active": true
+    }  
+    ],
+    "formhead":[
+      {
+        "title":"தமிழ் இசை சங்கம் தரம் தேர்வு பாடநெறி (TISGEC)",
+        "subtitle":"தமிழ் இசை கல்லூரி, ராஜா அன்மலை மன்றம், சென்னை 600 108",
+        "no":"9282235964 // 9841077817",
+        "subtitle2":"Email: tisgec2020@tamilisaisangam.in ; Website: www.tamilisaisangam.in",
+        "img1":"/assets/image/doc-ico.jpg",
+        "img2":"/assets/image/nataraj.jpg",
+        "images":"/assets/image/annamalai_chettiar2"
+      }    
+    ], 
+    "form":[
+      {
+        "title": "பதிவேற்றம் மூலம் விண்ணப்பம்",
+        "description": "ஆசிரியர்/சபைகளால் நிரப்பப்பட வேண்டும்",
+        "Fee": [
+          { "title": "கட்டணங்கள்: இந்தியர்களுக்கு - ரூ.1,250/- // வெளிநாட்டவர்களுக்கு - ரூ.3,000/-" }
+        ],
+        
+          "accept": [
+            { "id": "k-option", "label": "நான் மேலே குறிப்பிடப்பட்டுள்ள விதிமுறைகள் மற்றும் பொறுப்புகளை ஒப்புக்கொள்கிறேன்." }
+          ],
+        
+        "declarations": [
+          {
+            "title": "அறிக்கை:",
+            "name": "நான் இங்கே அறிவிப்பதை அறிகிறேன், இந்த விண்ணப்பத்தில் உள்ள அனைத்து அறிக்கைகளும் என் அறிவு மற்றும் நம்பிக்கையின் படி உண்மையான, முழுமையான மற்றும் சரியானவை. எந்தவொரு தகவலும் உண்மையற்றது / பொய்யானது / தவறானது என கண்டறியப்பட்டால் அல்லது நான் தகுதி மाप்புகளை பூர்த்தி செய்யாதபட்சத்தில், என் பதிவு இரண்டாம் நிலை தேர்வு மையத்திற்கு ரத்து / நிறுத்தப்படலாம், எந்த காரணமும் இல்லாமல். நான் என் பதிவுக்கான விதிமுறைகள், ஒழுங்குகளும் செயல்முறைகளையும் கடைப்பிடிப்பதை ஒப்புக்கொள்கிறேன்."
+          }
+        ],
+        "fields": [
+          {
+            "type": "text",
+            "name": "நிறுவனத்தின் பெயர் / ஆசிரியரின் பெயர்:",
+            "placeholder": "நிறுவனத்தின் பெயர் / ஆசிரியரின் பெயர்:",
+            "col": 6
+          },
+          {
+            "type": "text",
+            "name": "Correspondence முகவரி:",
+            "placeholder": "Correspondence முகவரி:",
+            "col": 6
+          },
+          { "type": "text", "name": "Zip Code", "placeholder": "தொலைபேசி எண்", "col": 6 },
+          { "type": "text", "name": "Email", "placeholder": "மினஞ்சல்", "col": 6 }
+        ],
+        "dates": [
+          { "type": "date", "name": "பிறந்த தேதி :", "placeholder": "DD/MM/YYYY" },
+          {
+            "type": "date",
+            "name": "நிறுவனத்தின் நிறுவப்பட்ட தேதி :",
+            "placeholder": "DD/MM/YYYY"
+          }
+        ],
+      
+        "radios": [
+          {
+            "title": "விண்ணப்பித்த பாடங்கள்:",
+            "options": [
+              { "id": "a-option", "label": "இசை - குரல்" },
+              { "id": "b-option", "label": "இசை - திருமுறையிசை" }
+            ]
+          },
+          {
+            "title": "இசைக்கருவிகள் -",
+            "options": [
+              { "id": "y-option", "label": "வீணை" },
+              { "id": "n-option", "label": "வயலின்" },
+              { "id": "w-option", "label": "புல்லாங்குழல்." },
+              { "id": "x-option", "label": "மிருதங்கம்" },
+              { "id": "p-option", "label": "தவில்" },
+              { "id": "o-option", "label": "நாதஸ்வரம்" }
+            ]
+          },
+          {
+            "title": "பண்டைய இசை -",
+            "options": [
+              { "id": "c-option", "label": "குரல் (வோகல்)" },
+              { "id": "d-option", "label": "இசைக்கருவிகள்" },
+              { "id": "e-option", "label": "பரதநாட்டியம்" },
+              { "id": "f-option", "label": "நாட்டுவாங்கம்" }
+            ]
+          },
+          {
+            "title": "பணம் செலுத்தும் முறை",
+            "options": [
+              { "id": "g-option", "label": "Cash" },
+              { "id": "h-option", "label": "Cheque/DD" },
+              { "id": "i-option", "label": "NEFT" }
+            ]
+          }
+        ]
+      
+      }
+    ],
     "gallery": [
       { 
         "id": 1,
@@ -972,11 +1175,11 @@
           },
           {
             "subtitle": "Evening College",
-            "path": "/day-college"
+            "path": "/tamilisai-eve-college"
           },
           {
             "subtitle": "TISGEC Course & Registration",
-            "path": "/day-college"
+            "path": "/TISGEC-course"
           },
           {
             "subtitle": "E-Quiz Registration",
@@ -1573,6 +1776,123 @@
           "point3":"Every year the College reopens in the month of June or The Academic year starts during the month of June."
         }
       ],
+      "stepses":[
+      
+      {
+      "number": 1,
+      "icon":"/Assets/image/registration-ico.png",
+      "title": "REGISTRATION.",
+      "description": "",
+      "title2":"கற்றுக்கொள்ள பல வழிகள் உள்ளன.",
+      "title3":"படிவத்தை எப்படி பூர்த்தி செய்ய வேண்டும்."
+    },
+    { 
+      "number": 2,
+      "icon": "/Assets/image/doc-ico.png",
+      "title": "DOCUMENTATION.",
+      "description": ""
+    },
+    { 
+      "number": 3,
+      "icon": "/Assets/image/get-start-ico.png",
+      "title": "Get started now",
+      "description": "",
+      "active": true
+    }  
+    ],
+    "formhead":[
+      {
+        "title":"TAMIL ISAI SANGAM GRADE EXAM COURSE (TISGEC)",
+        "subtitle":"TAMIL ISAI KALLOORI, RAJA ANNAMALAI MANDRAM, CHENNAI 600 108",
+        "no":"9282235964 // 9841077817",
+        "subtitle2":"Email: tisgec2020@tamilisaisangam.in ; Website: www.tamilisaisangam.in",
+        "img":"/assets/image/annamalai_chettiya2.jpg",
+        "img2":"/assets/image/nataraj.jpg"
+      }    
+    ], 
+    "form":[
+      {
+        "title": "APPLICATION FORM FOR REGISTRATION",
+        "description": "To be filled by Teacher/ Institutions",
+        "Fee": [
+          { "title": "Fees : For Indian - Rs.1,250/- // For Foreigners - Rs.3,000/-" }
+        ],
+        
+          "accept": [
+            { "id": "k-option", "label": "I accept to the terms & conditions, rules & responsibilities as mentioned above" }
+          ],
+        
+        "declarations": [
+          {
+            "title": "Declaration :",
+            "name": "I hereby declare that all statements made in the application are true, complete and correct to the best of my knowledge and belief. I understand that in the event of any information being found untrue / false / incorrect or I do not satisfy the eligibility criteria, my registration for grade exam centre will be cancelled / terminated, without assigning any reasons thereof. I agree to abide by the rules, regulations and procedures for my registration."
+          }
+        ],
+        "fields": [
+          {
+            "type": "text",
+            "name": "Name of the Institution / Teacher :",
+            "placeholder": "Name of the Institution / Teacher Name :",
+            "col": 6
+          },
+          {
+            "type": "text",
+            "name": "Address for Correspondence :",
+            "placeholder": "Address for Correspondence :",
+            "col": 6
+          },
+          { "type": "text", "name": "Zip Code", "placeholder": "Mobile No", "col": 6 },
+          { "type": "text", "name": "Email", "placeholder": "Email", "col": 6 }
+        ],
+        "dates": [
+          { "type": "date", "name": "Date of Birth :", "placeholder": "DD/MM/YYYY" },
+          {
+            "type": "date",
+            "name": "Date of establishment of institution :",
+            "placeholder": "DD/MM/YYYY"
+          }
+        ],
+      
+        "radios": [
+          {
+            "title": "Courses Applied for :",
+            "options": [
+              { "id": "a-option", "label": "Music - Vocal" },
+              { "id": "b-option", "label": "Music - Thirumurai Isai" }
+            ]
+          },
+          {
+            "title": "Music Instruments -",
+            "options": [
+              { "id": "y-option", "label": "Veena" },
+              { "id": "n-option", "label": "Violin" },
+              { "id": "w-option", "label": "Flute" },
+              { "id": "x-option", "label": "Mridhangam" },
+              { "id": "p-option", "label": "Tavil" },
+              { "id": "o-option", "label": "Nagasvaram" }
+            ]
+          },
+          {
+            "title": "Folk Music -",
+            "options": [
+              { "id": "c-option", "label": "Vocal" },
+              { "id": "d-option", "label": "Instruments" },
+              { "id": "e-option", "label": "Bharathanatyam" },
+              { "id": "f-option", "label": "Nattuvangam" }
+            ]
+          },
+          {
+            "title": "Mode of payment :",
+            "options": [
+              { "id": "g-option", "label": "Cash" },
+              { "id": "h-option", "label": "Cheque/DD" },
+              { "id": "i-option", "label": "NEFT" }
+            ]
+          }
+        ]
+      
+      }
+    ],
     "gallery": [
       {
         "id": 1,
