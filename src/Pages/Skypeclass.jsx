@@ -29,11 +29,9 @@ const Skypeclass = () => {
                   <h3>{item.title}</h3>
                   <h6>{item.title1}</h6>
                   <div className="col-md-7">
-                    {/* Render card items */}
                     {item.card?.map((cardItem, cardIndex) => (
                       <div key={cardIndex}>
                         <h5>{cardItem.title}</h5>
-                        {/* Render paragraphs if they exist */}
                         {cardItem.para?.map((paragraph, idx) => (
                           <p key={idx}>{paragraph}</p>
                         ))}

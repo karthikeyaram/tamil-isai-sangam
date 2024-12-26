@@ -30,6 +30,7 @@ const Login = () => {
     // Handle login logic
   };
 
+
   const socialLinks = [
     { name: "facebook", icon: "fa-facebook", url: "#" },
     { name: "twitter", icon: "fa-twitter", url: "#" },
@@ -63,31 +64,37 @@ const Login = () => {
               </div>
               <div className="cnt-block">
                 <form onSubmit={handleSubmit} className="form-outer">
-                  {item.placeholder.map((field,id)=>{
+                  {item.placeholder.map((field, id) => {
                     const [fieldKey, fieldValue] = Object.entries(field)[0];
                     return (
-                                <input
-                                name={fieldKey}
-                                type={
-                                  fieldKey === "email"
-                                    ? "email"
-                                    : fieldKey === "password"
-                                    ? "password"
-                                    : "text"
-                                }
-                                placeholder={fieldValue}
-                                value={formData[fieldKey] || ""}
-                                onChange={handleChange}
-                              />
-                            )
-                    })}                  
+                      <input
+                        name={fieldKey}
+                        type={
+                          fieldKey === "email"
+                            ? "email"
+                            : fieldKey === "password"
+                            ? "password"
+                            : "text"
+                        }
+                        placeholder={fieldValue}
+                        value={formData[fieldKey] || ""}
+                        onChange={handleChange}
+                      />
+                    );
+                  })}
                   <div className="button-outer">
                     <button className="btn" type="submit">
-                    {item.title}<span className="icon-more-icon"></span>
+                      {item.title}
+                      <span className="icon-more-icon"></span>
                     </button>
                     <div className="or hidden-xs">{item.or}</div>
-                    <button className="btn register" type="button">
-                    {item.subtitle}<span className="icon-more-icon"></span>
+                    <button
+                      className="btn register"
+                      type="button"
+                      onClick={() => navigate("/register")}
+                    >
+                      {item.subtitle}
+                      <span className="icon-more-icon"></span>
                     </button>
                   </div>
                   <div className="remember">
@@ -96,7 +103,8 @@ const Login = () => {
                       <label htmlFor="rememberMe">{item.option1}</label>
                     </div>
                     <a href="#" className="forgot">
-                      <span>?</span>{item.option2}
+                      <span>?</span>
+                      {item.option2}
                     </a>
                   </div>
                 </form>
