@@ -418,7 +418,7 @@ h1 {
 /* Table Container */
 .table-container {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Space below the content */
   padding: 10px;
 }
 
@@ -429,12 +429,12 @@ h1 {
   border-collapse: collapse;
   font-size: 16px;
   background-color: #f4f4f4;
-  margin: 0 auto;
+  margin: 0 auto; /* Centers the table */
 }
 
 /* Table Headers and Data Cells */
 .fee-table th, .fee-table td {
-  padding: 12px; /* Increased for better spacing */
+  padding: 10px;
   text-align: center;
   border: 1px solid #ddd;
 }
@@ -443,7 +443,6 @@ h1 {
 .fee-table th {
   background-color: #1f8d49;
   color: white;
-  font-weight: bold;
 }
 
 /* Hover Effect */
@@ -453,13 +452,14 @@ h1 {
 
 .fee-table .table-row:hover td {
   color: #0056b3;
+  background-color: #d1e7fd;
 }
 
 /* Sub-header Styling for the Dividing Line */
 .sub-header {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  gap: 10px; /* Add space between columns */
 }
 
 .sub-header span {
@@ -469,19 +469,18 @@ h1 {
 /* Horizontal Line Styling */
 .separator {
   border: 0;
-  border-top: 2px solid #ddd;
-  margin: 15px 0;
+  border-top: 2px solid #ffffff; /* Black horizontal line */
+  margin: 10px 0; /* Space before and after the line */
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .fee-table {
-    width: 90%; /* Reduced width for better view on small screens */
+    width: 100%; /* Full width for small screens */
   }
 
   .fee-table th, .fee-table td {
-    padding: 8px;
-    font-size: 14px; /* Adjust font size */
+    padding: 8px; /* Reduce padding on small screens */
   }
 
   .sub-header {
@@ -489,51 +488,49 @@ h1 {
   }
 
   .separator {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ddd; /* Adjust line width for small screens */
+  }
+
+  /* Adjust font size for small screens */
+  .fee-table h3, .fee-table h4, .fee-table p {
+    font-size: 16px;
   }
 }
 
 @media (max-width: 480px) {
-  .fee-table {
-    width: 100%; /* Full width for very small screens */
-  }
-
   .fee-table th, .fee-table td {
-    padding: 6px;
-    font-size: 12px;
+    padding: 6px; /* Further reduce padding for very small screens */
   }
 
   .sub-header {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stack columns vertically */
   }
 
   .separator {
-    margin: 5px 0;
+    margin: 5px 0; /* Space adjustment */
   }
 }
 
 /* Tablet and Large Screen Styling */
 @media (min-width: 768px) and (max-width: 1024px) {
   .fee-table {
-    width: 85%;
+    width: 90%; /* 90% width on medium screens */
   }
 
   .fee-table th, .fee-table td {
-    padding: 10px;
+    padding: 12px; /* Increase padding for better visibility */
   }
 }
 
 @media (min-width: 1024px) {
   .fee-table {
-    width: 70%;
+    width: 70%; /* Set table width to 70% on larger screens */
   }
 
   .fee-table th, .fee-table td {
-    padding: 15px;
-    font-size: 16px;
+    padding: 15px; /* More padding on large screens */
   }
 }
-
 /* -----registraionform-------- */
 /* General Styles */
 .head-block {
@@ -626,43 +623,10 @@ h1 {
 }
 
 
-/* -------------audio------------ */
-
-
-h1 {
-  text-align: center;
-  margin: 20px 0;
-  color: #333;
+/* ------------ */
+.card-container {
+  padding: 16px; 
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 auto;
-  /* max-width: 800px; */
-}
 
-audio {
-  margin-top: 10px;
-  width: 100%;
-}
-
-button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #218838;
-}
-
-button:active {
-  background-color: #1e7e34;
-}
 

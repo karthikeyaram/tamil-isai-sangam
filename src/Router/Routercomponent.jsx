@@ -35,9 +35,8 @@ import Staff from '../Pages/Staff'
 import Diplomacourse from '../Pages/Diplomacouse'
 import Certificatecourse from '../Pages/Certificatecourse'
 import Specialcourse from '../Pages/Specialcourse'
-import Skypecourse from '../Pages/Skypeclass'
-import Skypeclass from '../Pages/Skypeclass'
-import Audio from '../Pages/Audio'
+import Distanceeducation from '../Pages/Distanceeducation'
+import Openeducation from '../Pages/Openeducation'
 
 const Routercomponent = () => {
   return (
@@ -90,9 +89,8 @@ const MainRoutes = () => {
         <Route path='/diploma-course' element={<Diplomacourse/>}/>
         <Route path='/cetificate-course' element={<Certificatecourse/>}/>
         <Route path='/special-course' element={<Specialcourse/>}/>
-        <Route path='/skype-class' element={<Skypeclass/>}/>
-        <Route path='/audio' element={<Audio/>}/>
-
+        <Route path='/distance-education' element={<Distanceeducation/>}/>
+        <Route path='/open-education' element={<Openeducation/>}/>
 
 
         

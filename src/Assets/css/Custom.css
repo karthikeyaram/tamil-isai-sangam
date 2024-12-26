@@ -1559,6 +1559,15 @@ h6 small {
     color: #777
 }
 
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+    margin-top: 20px;
+    margin-bottom: 35px
+}
 
 .h1 .small,
 .h1 small,
@@ -1610,7 +1619,10 @@ h2 {
     font-size: 30px
 }
 
-
+.h3,
+h3 {
+    font-size: 21px
+}
 
 .h4,
 h4 {
@@ -2019,8 +2031,8 @@ pre code {
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px
+    margin-right: -11px;
+    margin-left: -11px
 }
 
 .col-lg-1,

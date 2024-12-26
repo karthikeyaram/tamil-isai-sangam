@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import jsondata from "../Data/Data.json";
 import { useState } from "react";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 const TISGECcourse = () => {
   const tabss = [
@@ -14,81 +15,83 @@ const TISGECcourse = () => {
   ];
 
   const { language } = useSelector((state) => state.language);
-  const tabs = jsondata[language]?.terms || []; // Ensure tabs is not undefined
-  const [activeTab, setActiveTab] = useState(tabs[0]?.id || ""); // Default to empty string if tabs[0] is undefined
+  const tabs = jsondata[language]?.terms || [];
+  const [activeTab, setActiveTab] = useState(tabs[0]?.id || "");
   const table = jsondata[language]?.tablecontent || [];
   const tabled = jsondata[language]?.tablecontent2 || [];
   const steps = jsondata[language]?.stepses || [];
   const formheadtitle = jsondata[language]?.formhead;
 
   const formheadArray = Array.isArray(formheadtitle) ? formheadtitle : [];
-  
+
 
   return (
     <>
-      <div className="details-tab">
-        <div className="container">
-          <div className="col-sm-12">
-            <div className="row">
-              {formheadArray.map((item, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="col-sm-12 head-block"
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
+      <div className="about inner padding-lg">
+        <div className="container1">
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="row">
+                {formheadArray.map((item, index) => {
+                  return (
                     <div
+                      key={index}
+                      className="col-sm-12 head-block"
                       style={{
-                        flex: 1,
                         display: "flex",
-                        justifyContent: "flex-start",
+                        justifyContent: "space-between",
+                        alignItems: "center",
                       }}
                     >
-                      <img
-                        src={item.img2}
-                        alt=""
+                      <div
                         style={{
-                          maxWidth: "100px",
-                          maxHeight: "100px",
-                          objectFit: "contain",
-                          backgroundColor: "red",
+                          flex: 1,
+                          display: "flex",
+                          justifyContent: "flex-start",
                         }}
-                      />
-                    </div>
+                      >
+                        <img
+                          src={item.img2}
+                          alt=""
+                          style={{
+                            maxWidth: "100px",
+                            maxHeight: "100px",
+                            objectFit: "contain",
+                            backgroundColor: "red",
+                          }}
+                        />
+                      </div>
 
-                    <div style={{ flex: 2, textAlign: "center" }}>
-                      <h3 style={{ marginBottom: "10px", color: "#0282c2" }}>
-                        {item.title}
-                      </h3>
-                      <h6 style={{ marginTop: "10px" }}>{item.subtitle}</h6>
-                      <p>{item.no}</p>
-                      <h6>{item.subtitle2}</h6>
-                    </div>
+                      <div style={{ flex: 2, textAlign: "center" }}>
+                        <h3 style={{ marginBottom: "10px", color: "#0282c2" }}>
+                          {item.title}
+                        </h3>
+                        <h6 style={{ marginTop: "10px" }}>{item.subtitle}</h6>
+                        <p style={{ marginTop: "0px" ,textAlign:"center"}}>{item.no}</p>
+                        <h6 style={{ marginTop: "0px" }}>{item.subtitle2}</h6>
+                      </div>
 
-                    <div
-                      style={{
-                        flex: 1,
-                        display: "flex",
-                        justifyContent: "flex-end",
-                      }}
-                    >
-                      <img
-                        src={item.img2}
-                        alt=""
+                      <div
                         style={{
-                          maxWidth: "100px",
-                          maxHeight: "100px",
-                          objectFit: "contain",
+                          flex: 1,
+                          display: "flex",
+                          justifyContent: "flex-end",
                         }}
-                      />
+                      >
+                        <img
+                          src={item.img2}
+                          alt=""
+                          style={{
+                            maxWidth: "100px",
+                            maxHeight: "100px",
+                            objectFit: "contain",
+                          }}
+                        />
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
           </div>
           <div className="row">
@@ -97,125 +100,71 @@ const TISGECcourse = () => {
                 className="bs-example bs-example-tabs"
                 data-example-id="togglable-tabs"
               >
-                <ul
-                  className="nav nav-tabs course-tab"
-                  id="myTabs"
-                  role="tablist"
-                >
-                  {tabs?.length > 0 &&
-                    tabs.map((tab) => (
-                      <li
-                        key={tab?.id} // Add safeguard for undefined tab
-                        role="presentation"
-                        className={activeTab === tab?.id ? "active" : ""} // Check tab?.id for undefined
-                      >
-                        <a
-                          href={`#${tab?.id}`} // Ensure tab?.id is defined
-                          role="tab"
-                          id={`${tab?.id}-tab`} // Ensure tab?.id is defined
-                          data-toggle="tab"
-                          aria-controls={tab?.id} // Ensure tab?.id is defined
-                          aria-expanded="true"
-                          onClick={(e) => {
-                            e.preventDefault();
-                            setActiveTab(tab?.id || ""); // Default to empty string if undefined
-                          }}
-                        >
-                          <span className={tab?.iconClass}></span>{" "}
-                          {/* Check iconClass */}
-                          <div className="block">{tab?.label}</div>{" "}
-                          {/* Check label */}
-                          {tab?.subLabel}
-                        </a>
-                      </li>
-                    ))}
-                </ul>
-                <div className="tab-content" id="myTabContent">
-                  {tabs?.length > 0 &&
-                    tabs.map((tab) => (
-                      <div
-                        key={tab?.id} // Add safeguard for undefined tab
-                        className={`tab-pane fade ${
-                          activeTab === tab?.id ? "in active" : ""
-                        }`}
-                        role="tabpanel"
-                        id={tab?.id} // Ensure tab?.id is defined
-                        aria-labelledby={`${tab?.id}-tab`} // Ensure tab?.id is defined
-                      >
-                        <div className="row">
-                          {tab?.content?.[0]?.column?.map((col, colIndex) => (
-                            <div key={colIndex} className="col-sm-6">
-                              <ul className="content">
-                                {col?.map((item, itemIndex) => (
-                                  <li
-                                    key={itemIndex}
-                                    style={{
-                                      listStyle: "none",
-                                      textAlign: "justify",
-                                    }}
-                                  >
-                                    <h4>{item?.title}</h4>
-                                    <p>{item?.description}</p>
-                                    {item?.subList && (
-                                      <ul>
-                                        {item.subList?.map(
-                                          (subItem, subIndex) => (
-                                            <li key={subIndex}>{subItem}</li>
-                                          )
-                                        )}
-                                      </ul>
-                                    )}
-                                  </li>
+                <div>
+                  <h6 style={{textAlign:"start"}}>Terms List</h6>
+                  {tabs.length > 0 ? (
+                    tabs.map((term, termIndex) => (
+                      <div key={termIndex}>
+                        {term.content.map((content, contentIndex) => (
+                          <div key={contentIndex}>
+                            {content.column.map((column, columnIndex) => (
+                              <ul key={columnIndex}>
+                                {column.map((item, itemIndex) => (
+                                <li key={itemIndex} style={{listStyle:"none" ,textAlign:"justify"}}><IoIosArrowDroprightCircle style={{marginBottom:"-3px",color:"#3278BE"}}/>{item.title}</li>
                                 ))}
                               </ul>
-                            </div>
-                          ))}
-                        </div>
+                            ))}
+                          </div>
+                        ))}
                       </div>
-                    ))}
+                    ))
+                  ) : (
+                    <p>No terms available.</p>
+                  )}
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+       
 
-      <div>
-        {table?.length > 0 &&
-          table.map((content, index) => (
-            <div key={index} className="table-container">
-              <h3>{content?.title}</h3>
-              <h4>{content?.title1}</h4>
-              <p style={{ fontWeight: "bold", fontSize: "22px" }}>
-                {content?.thead}
-              </p>
-              <table className="fee-table">
-                <thead>
-                  <tr>
-                    <th>{content?.thead1?.name}</th>
-                    <th>{content?.thead1?.name1}</th>
-                    <th>{content?.thead1?.name2}</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {content?.table?.map((row, rowIndex) => (
-                    <tr key={rowIndex} className="table-row">
-                      <td>{row?.grade}</td>
-                      <td>{row?.amount}</td>
-                      <td>{row?.amount2}</td>
+      <div className="row">
+        <div className="col-sm-12">
+          {table?.length > 0 &&
+            table.map((content, index) => (
+              <div key={index} className="table-container">
+                <h3>{content?.title}</h3>
+                <h4>{content?.title1}</h4>
+                <p style={{ fontWeight: "bold", fontSize: "22px",textAlign:"center" }}>
+                  {content?.thead}
+                </p>
+                <table className="fee-table">
+                  <thead>
+                    <tr>
+                      <th>{content?.thead1?.name}</th>
+                      <th>{content?.thead1?.name1}</th>
+                      <th>{content?.thead1?.name2}</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          ))}
+                  </thead>
+                  <tbody>
+                    {content?.table?.map((row, rowIndex) => (
+                      <tr key={rowIndex} className="table-row">
+                        <td>{row?.grade}</td>
+                        <td>{row?.amount}</td>
+                        <td>{row?.amount2}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ))}
+        </div>
       </div>
 
       <div>
         {tabled?.length > 0 &&
           tabled.map((content, index) => (
             <div key={index} className="table-container">
-              <p style={{ fontWeight: "bold", fontSize: "22px" }}>
+              <p style={{ fontWeight: "bold", fontSize: "22px",textAlign:"center" }}>
                 {content?.thead}
               </p>
               <table className="fee-table">
@@ -248,8 +197,8 @@ const TISGECcourse = () => {
       <div className="how-apply padding-lg">
         <div className="container">
           <div>
-            <h2>
-              <span>There are many ways to learn</span>
+            <h2 style={{textAlign:"center"}}>
+              <span >There are many ways to learn</span>
               How to Apply
             </h2>
             <ul className="row">
@@ -275,6 +224,8 @@ const TISGECcourse = () => {
             </a>
           </div>
         </div>
+      </div>
+      </div>
       </div>
     </>
   );
