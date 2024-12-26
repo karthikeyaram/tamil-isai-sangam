@@ -2,9 +2,9 @@ import React from 'react'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 
 import IsaiArulalarkal from '../Component/Gallery/IsaiArulalarkal'
-import IsaiKalaivanarkal from '../Component/Gallery/IsaiKalaivanarkal'
-import IsaiPerairignarkal from '../Component/Gallery/IsaiPerairignarkal'
-import PannIsaiPerarignarkal from '../Component/Gallery/PannIsaiPerarignarkal'
+// import IsaiKalaivanarkal from '../Component/Gallery/IsaiKalaivanarkal'
+// import IsaiPerairignarkal from '../Component/Gallery/IsaiPerairignarkal'
+// import PannIsaiPerarignarkal from '../Component/Gallery/PannIsaiPerarignarkal'
 import Media from '../Component/media/Media'
 import Navbar from "../Component/Common/Navbar";
 import Home from "../Component/Home/Home";
@@ -32,6 +32,20 @@ import TISGECcourse from '../Pages/TISGECcourse'
 import Registrationfom from '../Pages/Registrationfom'
 import Equiezregistration from '../Pages/Equiezregistration'
 import Staff from '../Pages/Staff'
+import Undergraduate from '../Component/Undergraduate'
+
+
+
+
+import Gallery3 from '../Component/Gallery/Gallery3';
+import Gallery4 from '../Component/Gallery/Gallery4';
+
+
+import Gallery5 from '../Component/Gallery/Gallery5';
+
+
+
+
 
 const Routercomponent = () => {
   return (
@@ -57,16 +71,21 @@ const MainRoutes = () => {
         <Route path="/DeivigaArulalarkal" element={<DeivigaArulalarkal />} />
         <Route path='/IsaiArulalarkal' element={<IsaiArulalarkal/>}/>
         <Route path='/library' element={<Library/>}/>
+        <Route path='/Undergraduate' element={<Undergraduate/>}/>
         <Route path="/tamil-isai-sangam" element={<Tamilisaisangam />} />
         <Route path="/register" element={<Register />} />
+        <Route path='/IsaiKalaivanarkal' element={<Gallery3/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/tamil-isai-history" element={<History />} />
         <Route path='/media' element={<Media/>}/>
         <Route path='/museum' element={<Museum/>}/>
-        <Route path='/IsaiKalaivanarkal'  element={<IsaiKalaivanarkal/>}/>
-        <Route path='/IsaiPerairignarkal' element={<IsaiPerairignarkal/>}/>
-        <Route path='/PannIsaiPerarignarkal' element={<PannIsaiPerarignarkal/>}/>
+<Route path='/PannIsaiPerarignarkal' element={<Gallery5/>}/>
+
+      <Route path='/IsaiPerairignarkal' element={<Gallery4/>}/>
+        {/* <Route path='/IsaiPerairignarkal ' element={<IsaiPerairignarkal/>}/> */}
+        {/* <Route path='/PannIsaiPerarignarkal ' element={<Gallery5/>}/> */}
+        {/* <Route path='/PannIsaiPerarignarkal '  element={<PannIsaiPerarignarkal/>}  /> */}
         <Route path='/trustees' element={<Boardtrustees/>}/>
         <Route path='/trustees' element={<Boardtrustees/>}/>
         <Route path='/presidents-and-secretaries' element={<Boardpresident/>}/>

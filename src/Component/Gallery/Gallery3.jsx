@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import jsondata from '../../Data/Data.json';
 
-const DeivigaArulalarkal = () => {
-  const [activeHeader, setActiveHeader] = useState('DeivigaArulalarkal');
+const IsaiKalaivanarkal = () => {
+  const [activeHeader, setActiveHeader] = useState('IsaiKalaivanarkal');
   const headerNames = [
     { name: 'DeivigaArulalarkal', path: '/DeivigaArulalarkal' },
     { name: 'IsaiArulalarkal', path: '/IsaiArulalarkal' },
@@ -14,7 +14,7 @@ const DeivigaArulalarkal = () => {
   ];
 
   const { language } = useSelector((state) => state.language);
-  const galleryd = jsondata[language]?.gallery || [];
+  const galleryd = jsondata[language]?.blog3 || []; // Get dynamic data
 
   const headerStyle = {
     display: 'flex',
@@ -26,6 +26,7 @@ const DeivigaArulalarkal = () => {
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)', 
     position: 'relative',
     animation: 'fadeIn 1s ease-in-out', 
+    flexWrap: 'wrap', // Allow header items to wrap on smaller screens
   };
 
   const headerItemStyle = (name) => ({
@@ -46,23 +47,23 @@ const DeivigaArulalarkal = () => {
   });
 
   const images = [
-    { src: 'img1.jpg' },
-    { src: 'img2.jpg' },
-    { src: 'img3.jpg'},
-    { src: 'img4.jpg' },
-    { src: 'img5.jpg'},
-    { src: 'img6.jpg'},
-    { src: 'img7.jpg'},
-    { src: 'img8.jpg'},
-    { src: 'img9.jpg' },
-    { src: 'img10.jpg' },
-    { src: 'img11.jpg' },
-    { src: 'img12.jpg' },
-    { src: 'img13.jpg' },
-    { src: 'img14.jpg' },
-    { src: 'img15.jpg' },
-    { src: 'img16.jpg' },
-    { src: 'img17.jpg' }
+    { src: 'img32.jpg', name: 'Image 1' },
+    { src: 'img27 (1).jpg', name: 'Image 2' },
+    { src: 'img27 (2).jpg', name: 'Image 3' },
+    { src: 'img27 (3).jpg', name: 'Image 4' },
+    { src: 'img27 (4).jpg', name: 'Image 5' },
+    { src: 'img27 (5).jpg', name: 'Image 6' },
+    { src: 'img27 (6).jpg', name: 'Image 7' },
+    { src: 'img27 (7).jpg', name: 'Image 8' },
+    { src: 'img27 (8).jpg', name: 'Image 9' },
+    { src: 'img27 (9).jpg', name: 'Image 10' },
+    { src: 'img27 (10).jpg', name: 'Image 11' },
+    { src: 'img27 (11).jpg', name: 'Image 12' },
+    { src: 'img27 (12).jpg', name: 'Image 13' },
+    { src: 'img27 (13).jpg', name: 'Image 14' },
+    { src: 'img27 (14).jpg', name: 'Image 15' },
+    { src: 'img27 (15).jpg', name: 'Image 16' },
+    { src: 'img27 (17).jpg', name: 'Image 17' },
   ];
 
   const [visibleImages, setVisibleImages] = useState([]);
@@ -110,7 +111,7 @@ const DeivigaArulalarkal = () => {
       : index % 2 === 0
       ? 'translateX(-100px)'
       : 'translateX(100px)', 
-    transition: `opacity 1s ease, transform 1s ease, transition-delay ${index * 0.3}s`, // Sequential delay for each image
+    transition: `opacity 1s ease, transform 1s ease, transition-delay ${index * 0.3}s`,
   });
 
   const galleryImageStyle = {
@@ -122,12 +123,11 @@ const DeivigaArulalarkal = () => {
 
   const imageNameStyle = {
     marginTop: '10px',
-    fontSize: '16px',
+    fontSize: '15px',
     fontWeight: '600',
     color: '#FFF',
     textShadow: '0px 1px 1px ',
     color:'rgba(243, 156, 18, 0.6)',
-
     padding: '8px 12px',
     borderRadius: '5px',
     maxWidth: '100%',
@@ -137,7 +137,7 @@ const DeivigaArulalarkal = () => {
 
   return (
     <div>
-      <div style={headerStyle} className="header-container">
+      <div style={headerStyle}>
         {headerNames.map(({ name, path }) => (
           <Link
             key={name}
@@ -168,10 +168,8 @@ const DeivigaArulalarkal = () => {
               alt={image.name}
               style={galleryImageStyle}
             />
-
-            {/* Display the first title from galleryd under the image */}
             <div style={imageNameStyle}>
-              {galleryd[0]?.gallery1?.[index]?.title || 'No Title Available'}
+              {galleryd[0]?.gallery3?.[index]?.title || 'No Title Available'}
             </div>
           </div>
         ))}
@@ -180,47 +178,29 @@ const DeivigaArulalarkal = () => {
       <style>
         {`
           @keyframes fadeIn {
-            0% {
-              opacity: 0;
-              transform: translateY(-20px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateY(0);
-            }
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
           }
 
           @keyframes slideInFromLeft {
-            0% {
-              opacity: 0;
-              transform: translateX(-100px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateX(0);
-            }
+            0% { opacity: 0; transform: translateX(-100px); }
+            100% { opacity: 1; transform: translateX(0); }
           }
 
           @keyframes slideInFromRight {
-            0% {
-              opacity: 0;
-              transform: translateX(100px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateX(0);
-            }
+            0% { opacity: 0; transform: translateX(100px); }
+            100% { opacity: 1; transform: translateX(0); }
           }
 
-          /* Responsive styles */
           @media (max-width: 768px) {
-            .header-container {
-              flex-direction: column;
-              align-items: center;
+            .headerStyle {
+              flexDirection: 'column';
+              gap: '20px';
             }
 
-            .header-container a {
-              margin-bottom: 10px;
+            .headerItemStyle {
+              fontSize: '16px';
+              padding: '10px 20px';
             }
           }
         `}
@@ -229,4 +209,4 @@ const DeivigaArulalarkal = () => {
   );
 };
 
-export default DeivigaArulalarkal;
+export default IsaiKalaivanarkal;

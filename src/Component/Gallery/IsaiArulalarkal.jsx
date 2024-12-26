@@ -1,20 +1,20 @@
-import React,{useEffect,useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import jsondata from '../../Data/Data.json'
+import jsondata from '../../Data/Data.json';
 
 const IsaiArulalarkal = () => {
-   const [activeHeader, setActiveHeader] = useState('IsaiArulalarkal');
-    const headerNames = [
-      { name: 'DeivigaArulalarkal', path: '/DeivigaArulalarkal' },
-      { name: 'IsaiArulalarkal', path: '/IsaiArulalarkal' },
-      { name: 'IsaiKalaivanarkal', path: '/IsaiKalaivanarkal' },
-      { name: 'IsaiPerairignarkal', path: '/IsaiPerairignarkal' },
-      { name: 'PannIsaiPerarignarkal', path: '/PannIsaiPerarignarkal' },
-    ];
-  const { language } = useSelector((state) => state.language);
-  const galleryd = jsondata[language]?.blog2 || []; // Added fallback to prevent undefined errors
+  const [activeHeader, setActiveHeader] = useState('IsaiArulalarkal');
+  const headerNames = [
+    { name: 'DeivigaArulalarkal', path: '/DeivigaArulalarkal' },
+    { name: 'IsaiArulalarkal', path: '/IsaiArulalarkal' },
+    { name: 'IsaiKalaivanarkal', path: '/IsaiKalaivanarkal' },
+    { name: 'IsaiPerairignarkal', path: '/IsaiPerairignarkal' },
+    { name: 'PannIsaiPerarignarkal', path: '/PannIsaiPerarignarkal' },
+  ];
 
+  const { language } = useSelector((state) => state.language);
+  const galleryd = jsondata[language]?.blog2 || []; // Adjusted for your JSON data structure
 
   const headerStyle = {
     display: 'flex',
@@ -48,8 +48,7 @@ const IsaiArulalarkal = () => {
   const images = [
     { src: 'img18.jpg' },
     { src: 'img19.jpg' },
-    { src: 'img20.jpg'},
-   
+    { src: 'img20.jpg' },
   ];
 
   const [visibleImages, setVisibleImages] = useState([]);
@@ -91,13 +90,9 @@ const IsaiArulalarkal = () => {
     textAlign: 'center',
     opacity: isVisible ? 1 : 0,
     transform: isVisible
-      ? index % 2 === 0
-        ? 'translateX(0)' 
-        : 'translateX(0)' 
-      : index % 2 === 0
-      ? 'translateX(-100px)'
+      ? 'translateX(0)' 
       : 'translateX(100px)', 
-    transition: `opacity 1s ease, transform 1s ease, transition-delay ${index * 0.3}s`, // Sequential delay for each image
+    transition: `opacity 1s ease, transform 1s ease, transition-delay ${index * 0.3}s`,
   });
 
   const galleryImageStyle = {
@@ -110,14 +105,20 @@ const IsaiArulalarkal = () => {
   const imageNameStyle = {
     marginTop: '10px',
     fontSize: '16px',
-    fontWeight: '500',
-    color: '#333',
+    fontWeight: '600',
+    color: '#FFF',
+    textShadow: '0px 1px 1px ',
+    color:'rgba(243, 156, 18, 0.6)',
+    padding: '8px 12px',
+    borderRadius: '5px',
+    maxWidth: '100%',
+    textAlign: 'center',
+    transition: 'background 0.3s ease, transform 0.3s ease',
   };
 
   return (
     <div>
-
-<div style={headerStyle}>
+      <div style={headerStyle} className="header-container">
         {headerNames.map(({ name, path }) => (
           <Link
             key={name}
@@ -136,7 +137,6 @@ const IsaiArulalarkal = () => {
         </h6>
       </div>
 
-
       <div style={galleryContainerStyle}>
         {images.map((image, index) => (
           <div
@@ -149,47 +149,14 @@ const IsaiArulalarkal = () => {
               alt={image.name}
               style={galleryImageStyle}
             />
-
-            {/* Display the first title from galleryd under the image */}
             <div style={imageNameStyle}>
               {galleryd[0]?.gallery2?.[index]?.title || 'No Title Available'}
             </div>
-
-{/* <div className="overlay" >
-              {galleryd.map((item, idx) => (
-                <div key={idx} className="gal">
-                  {item.gallery2?.map((img, id) => (
-                    <div key={id} className="overlay-text">
-                      {img.title}
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div> */}
-
-
-            
           </div>
         ))}
       </div>
-      
-      
-      
-            {/* <div className="overlay" >
-              {galleryd.map((item, idx) => (
-                <div key={idx} className="gal">
-                  {item.gallery2?.map((img, id) => (
-                    <div key={id} className="overlay-text">
-                      {img.title}
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div> */}
 
-
-
-            <style>
+      <style>
         {`
           @keyframes fadeIn {
             0% {
@@ -223,11 +190,20 @@ const IsaiArulalarkal = () => {
               transform: translateX(0);
             }
           }
+
+          /* Responsive styles */
+          @media (max-width: 768px) {
+            .header-container {
+              flex-direction: column;
+              align-items: center;
+            }
+
+            .header-container a {
+              margin-bottom: 10px;
+            }
+          }
         `}
       </style>
-
-            
-            {/* <div style={imageNameStyle}>{image.name}</div> */}
     </div>
   );
 };

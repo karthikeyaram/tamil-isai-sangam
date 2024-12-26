@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import jsondata from '../../Data/Data.json';
 
-const DeivigaArulalarkal = () => {
-  const [activeHeader, setActiveHeader] = useState('DeivigaArulalarkal');
+const Gallery5 = () => {
+  const [activeHeader, setActiveHeader] = useState('PannIsaiPerarignarkal');
+
   const headerNames = [
     { name: 'DeivigaArulalarkal', path: '/DeivigaArulalarkal' },
     { name: 'IsaiArulalarkal', path: '/IsaiArulalarkal' },
@@ -14,7 +15,7 @@ const DeivigaArulalarkal = () => {
   ];
 
   const { language } = useSelector((state) => state.language);
-  const galleryd = jsondata[language]?.gallery || [];
+  const galleryd = jsondata[language]?.blog5 || []; // Added fallback to prevent undefined errors
 
   const headerStyle = {
     display: 'flex',
@@ -46,23 +47,15 @@ const DeivigaArulalarkal = () => {
   });
 
   const images = [
-    { src: 'img1.jpg' },
-    { src: 'img2.jpg' },
-    { src: 'img3.jpg'},
-    { src: 'img4.jpg' },
-    { src: 'img5.jpg'},
-    { src: 'img6.jpg'},
-    { src: 'img7.jpg'},
-    { src: 'img8.jpg'},
-    { src: 'img9.jpg' },
-    { src: 'img10.jpg' },
-    { src: 'img11.jpg' },
-    { src: 'img12.jpg' },
-    { src: 'img13.jpg' },
-    { src: 'img14.jpg' },
-    { src: 'img15.jpg' },
-    { src: 'img16.jpg' },
-    { src: 'img17.jpg' }
+    { src: 'img31 (10).jpg', name: 'Image 1' },
+    { src: 'img31 (9).jpg', name: 'Image 2' },
+    { src: 'img31 (8).jpg', name: 'Image 3' },
+    { src: 'img31 (6).jpg', name: 'Image 4' },
+    { src: 'img31 (5).jpg', name: 'Image 5' },
+    { src: 'img31 (4).jpg', name: 'Image 6' },
+    { src: 'img31 (3).jpg', name: 'Image 7' },
+    { src: 'img31 (2).jpg', name: 'Image 8' },
+    { src: 'img31 (1).jpg', name: 'Image 9' },
   ];
 
   const [visibleImages, setVisibleImages] = useState([]);
@@ -127,7 +120,6 @@ const DeivigaArulalarkal = () => {
     color: '#FFF',
     textShadow: '0px 1px 1px ',
     color:'rgba(243, 156, 18, 0.6)',
-
     padding: '8px 12px',
     borderRadius: '5px',
     maxWidth: '100%',
@@ -168,10 +160,9 @@ const DeivigaArulalarkal = () => {
               alt={image.name}
               style={galleryImageStyle}
             />
-
             {/* Display the first title from galleryd under the image */}
             <div style={imageNameStyle}>
-              {galleryd[0]?.gallery1?.[index]?.title || 'No Title Available'}
+              {galleryd[0]?.gallery5?.[index]?.title || 'No Title Available'}
             </div>
           </div>
         ))}
@@ -229,4 +220,4 @@ const DeivigaArulalarkal = () => {
   );
 };
 
-export default DeivigaArulalarkal;
+export default Gallery5;

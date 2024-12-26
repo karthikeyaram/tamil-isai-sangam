@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
-
-import { useSelector } from 'react-redux';
-import jsondata from '../../Data/Data.json'
+import { useSelector } from "react-redux";
+import jsondata from "../../Data/Data.json";
 
 const Museum = () => {
-
-
   const imageSources = [
     "1 (1).jpg",
     "2.jpg",
@@ -28,7 +25,7 @@ const Museum = () => {
   ];
 
   const { language } = useSelector((state) => state.language);
-  const museumd = jsondata[language]?.museums || []; 
+  const museumd = jsondata[language]?.museums || [];
 
   const [shuffledImages, setShuffledImages] = useState(imageSources);
 
@@ -45,6 +42,24 @@ const Museum = () => {
     return () => clearInterval(interval);
   }, [shuffledImages]);
 
+ 
+  const headings = {
+    tamil: {
+      library: "தொல் இசை களஞ்சியம்",
+      membership: "உறுப்பினர் விவரங்கள்",
+      video: "அறிமுகக் காணொளி",
+      gallery: "காட்சியகம்",
+    },
+    english: {
+      library: "Tamil Music Library",
+      membership: "Membership Details",
+      video: "Introduction Video",
+      gallery: "Gallery",
+    },
+  };
+
+  const selectedHeadings = headings[language] || headings.english;
+
   return (
     <div style={{ backgroundColor: "#f3f4f6", minHeight: "100vh", padding: "2rem" }}>
       <header
@@ -59,11 +74,13 @@ const Museum = () => {
         }}
       >
         <h1 style={{ fontSize: "2.5rem", fontWeight: "700", letterSpacing: "0.05em" }}>
-          Tamil Music Library
+          {selectedHeadings.library}
         </h1>
-        <p style={{ fontSize: "1.2rem", marginTop: "0.5rem", fontWeight: "300" }}>
-          Preserving the rich heritage of Tamil music
-        </p>
+        {/* <p style={{ fontSize: "1.2rem", marginTop: "0.5rem", fontWeight: "300" }}>
+          {language === "tamil"
+            ? "தமிழ் இசையின் பண்புகளை பாதுகாத்தல்"
+            : "Preserving the rich heritage of Tamil music"}
+        </p> */}
       </header>
 
       <main style={{ display: "flex", flexWrap: "wrap", gap: "2rem", justifyContent: "center" }}>
@@ -86,70 +103,33 @@ const Museum = () => {
               marginBottom: "1rem",
             }}
           >
-             </h2>
-             <div>
-    <div>
-      {museumd.map((museum, index) => (
-        <div key={index} style={{ padding: '20px', borderBottom: '1px solid #ccc' }}>
-          <h2 style={{ fontSize: '22px', fontWeight: '600' }}>Museum Information</h2>
+            {selectedHeadings.membership}
+          </h2>
 
-          {/* Location */}
-          <div>
-            <strong>{museum.membership_details.location.label}: </strong>
-            <span>{museum.membership_details.location.value}</span>
-          </div>
-
-          {/* Visiting Hours */}
-          <div>
-            <strong>{museum.membership_details.visiting_hours.label}: </strong>
-            <span>{museum.membership_details.visiting_hours.value}</span>
-          </div>
-
-          {/* Membership Fee */}
-          <div>
-            <strong>{museum.membership_details.membership_fee.label}: </strong>
-            <span>{museum.membership_details.membership_fee.value}</span>
-          </div>
-
-          {/* Free Entry */}
-          <div>
-            <strong>{museum.membership_details.free_entry.label}: </strong>
-            <span>{museum.membership_details.free_entry.value}</span>
-          </div>
-
-          {/* Foreign Nationals */}
-          <div>
-            <strong>{museum.membership_details.foreign_nationals.label}: </strong>
-            <span>{museum.membership_details.foreign_nationals.value}</span>
-          </div>
-
-          {/* Educational Institutions */}
-          <div>
-            <strong>{museum.membership_details.educational_institutions.label}: </strong>
-            <span>{museum.membership_details.educational_institutions.value}</span>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <strong>{museum.membership_details.contact.label}: </strong>
-            <span>{museum.membership_details.contact.value}</span>
-          </div>
-
-          {/* Supervisor */}
-          <div>
-            <strong>{museum.membership_details.supervisor.label}: </strong>
-            <span>{museum.membership_details.supervisor.value}</span>
-          </div>
-
-          {/* Phone Supervisor */}
-          <div>
-            <strong>{museum.membership_details.phone_supervisor.label}: </strong>
-            <span>{museum.membership_details.phone_supervisor.value}</span>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
+          {museumd.map((museum, index) => (
+            <div key={index} style={{ padding: "20px" }}>
+              <div
+                style={{
+                  backgroundColor: "#f9fafb",
+                  padding: "20px",
+                  borderRadius: "10px",
+                  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+                  marginBottom: "20px",
+                }}
+              >
+        
+                {Object.entries(museum.membership_details).map(([key, detail]) => (
+                  <div
+                    key={key}
+                    style={{ fontSize: "1.3rem", marginBottom: "12px", fontWeight: "500" }}
+                  >
+                    <strong style={{ color: "#2563eb" }}>{detail.label}: </strong>
+                    <span>{detail.value}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </section>
 
         <section
@@ -171,7 +151,7 @@ const Museum = () => {
               marginBottom: "1rem",
             }}
           >
-            Introduction Video
+            {selectedHeadings.video}
           </h2>
           <div
             style={{
@@ -212,7 +192,7 @@ const Museum = () => {
               marginBottom: "1rem",
             }}
           >
-            Gallery
+            {selectedHeadings.gallery}
           </h2>
           <div
             style={{
