@@ -157,7 +157,7 @@ const Certificatecourse = () => {
               <div className="stay-tuned">
                 <h2>Stay Tuned</h2>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  
                 </p>
 
                 {/* Mailchimp Signup Form */}

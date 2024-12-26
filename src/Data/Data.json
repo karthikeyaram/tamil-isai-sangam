@@ -26,7 +26,6 @@
       },
       {
         "navtitle": "இசை விழா",
-        "path": "/isai-vizha",
         "icon": "",
         "details": [
           {
@@ -196,27 +195,37 @@
               {
                 "id": 1,
                 "cardtitle": "சிறிய சிறுவர்",
+                "image": "/assets/image/categorys.jpg",
                 "cardcontent": "ஏழு முதல் பத்தாம் ஆண்டு வயது."
               },
               {
                 "id": 2,
                 "cardtitle": "கீழ் நிலை",
+                "image": "/assets/image/categorys.jpg",
                 "cardcontent": "பதினொன்று முதல் பதினைந்து ஆண்டு வயது பதிவு கட்டணம் ரூ.150."
               },
               {
                 "id": 3,
                 "cardtitle": "உயர்ந்த நிலை",
+                "image": "/assets/image/categorys.jpg",
                 "cardcontent": "பதினாறு முதல் இருபத்தி ஒன்று ஆண்டு வயது."
               },
               {
                 "id": 4,
                 "cardtitle": "உயர்ந்த மூத்த நிலை",
+                "image": "/assets/image/categorys.jpg",
                 "cardcontent": "இருபத்தி ஒன்று ஆண்டு வயது மற்றும் அதற்கு மேல் பதிவு கட்டணம் ரூ.250."
               }
             ]
           }
         ]
       }
+    ],
+    "cardtitle":[
+      {"title1":"பதிவு செய்யவும்",
+        "title2":"பதிவுகள் பதிவிறக்கம் செய்யவும்",
+        "title3":"சான்றிதழ்"
+    }
     ],
     "head" : [
       {
@@ -902,12 +911,12 @@
     "presidents":[      
       {"title":"தலைவர்கள்",
         "images":[
-          {"id":1,"img":"/assets/head img/acmuthiah.jpg","title":"பேராசிரியர் இ.சுந்தரமூர்த்தி","subtitle":"தலைவர்"},{"id":2,"img":"/assets/head img/plakshmanan.jpg","title":"மாண்புமிகு நீதிபதி பு.ரா. கோகுலகிருஷ்ணன்","subtitle":"தலைவர் (1992-2019)"},
-          {"id":3,"img":"/assets/head img/devaki_muthiah.jpg","title":"திரு. எஸ். ஸ்ரீராம்","subtitle":" உதவிச் செயலர்(1947 - 1992)"},{"id":4,"img":"/assets/head img/al_vadivelu.jpg","title":"டாக்டர்.எம். ஏ. சிதம்பரம் செட்டியார்","subtitle":"மதிப்பியல் செயலர்(1943 - 1995)"},
-          {"id":5,"img":"/assets/head img/ashwin_muthiah.jpg","title":"நீதிபதி. டாக்டர். எஸ். மகராஜன்","subtitle":"தலைவர் (1978 - 1982)"},{"id":6,"img":"/assets/head img/sakthi_thirunakarasu.jpg","title":"திவான் பகதூர் தி.மு. நாராயண சாமிப் பிள்ளை","subtitle":"தலைவர் (1956 - 1978)"},
-          {"id":7,"img":"/assets/head img/vali_arun.jpg","title":"திவான் பகதூர் தி.மு. நாராயண சாமிப் பிள்ளை","subtitle":"தலைவர் (1956 - 1978)"},{"id":8,"img":"/assets/head img/rm_somasundram.jpg","title":"திவான் பகதூர் சி.எஸ். இரத்தின சபாபதி முதலியார்","subtitle":"தலைவர் (1953 - 1956)"},
-          {"id":9,"img":"/assets/head img/ar_meiyappan.jpg","title":"டாக்டர்.ரா.க. சண்முகம் செட்டியார்","subtitle":"தலைவர் (1948 - 1953)"},{"id":10,"img":"/assets/head img/ar_nachiyappan.jpg","title":"டாக்டர். ராஜாசர்.முத்தையா செட்டியார்","subtitle":"துணைத் தலைவர் (1943 - 1982)"}
-          ,{"id":9,"img":"/assets/head img/ar_meiyappan.jpg","title":"டாக்டர். ராஜாசர்.மு. அண்ணாமலை செட்டியார்","subtitle":"தலைவர் (1943 - 1948)"}
+          {"id":1,"img":"/assets/head img/sundaramoorthi_bg.jpg","title":"பேராசிரியர் இ.சுந்தரமூர்த்தி","subtitle":"தலைவர்"},{"id":2,"img":"/assets/head img/gokulakrishnan.jpg","title":"மாண்புமிகு நீதிபதி பு.ரா. கோகுலகிருஷ்ணன்","subtitle":"தலைவர் (1992-2019)"},
+          {"id":3,"img":"/assets/head img/sriram.jpg","title":"திரு. எஸ். ஸ்ரீராம்","subtitle":" உதவிச் செயலர்(1947 - 1992)"},{"id":4,"img":"/assets/head img/chidambaram_chettiar.jpg","title":"டாக்டர்.எம். ஏ. சிதம்பரம் செட்டியார்","subtitle":"மதிப்பியல் செயலர்(1943 - 1995)"},
+          {"id":5,"img":"/assets/head img/magarajan.jpg","title":"நீதிபதி. டாக்டர். எஸ். மகராஜன்","subtitle":"தலைவர் (1978 - 1982)"},{"id":6,"img":"/assets/head img/sakthi_thirunakarasu.jpg","title":"திவான் பகதூர் தி.மு. நாராயண சாமிப் பிள்ளை","subtitle":"தலைவர் (1956 - 1978)"},
+          {"id":7,"img":"/assets/head img/narayana_swamy_pillai.jpg","title":"திவான் பகதூர் தி.மு. நாராயண சாமிப் பிள்ளை","subtitle":"தலைவர் (1956 - 1978)"},{"id":8,"img":"/assets/head img/rathinasabapathy_mudaliar.jpg","title":"திவான் பகதூர் சி.எஸ். இரத்தின சபாபதி முதலியார்","subtitle":"தலைவர் (1953 - 1956)"},
+          {"id":9,"img":"/assets/head img/shanmugam_chettiar.jpg","title":"டாக்டர்.ரா.க. சண்முகம் செட்டியார்","subtitle":"தலைவர் (1948 - 1953)"},{"id":10,"img":"/assets/head img/muthiah_chettiar.jpg","title":"டாக்டர். ராஜாசர்.முத்தையா செட்டியார்","subtitle":"துணைத் தலைவர் (1943 - 1982)"}
+          ,{"id":9,"img":"/assets/head img/rajasir_annamalai.jpg","title":"டாக்டர். ராஜாசர்.மு. அண்ணாமலை செட்டியார்","subtitle":"தலைவர் (1943 - 1948)"}
         ] 
     }
     ],
@@ -1333,7 +1342,7 @@
       }
       ],
       "tablecontent":[{
-          "title":"கூட்டுத்தொகை அமைப்பு",
+          "title":"FEES STRUCTURE",
             "title1":"VOCAL / VEENA / VIOLIN / FLUTE / MIRDANGAM / TAVIL / /NAGASWARAM / BHARATHANATYAM / FOLK",
             "thead":"1. REGISTRATION FEES: (For Institution and/or Teachers-including Application Fees)",
               "thead1":{"name":"Grade","name1":"For Indian","name2":"For Foreigners"},
@@ -1813,7 +1822,35 @@
     {"no": 77, "name": "Certificate in NGO Management"},{"no": 78, "name": "Bachelor Preparatory Programme"}
   ]
   }
-] ,       
+] ,  
+"skypeclass":[
+          {
+            "title":"நிகழ்நிலை (Online) வகுப்புகள்",
+            "title1":"பயிற்று விக்கப்பெறும் வகுப்புகள்",
+            "head1":{
+              "thumbnail": "/assets/image/tamilisaisangam1.jpg"
+            },
+            "card":[
+              {"title":"'இசைக்கலைச் சான்றிதழ்' (குரலிசை, வீணை, வயலின்)",
+              "para":["1.வகுப்புகள் ஒரு வாரம் (40 வகுப்புகள்) நடைபெறும்.","2.இந்தியா மற்றும் வெளிநாடுகளில் உள்ளவர்கள் இந்த வகுப்புகளில் சேரலாம்.","3.வகுப்புகளின் கால அளவு ஒரு மணி நேரம்.",
+            "4.அயல் நாட்டு மாணவர்களுக்கு வாரம் ஒரு முறை வகுப்புகள் நடைபெறும். மாணவர்கள் வகுப்பின் எண்ணிக்கையை அதிகரிக்கலாம்."] }
+            ],
+            "card2":""
+          }
+      ], "skype2":["5.அயல் நாட்டு மாணவர்களுக்கு 10 வகுப்புகளுக்குக் 250 ரூபாய் கட்டணம் செலுத்தவேண்டும். 10 வகுப்புகளுக்கு முன் கூட்டியே செலுத்துவது அவசியம்",
+            "6.உள்ள நாட்டு இந்தியா மாணவர்களுக்கு 10 வகுப்புகளுக்குக் ரூபாய் 5000 கட்டணம் செலுத்தவேண்டும். 10 வகுப்புகளுக்கு கட்டணம் முன் கூட்டியே செலுத்தவேண்டும். ஒரு வருடத்தில் 2 அல்லது 3 வகுப்புகள் எடுத்துக்கொள்ளலாம்.","இசைக்கலை சான்றிதழ் பயிசி முடிந்தபின் தமிழ் இசை சங்கத்தில் சான்றிதழ் வழங்கப்படும்.",
+          "தகுதி: இசை கற்றுக்கொள்வதற்கு ஆர்வம் வேண்டும்","விரும்பத்தக்கது: இசையில் அடிப்படை பாடங்கள் தெரிந்திருக்க வேண்டும்"
+           ],  
+           "address":[{
+    "title":"தமிழ் இசைச் சங்கம்",
+    "title2":"இராஜா அண்ணாமலை மன்றம்,",
+    "title3":"எண் 5, எஸ்பிளனேடு சாலை,",
+    "title4":"சென்னை 600 108,  தமிழ் நாடு, இந்தியா",
+    "phone1":"+91 94449 25880 / 94430 60416",
+    "phone2":"+91 44 2534 1425 / 2533 0350",
+    "email":"tamilisaisangam@yahoo.in" ,     
+    "email2":"tamilisaisangamskype@gmail.com"
+  }],  
        
     "footers": [
       {
@@ -1852,7 +1889,6 @@
       },
       {
         "navtitle": "Isai Vizha",
-        "path": "/isai-vizha",
         "details": [
           {
             "subtitle": "Tamil Pann Research",
@@ -1912,6 +1948,11 @@
           {
             "subtitle": "Special course",
             "path": "/special-course"
+          }
+          ,
+          {
+            "subtitle": "Skype classes",
+            "path": "/skype-class"
           },
           {
             "subtitle": "Distance Education",
@@ -2038,6 +2079,46 @@
         ]
       }
     ],
+    
+      "notes2":[
+        {
+          "title":"Notes",
+          "point":"Every year, the college starts in the month of June."
+        }
+      ],
+    "evecollege":[
+      {
+        "title":"Evening College",
+        "title1":"Evening Tamil Music College classes will begin at 5:00 PM and continue until 7:15 PM. Academic year (2019 - 2020).",
+          "title2":"Classes offered for training",
+          "courses":[
+            {
+              "title3":"“Certificate in Carnatic Music Arts (Vocal, Violin, Bharatanatyam)",
+              "image":"/assets/image/course-img1.jpg",
+              "duration":"2 Year",
+              "description":["Educational Qualification: 8th Grade Pass"],
+              "course":"Courses"
+            },{
+              "title3":"“Music Wealth Certificate Course (Vocal Music, Bharatanatyam)",
+              "image":"/assets/image/course-img1.jpg",
+              "duration":"1 Year",
+              "description":[
+                "Educational Qualification: 10th Grade Graduation", "Music Qualification : Karnataka Music Art Certificate Qualification."
+              ],
+              "course":"Courses"
+            },{
+              "title3":"“Isai Mani Certificate Course (Vocal Music, Bharatanatyam).",
+              "image":"/assets/image/course-img1.jpg",
+              "duration":"3 Year",
+              "description":[
+                "Educational Qualification: 10th Grade Pass.", "Music Qualification: Carnatic Music Certificate, Isai Selvam Certification."
+              ],
+              "course":"Courses"
+            }              
+
+          ]
+      }
+    ],
     "head" : [
       {
         "head1": {
@@ -2053,6 +2134,12 @@
           ]
         }
       }
+    ],
+    "cardtitle":[
+      {"title1":"Competition Apply Online",
+        "title2":"Download Prospects",
+        "title3":"Certification"
+    }
     ],
     "heads" : [
       {
@@ -2486,20 +2573,24 @@
       ],
       "skypeclass":[
           {
-            "title":"நிகழ்நிலை (Online) வகுப்புகள்",
-            "title1":"பயிற்று விக்கப்பெறும் வகுப்புகள்",
+            "title":"Online Classes",
+            "title1":"Classes that will be conducted",
             "img":"/assets/image/annamalai_chettiya2.jpg",
+            "head1":{
+            "thumbnail": "/assets/image/tamilisaisangam1.jpg"
+            },
             "card":[
-              {"title":"'இசைக்கலைச் சான்றிதழ்' (குரலிசை, வீணை, வயலின்)",
-              "para":["1.வகுப்புகள் ஒரு வாரம் (40 வகுப்புகள்) நடைபெறும்.","2.இந்தியா மற்றும் வெளிநாடுகளில் உள்ளவர்கள் இந்த வகுப்புகளில் சேரலாம்.","3.வகுப்புகளின் கால அளவு ஒரு மணி நேரம்.",
-            "4.அயல் நாட்டு மாணவர்களுக்கு வாரம் ஒரு முறை வகுப்புகள் நடைபெறும். மாணவர்கள் வகுப்பின் எண்ணிக்கையை அதிகரிக்கலாம்.","5.அயல் நாட்டு மாணவர்களுக்கு 10 வகுப்புகளுக்குக் 250 ரூபாய் கட்டணம் செலுத்தவேண்டும். 10 வகுப்புகளுக்கு முன் கூட்டியே செலுத்துவது அவசியம்",
-            "6.உள்ள நாட்டு இந்தியா மாணவர்களுக்கு 10 வகுப்புகளுக்குக் ரூபாய் 5000 கட்டணம் செலுத்தவேண்டும். 10 வகுப்புகளுக்கு கட்டணம் முன் கூட்டியே செலுத்தவேண்டும். ஒரு வருடத்தில் 2 அல்லது 3 வகுப்புகள் எடுத்துக்கொள்ளலாம்.","இசைக்கலை சான்றிதழ் பயிசி முடிந்தபின் தமிழ் இசை சங்கத்தில் சான்றிதழ் வழங்கப்படும்.",
-          "தகுதி: இசை கற்றுக்கொள்வதற்கு ஆர்வம் வேண்டும்","விரும்பத்தக்கது: இசையில் அடிப்படை பாடங்கள் தெரிந்திருக்க வேண்டும்"]
-            }
+              {"title":"'Certificate in Music Arts (Vocal Music, Veena, Violin)",
+              "para":["1.Classes will be conducted for one week (40 classes).","2.People from India and abroad can join these classes.","3.The duration of the classes is one hour.",
+            "4.For foreign students, classes will be held once a week. Students can increase the number of classes."] }
             ],
             "card2":""
           }
       ],
+      "skype2":["5.Foreign students must pay a fee of 250 rupees for 10 classes. Payment for the 10 classes must be made in advance.",
+            "6.Indian students must pay a fee of 5000 rupees for 10 classes. Payment for the 10 classes must be made in advance. Students can take 2 or 3 classes in a year.","7.After completing the music course, a certificate will be provided by the Tamil Isai Sangam."
+          ,"Eligibility: Must have an interest in learning music.","Desirable: Should have knowledge of basic music lessons."
+           ], 
       "notes":[
         {
           "title":"Note",
@@ -2510,7 +2601,7 @@
         }
       ],
       "tablecontent":[{
-        "title":"கூட்டுத்தொகை அமைப்பு",
+        "title":"FEES STRUCTURE",
           "title1":"VOCAL / VEENA / VIOLIN / FLUTE / MIRDANGAM / TAVIL / /NAGASWARAM / BHARATHANATYAM / FOLK",
           "thead":"1. REGISTRATION FEES: (For Institution and/or Teachers-including Application Fees)",
             "thead1":{"name":"Grade","name1":"For Indian","name2":"For Foreigners"},
@@ -3868,6 +3959,16 @@
        }]
     }
   ],
+  "address":[{
+    "title":"Tamil Isai Sangam",
+    "title2":"Rajah Annamalai Mandram,",
+    "title3":"No. 5, Esplanade Road, Chennai 600 108",
+    "title4":"TamilNadu, India",
+    "phone1":"+91 94449 25880 / 94430 60416",
+    "phone2":"+91 44 2534 1425 / 2533 0350",
+    "email":"tamilisaisangam@yahoo.in" ,     
+    "email2":"tamilisaisangamskype@gmail.com"
+  }],
   "openuniv":[
     {
       "title":"Open Education",

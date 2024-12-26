@@ -865,7 +865,7 @@ textarea:focus::placeholder{
 	display: block;
 	padding-bottom: 10px;
 	font-family: 'texgyreadventorbold';
-	font-size: 24px;
+	font-size: 18px;
 	color: #fff;
 	text-transform: uppercase;
 }
@@ -2849,10 +2849,7 @@ a.download-prospects:hover span {
 .about.inner .modal-body .video-block {
 	margin-bottom: 0px;
 }
-.about.inner p {
-	padding-bottom: 20px;
-	text-align: justify;
-}
+
 .about .btn-wrapper {
 	display: block;
 }
@@ -5572,6 +5569,10 @@ h3 {
 h3 {
     font-size: 21px
 }
+.about.inner p {
+	padding-bottom: 10px;
+	text-align: justify;
+}
 
 }
 @media(max-width:766px){
@@ -5582,6 +5583,10 @@ h3 {
 		/* font-size: 10px; */
 		color: #fff;
 		text-transform: uppercase;
+	}
+	.about.inner p {
+		padding-bottom: 2px;
+		text-align: justify;
 	}
 	.h1,
 .h2,
@@ -6471,7 +6476,7 @@ h3 {
 		padding-right: 0px !important;
 	}
 	.about ul.our-links {
-		margin: -226px -15px 30px -15px;
+		margin: -226px -15px 30px -46px;
 	}
 	.about ul.our-links li {
 		padding: 20px 20px 30px 20px;

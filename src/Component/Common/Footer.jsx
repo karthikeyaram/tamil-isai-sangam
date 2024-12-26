@@ -47,20 +47,10 @@ const Footer = () => {
       { name: "Peer Learning", link: "#" },
     ],
     socialLinks: [
-      { icon: <FaFacebook />, link: "#" },
-      { icon: <FaTwitter />, link: "#" },
-      { icon: <FaGooglePlus />, link: "#" },
-      { icon: <FaYoutube />, link: "#" },
-      { icon: <FaInstagram />, link: "#" },
-    ],
-    instagramImages: [
-      "images/insta-img1.jpg",
-      "images/insta-img2.jpg",
-      "images/insta-img3.jpg",
-      "images/insta-img4.jpg",
-      "images/insta-img5.jpg",
-      "images/insta-img6.jpg",
-    ],
+      { icon: <FaFacebook />, link: "https://www.facebook.com/people/Tamil-Isai-Kalloori-Tamil-Isai-Sangam/100064832676981/" },
+      { icon: <FaYoutube />, link: "https://www.youtube.com/channel/UCc52PkQqepI__b2vjg-dOkQ" },
+      { icon: <FaInstagram />, link: "https://www.instagram.com/tamil_isai_kalloori?igshid=rzk92bvhobqq" },
+    ]
   };
 
   return (
@@ -171,7 +161,7 @@ const Footer = () => {
             </div>
 
             {/* Instagram Section */}
-            <div className="col-sm-4">
+            {/* <div className="col-sm-4">
               <div className="instagram">
                 <h3>@INSTAGRAM</h3>
                 <ul className="clearfix">
@@ -188,7 +178,7 @@ const Footer = () => {
                   ))}
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

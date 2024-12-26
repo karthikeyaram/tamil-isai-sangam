@@ -15,7 +15,7 @@ const Banner = () => {
       title: "Explore the World of",
       spatitile: "Our Graduates",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "",
       buttonLink: "about.html",
       Image: require("../../Assets/banner/slider_01.jpg"),
     },
@@ -39,13 +39,11 @@ const Banner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000); 
+    }, 5000);
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, [slides.length]);
 
- 
-   
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
@@ -56,36 +54,37 @@ const Banner = () => {
 
   const margazhiSpecial = homeData[language]?.home[0]?.margazhispecial || [];
   const categorys = homeData[language]?.home[1]?.margazhispecial || [];
+  const head = homeData[language]?.cardtitle || [];
 
   return (
     <>
       <div
-      style={{
-        position: "relative",
-        overflow: "hidden",
-        width: "100%",
-        height: "350px", 
-      }}
-    >
-      <div style={{ position: "relative", width: "100%", height: "100%" }}>
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              backgroundImage: `url(${slide.Image})`,
-              backgroundSize: "contain", 
-              backgroundRepeat: "no-repeat", 
-              backgroundPosition: "top", 
-              opacity: index === currentSlide ? 1 : 0,
-              transition: "opacity 1.5s ease-in-out",
-            }}
-          >
-            {/* <div
+        style={{
+          position: "relative",
+          overflow: "hidden",
+          width: "100%",
+          height: "350px",
+        }}
+      >
+        <div style={{ position: "relative", width: "100%", height: "100%" }}>
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                backgroundImage: `url(${slide.Image})`,
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "top",
+                opacity: index === currentSlide ? 1 : 0,
+                transition: "opacity 1.5s ease-in-out",
+              }}
+            >
+              {/* <div
               style={{
                 position: "absolute",
                 bottom: "20%",
@@ -111,75 +110,81 @@ const Banner = () => {
                 Know More
               </a>
             </div> */}
-          </div>
-        ))}
-      </div>
-    </div>
-      <div className="about">
-        <div className="container1">
-          <ul className="row our-links">
-            <li
-              className="col-sm-4 apply-online clearfix equal-hight"
-              style={{ height: "194px" }}
-            >
-              <div className="icon">
-                <img
-                  src="images/apply-online-ico.png"
-                  className="img-responsive"
-                  alt=""
-                />
-              </div>
-              <div className="detail">
-               <a href="/competition-form"> <h3 style={{cursor:"pointer"}} >Competition Apply Online</h3></a>
-                <p>Lorem Ipsum is simply dummy text of the printing...</p>
-                <a href="apply-online.html" className="more">
-                  <MdKeyboardArrowRight />
-                </a>
-              </div>
-            </li>
-            <li
-              className="col-sm-4 prospects clearfix equal-hight"
-              style={{ height: "194px" }}
-            >
-              <div className="icon">
-                <img
-                  src="images/prospects-ico.png"
-                  className="img-responsive"
-                  alt=""
-                />
-              </div>
-              <div className="detail">
-                <h3>
-                  <span>Download</span> Prospects
-                </h3>
-                <p>Lorem Ipsum is simply dummy text of the printing...</p>
-                <a href="#" className="more">
-                  <MdKeyboardArrowRight />
-                </a>
-              </div>
-            </li>
-            <li
-              className="col-sm-4 certification clearfix equal-hight"
-              style={{ height: "194px" }}
-            >
-              <div className="icon">
-                <img
-                  src="images/certification-ico.png"
-                  className="img-responsive"
-                  alt=""
-                />
-              </div>
-              <div className="detail">
-                <h3>Certification</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing...</p>
-                <a href="#" className="more">
-                  <MdKeyboardArrowRight />
-                </a>
-              </div>
-            </li>
-          </ul>
+            </div>
+          ))}
         </div>
       </div>
+      {head.map((item, index) => (
+      <div className="about">
+      
+        <div className="container1">
+          
+            <ul key={index} className="row our-links">
+              <li
+                className="col-sm-4 apply-online clearfix equal-hight"
+                style={{ height: "194px" }}
+              >
+                <div className="icon">
+                  <img
+                    src="images/apply-online-ico.png"
+                    className="img-responsive"
+                    alt=""
+                  />
+                </div>
+                <div className="detail">
+                  <a href="/competition-form">
+                    <h3 style={{ cursor: "pointer" }}>{item.title1}</h3>
+                  </a>
+                  
+                  <a href="apply-online.html" className="more">
+                    <MdKeyboardArrowRight />
+                  </a>
+                </div>
+              </li>
+              <li
+                className="col-sm-4 prospects clearfix equal-hight"
+                style={{ height: "194px" }}
+              >
+                <div className="icon">
+                  <img
+                    src="images/prospects-ico.png"
+                    className="img-responsive"
+                    alt=""
+                  />
+                </div>
+                <div className="detail">
+                  <h3>
+                    <span>{item.title2}</span>
+                  </h3>
+                  <a href="#" className="more">
+                    <MdKeyboardArrowRight />
+                  </a>
+                </div>
+              </li>
+              <li
+                className="col-sm-4 certification clearfix equal-hight"
+                style={{ height: "194px" }}
+              >
+                <div className="icon">
+                  <img
+                    src="images/certification-ico.png"
+                    className="img-responsive"
+                    alt=""
+                  />
+                </div>
+                <div className="detail">
+                  <h3>{item.title3}</h3>
+                  <a href="#" className="more">
+                    <MdKeyboardArrowRight />
+                  </a>
+                </div>
+              </li>
+            </ul>
+         
+        </div>
+        
+      </div>
+    ))}
       <div className="news-events padding-lg">
         <div className="container1">
           {margazhiSpecial.map((special, index) => (
@@ -198,17 +203,17 @@ const Banner = () => {
                       <div className="inner">
                         <figure className="card-figure">
                           {/* Image */}
-                           <img
+                          <img
                             src={card.image}
                             alt={card.cardtitle}
                             className="card-image"
                             style={{
                               width: "100%",
-                              height: "auto", 
+                              height: "auto",
                               borderRadius: "10px",
-                              transition: "transform 0.3s ease", 
+                              transition: "transform 0.3s ease",
                             }}
-                          /> 
+                          />
                           <div
                             className="card"
                             style={{
@@ -221,11 +226,10 @@ const Banner = () => {
                               flexDirection: "column",
                               justifyContent: "flex-end",
                               width: "100%",
-                              backgroundColor:"#C1C2C2",
-                              marginBottom:"30px"
+                              backgroundColor: "#C1C2C2",
+                              marginBottom: "10px",
                             }}
                           >
-                            {/* Card Title */}
                             <h5 className="card-title">{card.cardtitle}</h5>
                             {/* Card Content */}
                             <h6
@@ -256,7 +260,7 @@ const Banner = () => {
                   special.card.map((card) => (
                     <li
                       key={card.id}
-                      className="col-sm-3" 
+                      className="col-sm-3"
                       style={{ listStyle: "none" }}
                     >
                       <div className="inner">
@@ -277,7 +281,7 @@ const Banner = () => {
                             style={{
                               backgroundSize: "cover",
                               backgroundPosition: "center",
-                              height: "200px",
+                              height: "224px",
                               borderRadius: "10px",
                               padding: "15px",
                               display: "flex",
