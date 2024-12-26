@@ -1033,7 +1033,7 @@ textarea:focus::placeholder{
 }
 .about h2 {
 	padding-bottom: 20px !important;
-	color: #353434;
+	color: #09606a;
 	text-align: left !important;
 }
 .about p {
@@ -6465,7 +6465,9 @@ a.btn-circle:hover {
     .how-apply h2, 
     .have-question h2 {
 		padding-bottom: 30px;
-		font-size: 26px;
+		font-size: 22px;
+		margin-left: 40px;
+        margin-top: 23px;
 	}
 	.our-impotance ul li .inner {
 		padding: 10px 10px 30px 10px;

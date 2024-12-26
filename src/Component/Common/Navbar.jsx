@@ -150,7 +150,7 @@ const Navbar = () => {
               type="button"
               onClick={toggleMenu}
             >
-              <IoReorderThreeOutline />
+              <IoReorderThreeOutline style={{ width: "35px", height: "35px" }} />
             </button>
           </div>
           <div className={`navbar-collapse ${isMenuOpen ? "show" : "hide"}`}>
