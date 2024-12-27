@@ -26,7 +26,6 @@
       },
       {
         "navtitle": "இசை விழா",
-        "path": "/isai-vizha",
         "icon": "",
         "details": [
           {
@@ -69,24 +68,28 @@
             "path": "/TISGEC-course"
           },
           {
-            "subtitle": "E-Quiz Registration",
+            "subtitle": "E-Quiz பதிவு",
             "path": "/equiez-register-form"
           },
           {
-            "subtitle": "Undergraduate course",
-            "path": "/undergraduate"
+            "subtitle": "இளநிலை பாடநெறி",
+            "path": "/awards"
           },
           {
             "subtitle": "Diploma course",
-            "path": "/awards"
+            "path": "/diploma-course"
           },
           {
-            "subtitle": "Special course",
-            "path": "/awards"
+            "subtitle": "Certificate course",
+            "path": "/cetificate-course"
+          },
+          {
+            "subtitle": "சிறப்பு பாடநெறி",
+            "path": "/special-course"
           },
           {
             "subtitle": "நிகழ்நிலை (Online) வகுப்புகள்",
-            "path": "/online-class"
+            "path": "/skype-class"
           },
           {
             "subtitle": "தொலைநிலைக்கல்வி",
@@ -94,7 +97,7 @@
           },
           {
             "subtitle": "திறந்த நிலை கல்வி",
-            "path": "/open-education"
+            "path": "open-education"
           },
           {
             "subtitle": "ஊழியர்கள்",
@@ -192,27 +195,37 @@
               {
                 "id": 1,
                 "cardtitle": "சிறிய சிறுவர்",
+                "image": "/assets/image/categorys.jpg",
                 "cardcontent": "ஏழு முதல் பத்தாம் ஆண்டு வயது."
               },
               {
                 "id": 2,
                 "cardtitle": "கீழ் நிலை",
+                "image": "/assets/image/categorys.jpg",
                 "cardcontent": "பதினொன்று முதல் பதினைந்து ஆண்டு வயது பதிவு கட்டணம் ரூ.150."
               },
               {
                 "id": 3,
                 "cardtitle": "உயர்ந்த நிலை",
+                "image": "/assets/image/categorys.jpg",
                 "cardcontent": "பதினாறு முதல் இருபத்தி ஒன்று ஆண்டு வயது."
               },
               {
                 "id": 4,
                 "cardtitle": "உயர்ந்த மூத்த நிலை",
+                "image": "/assets/image/categorys.jpg",
                 "cardcontent": "இருபத்தி ஒன்று ஆண்டு வயது மற்றும் அதற்கு மேல் பதிவு கட்டணம் ரூ.250."
               }
             ]
           }
         ]
       }
+    ],
+    "cardtitle":[
+      {"title1":"பதிவு செய்யவும்",
+        "title2":"பதிவுகள் பதிவிறக்கம் செய்யவும்",
+        "title3":"சான்றிதழ்"
+    }
     ],
     "head" : [
       {
@@ -310,16 +323,600 @@
           {"id":9,"img":"/assets/head img/ar_meiyappan.jpg","title":"திரு . ஏஆர் . மெய்யப்பன்","subtitle":""},{"id":10,"img":"/assets/head img/ar_nachiyappan.jpg","title":"திரு. ஏஆர் நாச்சியப்பன்","subtitle":"உதவிச் செயலர்"}
         ] 
     }
+    ],"blog2": [
+
+   { "gallery2":
+
+   [
+     {
+       "id": 18,
+       "title": "முத்து தண்டவர்",
+       "image": "img17.jpg"
+     },
+     {
+       "id": 19,
+       "title": "மணிமுத்தா பிள்ளை",
+       "image": "img17.jpg"
+     },
+     {
+       "id": 20,
+       "title": "அருணாசலகவி ராயர்",
+       "image": "img17.jpg"
+     }
+   ]
+ 
+}
+
     ],
+
+ "blog4": [
+  {
+    "gallery4": [
+      {
+        "id": 69,
+        "title": "வழுவூர் பி.ராமையா பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 70,
+        "title": "கிரிபானந்த வரியார்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 71,
+        "title": "செம்மங்குடி ஆர்.ஸ்ரீனிவாச ஐயர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 72,
+        "title": "எம்.எஸ்.சுப்புலக்ஷ்மி",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 73,
+        "title": "மதுரை எஸ்.சோமசுந்தரம்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 74,
+        "title": "மா.பா.பெரியசாமி தூரன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 75,
+        "title": "டி.கே.பட்டம்மாள்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 76,
+        "title": "திருவிழிமழலை எஸ்.சுப்ரமணிய பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 77,
+        "title": "டி.பாலசரஸ்வதி",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 78,
+        "title": "திருவிழிமழலை எஸ்.நடராஜசுந்தரம் பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 79,
+        "title": "எம்.லா.வசந்தகுமாரி",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 80,
+        "title": "ராமநாதபுரம் சி.எஸ்.முருகபூபிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 81,
+        "title": "மி.பா.சோமசுந்தரம்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 82,
+        "title": "டாக்டர். எஸ்.ராமநாதன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 83,
+        "title": "சீர்காழி திரு. எஸ். கோவிந்தராஜன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 84,
+        "title": "நாமகிரி பட்டை கிருஷ்ணன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 85,
+        "title": "லால்குடி ஜி.ஜெயராமன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 86,
+        "title": "தஞ்சை கே.பி.கிட்டப்பா",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 87,
+        "title": "தர்மபுரம் பி.சாமிநாதன் (தேவ்ரம்)",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 88,
+        "title": "ஏ.கே.சி.நடராஜன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 89,
+        "title": "குன்னக்குடி ஆர்.வையத்யநாதன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 90,
+        "title": "வளைப்பட்டியர் ஏ.ஆர்.சுப்ரமணியன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 91,
+        "title": "கே.ஜே.யேசுதாஸ்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 92,
+        "title": "ஷேக் சின்ன மௌலானா",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 93,
+        "title": "டாக்டர்.சேல்வி பத்மா சுப்பிரமணியம் (பரதநாட்டியம்)",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 94,
+        "title": "திருப்பம்புரம் டாக்டர்.ச.சண்முகசுந்தரம்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 95,
+        "title": "டி.ஆர்.பப்பா",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 96,
+        "title": "திருவிழா ஆர்.ஜெயசங்கர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 97,
+        "title": "டாக்டர்.ந.ராமணி (ஃபிளூட்)",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 98,
+        "title": "காஞ்சிபுரம் ஏ.விநாயக மூலியர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 99,
+        "title": "மதுரை டி.ஏன.சேஷகோபாலன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 100,
+        "title": "காஞ்சிபுரம் எம்.எம்.வெங்கடவரதன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 101,
+        "title": "டாக்டர்.மு.பாலமுரளிகிருஷ்ணன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 102,
+        "title": "எம்.எஸ்.விஸ்வநாதன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 103,
+        "title": "கே.ஜே.சரசா",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 104,
+        "title": "திருவிடைமருது பி. எஸ்.விஆர் ராஜா",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 105,
+        "title": "பொம்மை சகோதரிகள். சி.சரோஜா மற்றும் சி.லலிதா",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 106,
+        "title": "சைதை டி.நாடாராஜன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 107,
+        "title": "செம்போணார்கோவில் எஸ்.ஆர்.டி.வையத்யநாதன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 108,
+        "title": "திரு.அருணா சைராம்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 109,
+        "title": "திரு.டி.என்.கிரிஷ்ணன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 110,
+        "title": "திரு.சுதா ரाघுநாதன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 111,
+        "title": "மதுரை எம்.பி.ஏன்.பொன்னுசாமி",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 112,
+        "title": "திரு.கிருஷ்ணா குமாரி நவந்த்ரன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 113,
+        "title": "டாக்டர்.சீர்காழி ஜி.சிவசிதம்பரம்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 114,
+        "title": "அரித்வரமங்கலம் திரு.ஏ.கே.பாலனிவெல்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 115,
+        "title": "திரு.சஞ்சய் சுப்பிரமணியம்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 116,
+        "title": "திரு.டி.எம்.கிரிஷ்ணா",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 117,
+        "title": "உமயல்புரம் திரு.கே.சிவராமன்",
+        "image": "img17.jpg"
+      }
+    ]
+  }
+],
+
+"blog5": [
+ 
+  {
+    "gallery5":[
+  
+      {
+        "id": 118,
+        "title": "திருப்பண்பந்தல் திரு. எஸ்.முத்துக்கண்டசாமி தேசிகர்",
+        "image": "img17.jpg"
+      },
+  
+      {
+        "id": 119,
+        "title": "தர்மபுரம் திரு. எஸ்.ஞானபிரகாச தேசிகர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 120,
+        "title": "திருத்தணி என்.சுவாமிநாதன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 121,
+        "title": "திரு. சாமி தண்டபாணி",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 122,
+        "title": "சீர்காழி எஸ்.திரு.ஞானசம்பந்தன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 123,
+        "title": "திருவிடைமருதூர் எஸ்.சம்பந்தா தேசிகர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 124,
+        "title": "வேதரன்யம் கே.முத்துகுமாரசாமி தேசிகர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 125,
+        "title": "பாளனி பா.சண்முகசுந்தரா தேசிகர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 126,
+        "title": "கரூர் கு.சாமிநாதா தேசிகர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 127,
+        "title": "பாளனி கா.வேங்கடேசன்",
+        "image": "img17.jpg"
+      }
+  
+    ]
+  }
+  ],
+   "blog3": [
+  {
+    "gallery3": [
+      {
+        "id": 21,
+        "title": "பழனி சுப்ரமணிய பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 22,
+        "title": "பழனி சுப்ரமணிய பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 23,
+        "title": "மிருதங்கம் தட்சிணாமூர்த்தி பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 24,
+        "title": "சிட்டூர் சுப்ரமணிய பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 25,
+        "title": "முசிரி சுப்ரமணிய ஐயர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 26,
+        "title": "வடிவேலு",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 27,
+        "title": "தஞ்சை கண்ணுசாமி நட்டுவனார்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 28,
+        "title": "இசை பெரரிக்ஞர் மு.மு.தந்தபாணி தேசிகர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 29,
+        "title": "இசை பெரரிக்ஞர் ஃபிடில் ராஜமணிக்கம் பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 30,
+        "title": "இசை பெரரிக்ஞர் பி.சம்பமூர்த்தி",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 31,
+        "title": "பொன்னையா",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 32,
+        "title": "தஞ்சை க.பொன்னையா பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 33,
+        "title": "மயிலாப்பூர் வேதநாயகம் பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 34,
+        "title": "மலைக்கோட்டை ஃபிடில் கோவிந்தசாமி பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 35,
+        "title": "காஞ்சிபுரம் நாயினா பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 36,
+        "title": "வீணை தனம்மாள்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 37,
+        "title": "திருக்கோடிக்கவல் கிருஷ்ணய்யர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 38,
+        "title": "ராஜரதினம் பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 39,
+        "title": "திருப்பம்புரம் ஸ்வாமிநாத பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 40,
+        "title": "மிருதங்கம் நாராயணசாமி அப்பா",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 41,
+        "title": "பலகாட் டி.எஸ்.மணி ஐயர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 42,
+        "title": "திருவிடைமருதூர் பி.சு.வீருசாமி பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 43,
+        "title": "தனகோதி அம்மாள்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 44,
+        "title": "சின்னையா",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 45,
+        "title": "பம்மல் சம்பந்தமுதலியார்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 46,
+        "title": "மதுரை மணி ஐயர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 47,
+        "title": "மதுரை மணி ஐயர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 48,
+        "title": "சண்முகவதிவு",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 49,
+        "title": "சிதம்பரம் பட்டக்கா.சுந்தரம்பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 50,
+        "title": "கல்கி கிருஷ்ணமூர்த்தி",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 51,
+        "title": "மன்னார்குடி கோணக்கோல் பாக்கிரியா பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 52,
+        "title": "திருவனந்தபுரம் டி.லட்சுமண பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 53,
+        "title": "காமகோட்டி அம்மாள்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 54,
+        "title": "டி.பாலசரஸ்வதி",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 55,
+        "title": "நீட்மங்கலம் மீனாக்ஷி சுந்தரம் பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 56,
+        "title": "பாண்டனையனல்லூர் மீனாக்ஷி சுந்தரம் பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 57,
+        "title": "பாப்பநாசம் சிவன்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 58,
+        "title": "கருக்குறிச்சி அருணாசலமே",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 59,
+        "title": "தவிள் பஞ்சபகேசா பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 60,
+        "title": "மகாகவி சுப்பிரமணிய பாரதியார்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 61,
+        "title": "மதுரை பொன்னுசாமி பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 62,
+        "title": "மிருதங்கம் அழகா நம்பி பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 63,
+        "title": "அரியுக்குடி ராமானுஜ ஐயங்கர்",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 64,
+        "title": "மயிலாப்பூர் கோவிந்தராஜ பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 65,
+        "title": "சுவாதி திருநாள் மஹாராஜா",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 66,
+        "title": "கே.பி.சுந்தரம்பாலி",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 67,
+        "title": "மயிலாப்பூர் கோவிந்தராஜ பிள்ளை",
+        "image": "img17.jpg"
+      },
+      {
+        "id": 68,
+        "title": "டி.கே.சி.",
+        "image": "img17.jpg"
+      }
+    ]
+  }
+],
+
     "presidents":[      
       {"title":"தலைவர்கள்",
         "images":[
-          {"id":1,"img":"/assets/head img/acmuthiah.jpg","title":"பேராசிரியர் இ.சுந்தரமூர்த்தி","subtitle":"தலைவர்"},{"id":2,"img":"/assets/head img/plakshmanan.jpg","title":"மாண்புமிகு நீதிபதி பு.ரா. கோகுலகிருஷ்ணன்","subtitle":"தலைவர் (1992-2019)"},
-          {"id":3,"img":"/assets/head img/devaki_muthiah.jpg","title":"திரு. எஸ். ஸ்ரீராம்","subtitle":" உதவிச் செயலர்(1947 - 1992)"},{"id":4,"img":"/assets/head img/al_vadivelu.jpg","title":"டாக்டர்.எம். ஏ. சிதம்பரம் செட்டியார்","subtitle":"மதிப்பியல் செயலர்(1943 - 1995)"},
-          {"id":5,"img":"/assets/head img/ashwin_muthiah.jpg","title":"நீதிபதி. டாக்டர். எஸ். மகராஜன்","subtitle":"தலைவர் (1978 - 1982)"},{"id":6,"img":"/assets/head img/sakthi_thirunakarasu.jpg","title":"திவான் பகதூர் தி.மு. நாராயண சாமிப் பிள்ளை","subtitle":"தலைவர் (1956 - 1978)"},
-          {"id":7,"img":"/assets/head img/vali_arun.jpg","title":"திவான் பகதூர் தி.மு. நாராயண சாமிப் பிள்ளை","subtitle":"தலைவர் (1956 - 1978)"},{"id":8,"img":"/assets/head img/rm_somasundram.jpg","title":"திவான் பகதூர் சி.எஸ். இரத்தின சபாபதி முதலியார்","subtitle":"தலைவர் (1953 - 1956)"},
-          {"id":9,"img":"/assets/head img/ar_meiyappan.jpg","title":"டாக்டர்.ரா.க. சண்முகம் செட்டியார்","subtitle":"தலைவர் (1948 - 1953)"},{"id":10,"img":"/assets/head img/ar_nachiyappan.jpg","title":"டாக்டர். ராஜாசர்.முத்தையா செட்டியார்","subtitle":"துணைத் தலைவர் (1943 - 1982)"}
-          ,{"id":9,"img":"/assets/head img/ar_meiyappan.jpg","title":"டாக்டர். ராஜாசர்.மு. அண்ணாமலை செட்டியார்","subtitle":"தலைவர் (1943 - 1948)"}
+          {"id":1,"img":"/assets/head img/sundaramoorthi_bg.jpg","title":"பேராசிரியர் இ.சுந்தரமூர்த்தி","subtitle":"தலைவர்"},{"id":2,"img":"/assets/head img/gokulakrishnan.jpg","title":"மாண்புமிகு நீதிபதி பு.ரா. கோகுலகிருஷ்ணன்","subtitle":"தலைவர் (1992-2019)"},
+          {"id":3,"img":"/assets/head img/sriram.jpg","title":"திரு. எஸ். ஸ்ரீராம்","subtitle":" உதவிச் செயலர்(1947 - 1992)"},{"id":4,"img":"/assets/head img/chidambaram_chettiar.jpg","title":"டாக்டர்.எம். ஏ. சிதம்பரம் செட்டியார்","subtitle":"மதிப்பியல் செயலர்(1943 - 1995)"},
+          {"id":5,"img":"/assets/head img/magarajan.jpg","title":"நீதிபதி. டாக்டர். எஸ். மகராஜன்","subtitle":"தலைவர் (1978 - 1982)"},{"id":6,"img":"/assets/head img/sakthi_thirunakarasu.jpg","title":"திவான் பகதூர் தி.மு. நாராயண சாமிப் பிள்ளை","subtitle":"தலைவர் (1956 - 1978)"},
+          {"id":7,"img":"/assets/head img/narayana_swamy_pillai.jpg","title":"திவான் பகதூர் தி.மு. நாராயண சாமிப் பிள்ளை","subtitle":"தலைவர் (1956 - 1978)"},{"id":8,"img":"/assets/head img/rathinasabapathy_mudaliar.jpg","title":"திவான் பகதூர் சி.எஸ். இரத்தின சபாபதி முதலியார்","subtitle":"தலைவர் (1953 - 1956)"},
+          {"id":9,"img":"/assets/head img/shanmugam_chettiar.jpg","title":"டாக்டர்.ரா.க. சண்முகம் செட்டியார்","subtitle":"தலைவர் (1948 - 1953)"},{"id":10,"img":"/assets/head img/muthiah_chettiar.jpg","title":"டாக்டர். ராஜாசர்.முத்தையா செட்டியார்","subtitle":"துணைத் தலைவர் (1943 - 1982)"}
+          ,{"id":9,"img":"/assets/head img/rajasir_annamalai.jpg","title":"டாக்டர். ராஜாசர்.மு. அண்ணாமலை செட்டியார்","subtitle":"தலைவர் (1943 - 1948)"}
         ] 
     }
     ],
@@ -745,7 +1342,7 @@
       }
       ],
       "tablecontent":[{
-          "title":"கூட்டுத்தொகை அமைப்பு",
+          "title":"FEES STRUCTURE",
             "title1":"VOCAL / VEENA / VIOLIN / FLUTE / MIRDANGAM / TAVIL / /NAGASWARAM / BHARATHANATYAM / FOLK",
             "thead":"1. REGISTRATION FEES: (For Institution and/or Teachers-including Application Fees)",
               "thead1":{"name":"Grade","name1":"For Indian","name2":"For Foreigners"},
@@ -1758,7 +2355,6 @@
       },
       {
         "navtitle": "Isai Vizha",
-        "path": "/isai-vizha",
         "details": [
           {
             "subtitle": "Tamil Pann Research",
@@ -1801,7 +2397,7 @@
           },
           {
             "subtitle": "E-Quiz Registration",
-            "path": "/day-college"
+            "path": "/equiez-register-form"
           },
           {
             "subtitle": "Undergraduate course",
@@ -1809,23 +2405,28 @@
           },
           {
             "subtitle": "Diploma course",
-            "path": "/day-college"
+            "path": "/diploma-course"
           },
           {
             "subtitle": "Certificate course",
-            "path": "/day-college"
+            "path": "/cetificate-course"
           },
           {
             "subtitle": "Special course",
-            "path": "/day-college"
+            "path": "/special-course"
+          }
+          ,
+          {
+            "subtitle": "Skype classes",
+            "path": "/skype-class"
           },
           {
             "subtitle": "Distance Education",
-            "path": "/day-college"
+            "path": "/distance-education"
           },
           {
-            "subtitle": "Open University",
-            "path": "/day-college"
+            "subtitle": "Open Education",
+            "path": "/open-education"
           },
           {
             "subtitle": "Staffs",
@@ -1880,6 +2481,7 @@
         "navtitle": "Contact Us",
         "path": "/contact"
       },
+    
       {
         "navtitle": "Audio",
         "path": "/audio"
@@ -1945,6 +2547,46 @@
         ]
       }
     ],
+    
+      "notes2":[
+        {
+          "title":"Notes",
+          "point":"Every year, the college starts in the month of June."
+        }
+      ],
+    "evecollege":[
+      {
+        "title":"Evening College",
+        "title1":"Evening Tamil Music College classes will begin at 5:00 PM and continue until 7:15 PM. Academic year (2019 - 2020).",
+          "title2":"Classes offered for training",
+          "courses":[
+            {
+              "title3":"“Certificate in Carnatic Music Arts (Vocal, Violin, Bharatanatyam)",
+              "image":"/assets/image/course-img1.jpg",
+              "duration":"2 Year",
+              "description":["Educational Qualification: 8th Grade Pass"],
+              "course":"Courses"
+            },{
+              "title3":"“Music Wealth Certificate Course (Vocal Music, Bharatanatyam)",
+              "image":"/assets/image/course-img1.jpg",
+              "duration":"1 Year",
+              "description":[
+                "Educational Qualification: 10th Grade Graduation", "Music Qualification : Karnataka Music Art Certificate Qualification."
+              ],
+              "course":"Courses"
+            },{
+              "title3":"“Isai Mani Certificate Course (Vocal Music, Bharatanatyam).",
+              "image":"/assets/image/course-img1.jpg",
+              "duration":"3 Year",
+              "description":[
+                "Educational Qualification: 10th Grade Pass.", "Music Qualification: Carnatic Music Certificate, Isai Selvam Certification."
+              ],
+              "course":"Courses"
+            }              
+
+          ]
+      }
+    ],
     "head" : [
       {
         "head1": {
@@ -1960,6 +2602,12 @@
           ]
         }
       }
+    ],
+    "cardtitle":[
+      {"title1":"Competition Apply Online",
+        "title2":"Download Prospects",
+        "title3":"Certification"
+    }
     ],
     "heads" : [
       {
@@ -2391,6 +3039,26 @@
             ]
         }
       ],
+      "skypeclass":[
+          {
+            "title":"Online Classes",
+            "title1":"Classes that will be conducted",
+            "img":"/assets/image/annamalai_chettiya2.jpg",
+            "head1":{
+            "thumbnail": "/assets/image/tamilisaisangam1.jpg"
+            },
+            "card":[
+              {"title":"'Certificate in Music Arts (Vocal Music, Veena, Violin)",
+              "para":["1.Classes will be conducted for one week (40 classes).","2.People from India and abroad can join these classes.","3.The duration of the classes is one hour.",
+            "4.For foreign students, classes will be held once a week. Students can increase the number of classes."] }
+            ],
+            "card2":""
+          }
+      ],
+      "skype2":["5.Foreign students must pay a fee of 250 rupees for 10 classes. Payment for the 10 classes must be made in advance.",
+            "6.Indian students must pay a fee of 5000 rupees for 10 classes. Payment for the 10 classes must be made in advance. Students can take 2 or 3 classes in a year.","7.After completing the music course, a certificate will be provided by the Tamil Isai Sangam."
+          ,"Eligibility: Must have an interest in learning music.","Desirable: Should have knowledge of basic music lessons."
+           ], 
       "notes":[
         {
           "title":"Note",
@@ -2400,6 +3068,18 @@
           "point3":"Every year the College reopens in the month of June or The Academic year starts during the month of June."
         }
       ],
+      "tablecontent":[{
+        "title":"FEES STRUCTURE",
+          "title1":"VOCAL / VEENA / VIOLIN / FLUTE / MIRDANGAM / TAVIL / /NAGASWARAM / BHARATHANATYAM / FOLK",
+          "thead":"1. REGISTRATION FEES: (For Institution and/or Teachers-including Application Fees)",
+            "thead1":{"name":"Grade","name1":"For Indian","name2":"For Foreigners"},
+          "table":[{"grade":"Grade","amount":"Rs.1,250/-","amount2":"Rs.3,000/-"}]
+    }],
+    "tablecontent2":[{
+       "thead":"2. Students Registration fees: (For each student)",
+          "thead1":{"title":"Registration Fees (including Application, Exam and Certificate)","name":"Grade","name1":"For Indian students","name2":"For foreigners students"},
+        "table":[{"grade":"Grade 1","amount":"Rs.500/-","amount2":"Rs.5,500/-"},{"grade":"Grade 2","amount":"Rs.750/-","amount2":"Rs.6,000/-"},{"grade":"Grade 3","amount":"Rs.1,000/-","amount2":"Rs.7,000/-"},{"grade":"Grade 4","amount":"Rs.1,800/-","amount2":"Rs.8,000/-"},{"grade":"Grade 5","amount":"Rs.2,000/-","amount2":"Rs.9,000/-"},{"grade":"Grade 6","amount":"Rs.2,200/-","amount2":"Rs.10,000/-"},{"grade":"Grade 7","amount":"Rs.2,500/-","amount2":"Rs.12,000/-"}
+    ]}],
       "stepses":[
       
       {
@@ -2434,6 +3114,32 @@
         "img2":"/assets/image/nataraj.jpg"
       }    
     ], 
+    "terms":[
+        {
+          "content": [
+              {
+                  "column": [
+                      [
+                          {
+                              "title": "This course is called as TISGEC – Tamil Isai Sangam Grade Exam Course"
+                          },
+                          {
+                              "title": "This course is Beneficial to all school going children." },
+                          {  "title": "The Grade exams will be divided into 8 level." }, {  "title": "These 8 Grades will be of 6 months duration each.." },{  "title": "Exam will be conducted once in 6 months." },{  "title": "Syllabus will be issued by Tamil Isai Sangam." },
+                          {  "title": "Exams will be conducted and after successful completion of each Grade Certificate will be issued by Tamil Isai Sangam, Raja Annamalai Mandram, Chennai – 600 108." },{  "title": "All Private Music and Dance Teachers and Music Institution can register their names and get Registration number for each Grade every six months after paying the prescribed Application and Registration Fees every six months for each Grade (Annexure 1)" }
+                          ,{"title": "After Registration, the Teachers/Institution can register their students appearing for Grade Exam by paying the prescribed fees (Annexure 2)" },
+                          {"title": "The students can take up only one Grade at a time." }
+                        ],
+                      [
+                          {"title": "The age limit for a student to take up the exam will be 7 years completion for Music and 8 years completion for Natyam on the date of application." },{"title": "The student will be eligible to take up exams only if he/she has passed the previous level." },{"title": "The first three levels will have only practical exams." }
+                            ,{"title": "The syllabus for each Grade will be given by Tamil Isai Sangam." },{"title": "The training for the exams shall be given by the teacher only." },{"title": "Tamil Isai Sangam will not conduct classes to train the students." },{"title": "The examinations will be conducted and Certificates after each level will be issued by Tamil Isai Sangam." },  
+                            {"title": "The Teacher / Faculty should accompany the students for the exam to do Nattuvangam for Natya Students." },{"title": "Only Tamil Compositions should be performed." }
+                          ]
+                  ]
+              }
+          ]
+      }
+      ],
     "form":[
       {
         "title": "APPLICATION FORM FOR REGISTRATION",
@@ -3102,7 +3808,7 @@
       },
       {
         "id": 119,
-        "title": "Dharmapuram Thiru. S. Gnanaprakasa Desikar",
+        "title": " Dharmapuram Thiru.S.Gnanaprakasa Desikar ",
         "image": "img17.jpg"
       },
       {

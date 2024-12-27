@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from "react-redux";
 import forms from "../Data/Data.json";
 
-const Equiezregistration = () => {
+const Specialcourse = () => {
     const { language } = useSelector((state) => state.language);
     const formheadtitle = forms[language]?.formhead;
 
@@ -86,9 +86,9 @@ const Equiezregistration = () => {
               <img src="images/logo.png" className="img-responsive" alt="" />
             </a>
             <div className="cnt-block">
-              <h1>E-Quiz Registration</h1>
-              <p>
-              The form E-Quiz Registration is no longer accepting responses.Try contacting the owner of the form if you think that this is a mistake.
+              <h1>APPLICATION FOR SPECIAL COURSE</h1>
+              <p style={{paddingBottom:"30px"}}>
+              The form APPLICATION FOR SPECIAL COURSE is no longer accepting responses.Try contacting the owner of the form if you think that this is a mistake.
               </p>
             </div>
             <div className="stay-connected">
@@ -218,4 +218,4 @@ const Equiezregistration = () => {
   )
 }
 
-export default Equiezregistration
+export default Specialcourse;

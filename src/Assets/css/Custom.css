@@ -138,12 +138,13 @@ select,
 textarea {
     font: inherit;
     color: #ffffff;
-    background-color: #d3d1d1;
+    background-color: #363636;
     padding-top: 10px;
     border: none;
     /* margin: 0;
     font: inherit;
     color: inherit */
+    margin-top: 10px;
 }
 
 button {
@@ -1631,7 +1632,7 @@ h4 {
 
 .h5,
 h5 {
-    font-size: 18px;
+    font-size: 11px;
     font-weight: bold;
 }
 
@@ -1641,7 +1642,7 @@ h6 {
 }
 
 p {
-    margin: 0 0 10px
+    margin: -7px 0 10px
 }
 
 .lead {
@@ -2031,8 +2032,8 @@ pre code {
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px
+    margin-right: -11px;
+    margin-left: -11px
 }
 
 .col-lg-1,
@@ -5796,20 +5797,20 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-nav>.open>a:focus,
 .navbar-inverse .navbar-nav>.open>a:hover {
     color: #fff;
-    background-color: #080808
+    background-color: #0f4e1f
 }
 
 @media (max-width:767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu>.dropdown-header {
-        border-color: #080808
+        border-color: #999898
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-        background-color: #080808
+        background-color: #b9b9b9
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-        color: #9d9d9d
+        color: #ffffff
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,
@@ -5822,7 +5823,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
     .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:focus,
     .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:hover {
         color: #fff;
-        background-color: #080808
+        background-color: #5a5a5a
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a,
