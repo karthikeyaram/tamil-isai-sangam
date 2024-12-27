@@ -42,7 +42,6 @@ const Museum = () => {
     return () => clearInterval(interval);
   }, [shuffledImages]);
 
- 
   const headings = {
     tamil: {
       library: "தொல் இசை களஞ்சியம்",
@@ -76,11 +75,6 @@ const Museum = () => {
         <h1 style={{ fontSize: "2.5rem", fontWeight: "700", letterSpacing: "0.05em" }}>
           {selectedHeadings.library}
         </h1>
-        {/* <p style={{ fontSize: "1.2rem", marginTop: "0.5rem", fontWeight: "300" }}>
-          {language === "tamil"
-            ? "தமிழ் இசையின் பண்புகளை பாதுகாத்தல்"
-            : "Preserving the rich heritage of Tamil music"}
-        </p> */}
       </header>
 
       <main style={{ display: "flex", flexWrap: "wrap", gap: "2rem", justifyContent: "center" }}>
@@ -117,12 +111,8 @@ const Museum = () => {
                   marginBottom: "20px",
                 }}
               >
-        
                 {Object.entries(museum.membership_details).map(([key, detail]) => (
-                  <div
-                    key={key}
-                    style={{ fontSize: "1.3rem", marginBottom: "12px", fontWeight: "500" }}
-                  >
+                  <div key={key} style={{ fontSize: "1.3rem", marginBottom: "12px", fontWeight: "500" }}>
                     <strong style={{ color: "#2563eb" }}>{detail.label}: </strong>
                     <span>{detail.value}</span>
                   </div>
@@ -195,9 +185,10 @@ const Museum = () => {
             {selectedHeadings.gallery}
           </h2>
           <div
+            className="museumimg"
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(6, 1fr)",
+              gridTemplateColumns: "repeat(6, 1fr)", 
               gap: "1.5rem",
             }}
           >
@@ -228,6 +219,17 @@ const Museum = () => {
           </div>
         </section>
       </main>
+
+    
+      <style>
+        {`
+          @media (max-width: 768px) {
+            .museumimg {
+              grid-template-columns: 1fr; /* One image per row on smaller screens */
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };

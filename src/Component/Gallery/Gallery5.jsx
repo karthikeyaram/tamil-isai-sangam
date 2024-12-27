@@ -24,25 +24,25 @@ const Gallery5 = () => {
     marginBottom: '40px',
     padding: '15px 30px',
     borderRadius: '10px',
-    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)', 
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
     position: 'relative',
-    animation: 'fadeIn 1s ease-in-out', 
+    animation: 'fadeIn 1s ease-in-out',
   };
 
   const headerItemStyle = (name) => ({
-    fontSize: '18px',
+    fontSize: '12px',
     fontWeight: '600',
-    color: activeHeader === name ? '#F39C12' : '#333333', 
-    textTransform: 'capitalize', 
+    color: activeHeader === name ? '#F39C12' : '#333333',
+    textTransform: 'capitalize',
     cursor: 'pointer',
     padding: '12px 24px',
     borderRadius: '5px',
     transition: 'color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease',
-    boxShadow: activeHeader === name ? '0 0 10px rgba(243, 156, 18, 0.6)' : 'none', 
+    boxShadow: activeHeader === name ? '0 0 10px rgba(243, 156, 18, 0.6)' : 'none',
     '&:hover': {
-      color: '#F39C12', 
-      transform: 'scale(1.1)', 
-      boxShadow: '0 0 10px rgba(243, 156, 18, 0.4)', 
+      color: '#F39C12',
+      transform: 'scale(1.1)',
+      boxShadow: '0 0 10px rgba(243, 156, 18, 0.4)',
     },
   });
 

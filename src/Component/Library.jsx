@@ -25,13 +25,7 @@ const Library = () => {
     <div className="library-container">
       <style>
         {`
-          html, body {
-            overflow-x: hidden;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-          }
+          
 
           .library-container {
             width: 100%;
@@ -104,17 +98,8 @@ const Library = () => {
             margin-left: 0;
           }
 
-          .row {
-            margin-bottom: 20px;
-          }
 
-          .footer {
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: auto; /* Ensures the footer stays at the bottom of the page */
-            width: 100%;
-          }
+        
         `}
       </style>
 

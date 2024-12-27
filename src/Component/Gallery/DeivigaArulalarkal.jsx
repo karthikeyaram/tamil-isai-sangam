@@ -16,6 +16,14 @@ const DeivigaArulalarkal = () => {
   const { language } = useSelector((state) => state.language);
   const galleryd = jsondata[language]?.gallery || [];
 
+  const translations = {
+    'DeivigaArulalarkal': 'தெய்வீக அருளாளர்கள்', 
+    'IsaiArulalarkal': 'இசை அருளாளர்கள்',
+    'IsaiKalaivanarkal': 'இசை கலைவாணர்கள்',
+    'IsaiPerairignarkal': 'முஇசைப் பேரறிஞர்கள்',
+    'PannIsaiPerarignarkal': 'பண் இசைப் பேரறிஞர்கள்',
+  };
+
   const headerStyle = {
     display: 'flex',
     justifyContent: 'center',
@@ -29,7 +37,7 @@ const DeivigaArulalarkal = () => {
   };
 
   const headerItemStyle = (name) => ({
-    fontSize: '18px',
+    fontSize: '12px',
     fontWeight: '600',
     color: activeHeader === name ? '#F39C12' : '#333333', 
     textTransform: 'capitalize', 
@@ -126,8 +134,7 @@ const DeivigaArulalarkal = () => {
     fontWeight: '600',
     color: '#FFF',
     textShadow: '0px 1px 1px ',
-    color:'rgba(243, 156, 18, 0.6)',
-
+    color: 'rgba(243, 156, 18, 0.6)',
     padding: '8px 12px',
     borderRadius: '5px',
     maxWidth: '100%',
@@ -136,97 +143,97 @@ const DeivigaArulalarkal = () => {
   };
 
   return (
-    <div>
-      <div style={headerStyle} className="header-container">
-        {headerNames.map(({ name, path }) => (
-          <Link
-            key={name}
-            to={path}
-            style={headerItemStyle(name)}
-            onClick={() => setActiveHeader(name)}
-          >
-            {name}
-          </Link>
-        ))}
-      </div>
-
-      <div style={{ textAlign: 'center' }}>
-        <h6 style={{ fontSize: '26px', fontWeight: '500', color: '#F39C12', marginBottom: '40px' }}>
-          {activeHeader}
-        </h6>
-      </div>
-
-      <div style={galleryContainerStyle}>
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className="gallery-item"
-            style={galleryItemStyle(visibleImages.includes(document.querySelector(`.gallery-item:nth-child(${index + 1})`)), index)}
-          >
-            <img
-              src={image.src}
-              alt={image.name}
-              style={galleryImageStyle}
-            />
-
-            {/* Display the first title from galleryd under the image */}
-            <div style={imageNameStyle}>
-              {galleryd[0]?.gallery1?.[index]?.title || 'No Title Available'}
+      <div>
+        <div style={headerStyle} className="header-container">
+          {headerNames.map(({ name, path }) => (
+            <Link
+              key={name}
+              to={path}
+              style={headerItemStyle(name)}
+              onClick={() => setActiveHeader(name)}
+            >
+              {language === 'tamil' && translations[name] ? translations[name] : name}
+            </Link>
+          ))}
+        </div>
+  
+        <div style={{ textAlign: 'center' }}>
+          <h6 style={{ fontSize: '26px', fontWeight: '500', color: '#F39C12', marginBottom: '40px' }}>
+            {language === 'tamil' && translations[activeHeader] ? translations[activeHeader] : activeHeader}
+          </h6>
+        </div>
+  
+        <div style={galleryContainerStyle}>
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="gallery-item"
+              style={galleryItemStyle(visibleImages.includes(document.querySelector(`.gallery-item:nth-child(${index + 1})`)), index)}
+            >
+              <img
+                src={image.src}
+                alt={image.name}
+                style={galleryImageStyle}
+              />
+              <div style={imageNameStyle}>
+                {galleryd[0]?.gallery1?.[index]?.title || 'No Title Available'}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+  
+        <style>
+          {`
+            @keyframes fadeIn {
+              0% {
+                opacity: 0;
+                transform: translateY(-20px);
+              }
+              100% {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+  
+            @keyframes slideInFromLeft {
+              0% {
+                opacity: 0;
+                transform: translateX(-100px);
+              }
+              100% {
+                opacity: 1;
+                transform: translateX(0);
+              }
+            }
+  
+            @keyframes slideInFromRight {
+              0% {
+                opacity: 0;
+                transform: translateX(100px);
+              }
+              100% {
+                opacity: 1;
+                transform: translateX(0);
+              }
+            }
+  
+            /* Responsive styles */
+            @media (max-width: 768px) {
+              .header-container {
+                flex-direction: column;
+                align-items: center;
+              }
+  
+              .header-container a {
+                margin-bottom: 10px;
+              }
+            }
+          `}
+        </style>
       </div>
+    );
+  };
+  
 
-      <style>
-        {`
-          @keyframes fadeIn {
-            0% {
-              opacity: 0;
-              transform: translateY(-20px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-
-          @keyframes slideInFromLeft {
-            0% {
-              opacity: 0;
-              transform: translateX(-100px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateX(0);
-            }
-          }
-
-          @keyframes slideInFromRight {
-            0% {
-              opacity: 0;
-              transform: translateX(100px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateX(0);
-            }
-          }
-
-          /* Responsive styles */
-          @media (max-width: 768px) {
-            .header-container {
-              flex-direction: column;
-              align-items: center;
-            }
-
-            .header-container a {
-              margin-bottom: 10px;
-            }
-          }
-        `}
-      </style>
-    </div>
-  );
-};
 
 export default DeivigaArulalarkal;

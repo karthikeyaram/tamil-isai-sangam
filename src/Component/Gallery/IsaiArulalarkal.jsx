@@ -14,7 +14,16 @@ const IsaiArulalarkal = () => {
   ];
 
   const { language } = useSelector((state) => state.language);
-  const galleryd = jsondata[language]?.blog2 || []; // Adjusted for your JSON data structure
+  const galleryd = jsondata[language]?.blog2 || [];
+
+  // Translation object
+  const translations = {
+    'DeivigaArulalarkal': 'தெய்வீக அருளாளர்கள்', 
+    'IsaiArulalarkal': 'இசை அருளாளர்கள்',
+    'IsaiKalaivanarkal': 'இசை கலைவாணர்கள்',
+    'IsaiPerairignarkal': 'முஇசைப் பேரறிஞர்கள்',
+    'PannIsaiPerarignarkal': 'பண் இசைப் பேரறிஞர்கள்',
+  };
 
   const headerStyle = {
     display: 'flex',
@@ -23,25 +32,25 @@ const IsaiArulalarkal = () => {
     marginBottom: '40px',
     padding: '15px 30px',
     borderRadius: '10px',
-    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)', 
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
     position: 'relative',
-    animation: 'fadeIn 1s ease-in-out', 
+    animation: 'fadeIn 1s ease-in-out',
   };
 
   const headerItemStyle = (name) => ({
-    fontSize: '18px',
+    fontSize: '12px',
     fontWeight: '600',
-    color: activeHeader === name ? '#F39C12' : '#333333', 
-    textTransform: 'capitalize', 
+    color: activeHeader === name ? '#F39C12' : '#333333',
+    textTransform: 'capitalize',
     cursor: 'pointer',
     padding: '12px 24px',
     borderRadius: '5px',
     transition: 'color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease',
-    boxShadow: activeHeader === name ? '0 0 10px rgba(243, 156, 18, 0.6)' : 'none', 
+    boxShadow: activeHeader === name ? '0 0 10px rgba(243, 156, 18, 0.6)' : 'none',
     '&:hover': {
-      color: '#F39C12', 
-      transform: 'scale(1.1)', 
-      boxShadow: '0 0 10px rgba(243, 156, 18, 0.4)', 
+      color: '#F39C12',
+      transform: 'scale(1.1)',
+      boxShadow: '0 0 10px rgba(243, 156, 18, 0.4)',
     },
   });
 
@@ -63,7 +72,7 @@ const IsaiArulalarkal = () => {
         });
       },
       {
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -90,8 +99,8 @@ const IsaiArulalarkal = () => {
     textAlign: 'center',
     opacity: isVisible ? 1 : 0,
     transform: isVisible
-      ? 'translateX(0)' 
-      : 'translateX(100px)', 
+      ? 'translateX(0)'
+      : 'translateX(100px)',
     transition: `opacity 1s ease, transform 1s ease, transition-delay ${index * 0.3}s`,
   });
 
@@ -99,7 +108,7 @@ const IsaiArulalarkal = () => {
     width: '100%',
     height: '200px',
     objectFit: 'contain',
-    transition: 'transform 0.3s ease', 
+    transition: 'transform 0.3s ease',
   };
 
   const imageNameStyle = {
@@ -108,7 +117,7 @@ const IsaiArulalarkal = () => {
     fontWeight: '600',
     color: '#FFF',
     textShadow: '0px 1px 1px ',
-    color:'rgba(243, 156, 18, 0.6)',
+    color: 'rgba(243, 156, 18, 0.6)',
     padding: '8px 12px',
     borderRadius: '5px',
     maxWidth: '100%',
@@ -126,14 +135,14 @@ const IsaiArulalarkal = () => {
             style={headerItemStyle(name)}
             onClick={() => setActiveHeader(name)}
           >
-            {name}
+            {language === 'tamil' && translations[name] ? translations[name] : name}
           </Link>
         ))}
       </div>
 
       <div style={{ textAlign: 'center' }}>
         <h6 style={{ fontSize: '26px', fontWeight: '500', color: '#F39C12', marginBottom: '40px' }}>
-          {activeHeader}
+          {language === 'tamil' && translations[activeHeader] ? translations[activeHeader] : activeHeader}
         </h6>
       </div>
 

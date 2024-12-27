@@ -43,6 +43,11 @@ import Topbar from '../Component/Admin/Topbar'
 import Staffdetails from '../Component/Admin/Staffdetails'
 import Userdetails from '../Component/Admin/Userdetails'
 import Audio from '../Pages/Audio'
+import Gallery3 from '../Component/Gallery/Gallery3'
+import Gallery4 from '../Component/Gallery/Gallery4'
+import Gallery5 from '../Component/Gallery/Gallery5'
+import CompetitionForm from '../Component/Home/Competitionform'
+import Undergraduate from '../Component/Undergraduate'
 
 
 const Routercomponent = () => {
@@ -76,9 +81,17 @@ const MainRoutes = () => {
         <Route path="/tamil-isai-history" element={<History />} />
         <Route path='/media' element={<Media />} />
         <Route path='/museum' element={<Museum />} />
-        <Route path='/IsaiKalaivanarkal' element={<IsaiKalaivanarkal />} />
+        {/* <Route path='/IsaiKalaivanarkal' element={<IsaiKalaivanarkal />} />
         <Route path='/IsaiPerairignarkal' element={<IsaiPerairignarkal />} />
-        <Route path='/PannIsaiPerarignarkal' element={<PannIsaiPerarignarkal />} />
+        <Route path='/PannIsaiPerarignarkal' element={<PannIsaiPerarignarkal />} /> */}
+
+        
+           <Route path='/IsaiKalaivanarkal' element={<Gallery3/>} />
+        <Route path='/IsaiPerairignarkal' element={<Gallery4/>} />
+        <Route path='/PannIsaiPerarignarkal' element={<Gallery5/>} /> 
+
+<Route path='/competition-form' element={<CompetitionForm/>}/>
+        
         <Route path='/trustees' element={<Boardtrustees />} />
         <Route path='/presidents-and-secretaries' element={<Boardpresident />} />
         <Route path='/tamil-pann-research' element={<Pannresearch />} />
@@ -98,7 +111,7 @@ const MainRoutes = () => {
         <Route path='/open-education' element={<Openeducation />} />
         <Route path='/skype-class' element={<Skypeclass />} />
         <Route path='/audio' element={<Audio />} />
-
+<Route path='/undergraduate' element={<Undergraduate/>}/>
         {/* Admin routes */}
         <Route path='/admin' element={<Adminlayout />} />
         <Route path='/staffdetails' element={<Staffdetails />} />

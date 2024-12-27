@@ -37,6 +37,14 @@ const Gallery4 = () => {
   const { language } = useSelector((state) => state.language);
   const galleryd = jsondata[language]?.blog4 || [];
 
+  const translations = {
+    'DeivigaArulalarkal': 'தெய்வீக அருளாளர்கள்', 
+    'IsaiArulalarkal': 'இசை அருளாளர்கள்',
+    'IsaiKalaivanarkal': 'இசை கலைவாணர்கள்',
+    'IsaiPerairignarkal': 'முஇசைப் பேரறிஞர்கள்',
+    'PannIsaiPerarignarkal': 'பண் இசைப் பேரறிஞர்கள்',
+  };
+
   const headerStyle = {
     display: 'flex',
     justifyContent: 'center',
@@ -47,10 +55,11 @@ const Gallery4 = () => {
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
     position: 'relative',
     animation: 'fadeIn 1s ease-in-out',
+  
   };
 
   const headerItemStyle = (name) => ({
-    fontSize: '18px',
+    fontSize: '12px',
     fontWeight: '600',
     color: activeHeader === name ? '#F39C12' : '#333333',
     textTransform: 'capitalize',
@@ -123,7 +132,7 @@ const Gallery4 = () => {
 
   const imageNameStyle = {
     marginTop: '10px',
-    fontSize: '16px',
+    fontSize: '14px',
     fontWeight: '600',
     color: '#FFF',
     textShadow: '0px 1px 1px ',
@@ -134,9 +143,10 @@ const Gallery4 = () => {
     textAlign: 'center',
     transition: 'background 0.3s ease, transform 0.3s ease',
   };
+
   return (
     <div>
-      <div style={headerStyle}>
+      <div className="header-container" style={headerStyle}>
         {headerNames.map(({ name, path }) => (
           <Link
             key={name}
@@ -144,14 +154,14 @@ const Gallery4 = () => {
             style={headerItemStyle(name)}
             onClick={() => setActiveHeader(name)}
           >
-            {name}
+            {language === 'tamil' && translations[name] ? translations[name] : name}
           </Link>
         ))}
       </div>
 
       <div style={{ textAlign: 'center' }}>
         <h6 style={{ fontSize: '26px', fontWeight: '500', color: '#F39C12', marginBottom: '40px' }}>
-          {activeHeader}
+        {language === 'tamil' && translations[activeHeader] ? translations[activeHeader] : activeHeader}
         </h6>
       </div>
 
@@ -183,25 +193,13 @@ const Gallery4 = () => {
             }
           }
 
-          @keyframes slideInFromLeft {
-            0% {
-              opacity: 0;
-              transform: translateX(-100px);
+          @media (max-width: 768px) {
+            .header-container {
+              flex-direction: column;
             }
-            100% {
-              opacity: 1;
-              transform: translateX(0);
-            }
-          }
 
-          @keyframes slideInFromRight {
-            0% {
-              opacity: 0;
-              transform: translateX(100px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateX(0);
+            .header-container a {
+              margin-bottom: 10px;
             }
           }
         `}
